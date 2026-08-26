@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Offer Lab
 
-## Getting Started
+**Live: [offer-lab.vercel.app](https://offer-lab.vercel.app)**
 
-First, run the development server:
+You got a job offer. Is the number good? Offer Lab converts a salary into what it actually
+means in a specific city: take-home after federal and state tax, real rent, and what is left
+over each month.
+
+## Why it works this way
+
+A salary is not comparable across cities and almost every new graduate compares them anyway.
+The interesting output is not take-home pay, it is the monthly surplus, because that is the
+number that determines whether the offer is livable.
+
+Two decisions worth calling out:
+
+- **The methodology is a popover, not a footnote.** Every assumption behind the number is one
+  click away. A tool that produces a confident dollar figure from hidden assumptions is worse
+  than no tool, because people act on it.
+- **The results are editable in place.** The city rent estimate will be wrong for a specific
+  person's situation, so they can overwrite it and watch the verdict change, rather than
+  distrusting the whole output because one input was off.
+
+## How it is built
+
+- Next.js App Router, TypeScript, Tailwind, Framer Motion
+- `src/lib/calculator.ts` for tax and budget math, `src/data/cities.ts` for cost of living
+- 2025 federal and state brackets, current rent data
+- Client side only, shareable by URL, nothing stored
+
+## Run it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Claude Code. Part of [Cense](https://cense.beehiiv.com).

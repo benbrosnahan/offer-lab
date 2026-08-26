@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy: #275B2D;
+  --color-navy-hover: #1E4623;
+  --color-selected: #EEF3F9;
+  --font-sans: var(--font-inter);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFCEC;
+  --foreground: #275B2D;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
+html, body {
+  background: #f8fafc;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Numeric tabular layout for currency */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth focus ring */
+*:focus-visible {
+  outline: 2px solid #1E3A5F;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Hide scrollbar in city picker dropdown */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* ---- Cense brand theme ----
+   Overrides Tailwind's stock neutral ramps so existing slate and gray
+   utility classes render as the warm green-on-cream Cense palette.
+   Semantic colors (red, amber, emerald) are deliberately left untouched. */
+@theme {
+  --color-slate-50: #F6F3E1;
+  --color-slate-100: #EAF3E7;
+  --color-slate-200: #DCE7D8;
+  --color-slate-300: #BFDCB8;
+  --color-slate-400: #8CA98E;
+  --color-slate-500: #5C7F5F;
+  --color-slate-600: #4A6E4D;
+  --color-slate-700: #3A6B3E;
+  --color-slate-800: #2F6133;
+  --color-slate-900: #275B2D;
+
+  --color-gray-50: #F6F3E1;
+  --color-gray-100: #EAF3E7;
+  --color-gray-200: #DCE7D8;
+  --color-gray-300: #BFDCB8;
+  --color-gray-400: #8CA98E;
+  --color-gray-500: #5C7F5F;
+  --color-gray-600: #4A6E4D;
+  --color-gray-700: #3A6B3E;
+  --color-gray-800: #2F6133;
+  --color-gray-900: #275B2D;
+
+  --color-brand: #275B2D;
+  --color-brand-hover: #1E4623;
+  --color-brand-light: #EAF3E7;
+  --color-page: #FFFCEC;
+  --color-line: #DCE7D8;
 }
