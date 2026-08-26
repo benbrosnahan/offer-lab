@@ -1,6 +1,6 @@
 # Offer Lab
 
-**Live: [offer-lab.vercel.app](https://offer-lab.vercel.app)**
+**Live: [offer-lab-ivory.vercel.app](https://offer-lab-ivory.vercel.app)**
 
 You got a job offer. Is the number good? Offer Lab converts a salary into what it actually
 means in a specific city: take-home after federal and state tax, real rent, and what is left
