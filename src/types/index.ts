@@ -14,7 +14,6 @@ export interface City {
   state: string; // 2-letter abbreviation
   median1BR: number; // monthly rent in USD
   colIndex: number; // necessities cost multiplier (1.0 = national avg)
-  localTaxRate: number; // city/county additional income tax (e.g., 0.034 for NYC)
 }
 
 export interface TaxBreakdown {

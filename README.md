@@ -24,8 +24,9 @@ Two decisions worth calling out:
 ## How it is built
 
 - Next.js App Router, TypeScript, Tailwind, Framer Motion
-- `src/lib/calculator.ts` for tax and budget math, `src/data/cities.ts` for cost of living
-- 2025 federal and state brackets, current rent data
+- `src/lib/calculator.ts` for tax and budget math, `src/data/taxes.ts` for 2025 state and
+  local income tax rules (with sources), `src/data/cities.ts` for cost of living
+- 2025 federal, state, and local tax brackets; rent as of November 2025
 - Client side only, shareable by URL, nothing stored
 
 ## Run it

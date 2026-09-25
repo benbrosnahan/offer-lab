@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Offer Lab by Cense — Is your job offer enough to live on?",
   description:
-    "Find out what your job offer actually means. See take-home pay, real cost of living, and whether you can afford the city — based on 2025 tax brackets and current rent data.",
+    "Find out what your job offer actually means. See take-home pay, real cost of living, and whether you can afford the city — based on 2025 tax brackets and rent data as of November 2025.",
   openGraph: {
     title: "Offer Lab — What your job offer actually means",
     description:

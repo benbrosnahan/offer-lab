@@ -137,7 +137,7 @@ function OfferLabContent() {
                   <OfferForm onSubmit={handleFirstSubmit} />
                 </div>
                 <p className="text-xs text-slate-400 text-center mt-4">
-                  No signup. No data stored. Calculations use 2025 tax brackets.
+                  No signup. No data stored. 2025 tax brackets, rent as of Nov 2025.
                 </p>
               </div>
             </motion.div>
@@ -161,7 +161,7 @@ function OfferLabContent() {
                     in {analysisA.city.name}
                   </h1>
                   <p className="text-sm text-slate-500 mt-1">
-                    Single filer, 2025 tax year.
+                    Single filer, 2025 tax brackets, rent as of Nov 2025.
                   </p>
                 </div>
                 <ShareButton a={analysisA.offer} />
@@ -294,7 +294,7 @@ function OfferLabContent() {
                   </h1>
                   <p className="text-sm text-slate-500 mt-1">
                     {analysisA.city.name} vs. {analysisB.city.name}, 2025 tax
-                    year.
+                    brackets, rent as of Nov 2025.
                   </p>
                 </div>
                 <ShareButton a={analysisA.offer} b={analysisB.offer} />
@@ -331,15 +331,21 @@ function OfferLabContent() {
                 <strong className="text-slate-700">Take-home pay</strong> uses
                 2025 federal tax brackets (single filer), the $15,750 standard
                 deduction, 2025 FICA rates (6.2% Social Security up to $176,100,
-                1.45% Medicare uncapped), and state effective income tax rates
-                from the Tax Foundation. Local income taxes are included for
-                NYC, Philadelphia, Detroit, Cleveland, Cincinnati, Columbus, and
-                other applicable cities.
+                1.45% Medicare uncapped), and each state&apos;s 2025 income tax
+                brackets, standard deduction, and exemptions as published by its
+                revenue department. Local income taxes are included for NYC,
+                Philadelphia, Pittsburgh, Baltimore, Detroit, Grand Rapids,
+                Cleveland, Cincinnati, Columbus, Indianapolis, Louisville,
+                Lexington, Kansas City, St. Louis, Birmingham, Wilmington, and
+                Portland (above $125,000). Not included: state payroll
+                deductions such as California SDI, and Denver&apos;s $5.75/month
+                occupational tax.
               </p>
               <p>
                 <strong className="text-slate-700">Rent</strong> uses median
-                1-bedroom rents from the Zumper National Rent Report (November
-                2025) and Apartment List metro-level data (2025).
+                1-bedroom rents as of November 2025 (Zumper National Rent
+                Report, November 2025, and Apartment List metro-level data,
+                2025).
               </p>
               <p>
                 <strong className="text-slate-700">Essentials</strong>{" "}

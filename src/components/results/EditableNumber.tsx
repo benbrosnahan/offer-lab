@@ -79,45 +79,44 @@ export default function EditableNumber({
   }
 
   return (
-    <button
-      type="button"
-      onClick={() => setEditing(true)}
-      className={cn(
-        "inline-flex items-center gap-1.5 group",
-        inline
-          ? "hover:text-navy transition-colors"
-          : "px-2 py-0.5 -mx-2 -my-0.5 rounded-md hover:bg-slate-100 transition-colors",
-        className
-      )}
-      aria-label={`Edit value, currently ${formatCurrency(value)}`}
-    >
-      <span className="tabular font-semibold">{formatCurrency(value)}</span>
-      <svg
-        className="w-3 h-3 text-slate-300 group-hover:text-navy transition-colors"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={2}
-        aria-hidden="true"
+    <span className="inline-flex items-center">
+      <button
+        type="button"
+        onClick={() => setEditing(true)}
+        className={cn(
+          "inline-flex items-center gap-1.5 group",
+          inline
+            ? "hover:text-navy transition-colors"
+            : "px-2 py-0.5 -mx-2 -my-0.5 rounded-md hover:bg-slate-100 transition-colors",
+          className
+        )}
+        aria-label={`Edit value, currently ${formatCurrency(value)}`}
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-        />
-      </svg>
+        <span className="tabular font-semibold">{formatCurrency(value)}</span>
+        <svg
+          className="w-3 h-3 text-slate-300 group-hover:text-navy transition-colors"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+          />
+        </svg>
+      </button>
       {isOverride && onReset && (
         <button
           type="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            onReset();
-          }}
+          onClick={onReset}
           className="text-[10px] text-slate-400 hover:text-navy font-medium ml-1"
         >
           reset
         </button>
       )}
-    </button>
+    </span>
   );
 }

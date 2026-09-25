@@ -149,8 +149,8 @@ export default function BudgetBreakdown({
             <p className="mt-2 text-slate-500">
               Effective tax rate: {(tax.effectiveRate * 100).toFixed(1)}%.
               Calculations use 2025 federal brackets with the $15,750 standard
-              deduction, 2025 FICA rates, and Tax Foundation state effective
-              rates. Assumes single filer, no other deductions.
+              deduction, 2025 FICA rates, and 2025 {city.state} state and local
+              income tax rules. Assumes single filer, no other deductions.
             </p>
           </MethodologyPopover>
         </Row>
@@ -175,7 +175,8 @@ export default function BudgetBreakdown({
               <p className="mt-2">
                 Source: Zumper National Rent Report (November 2025) and
                 Apartment List metro-level rent data (2025). National median 1BR
-                rent is currently <span className="tabular">$1,501/month</span>.
+                rent was <span className="tabular">$1,501/month</span> as of
+                November 2025.
               </p>
               <p className="mt-2 text-slate-500">
                 This is the median — half of 1-bedroom rentals are cheaper,
