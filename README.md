@@ -3,8 +3,8 @@
 **Live: [offer-lab-ivory.vercel.app](https://offer-lab-ivory.vercel.app)**
 
 You got a job offer. Is the number good? Offer Lab converts a salary into what it actually
-means in a specific city: take-home after federal and state tax, real rent, and what is left
-over each month.
+means in a specific city: take-home after federal, state and city tax and payroll premiums,
+a typical rent and everyday costs, and what is left over each month.
 
 ## Why it works this way
 
@@ -14,26 +14,37 @@ number that determines whether the offer is livable.
 
 Two decisions worth calling out:
 
-- **The methodology is a popover, not a footnote.** Every assumption behind the number is one
-  click away. A tool that produces a confident dollar figure from hidden assumptions is worse
-  than no tool, because people act on it.
+- **The math is one tap away, not a footnote.** Every assumption behind the number opens in
+  place under the figure it explains. A tool that produces a confident dollar figure from
+  hidden assumptions is worse than no tool, because people act on it.
 - **The results are editable in place.** The city rent estimate will be wrong for a specific
-  person's situation, so they can overwrite it and watch the verdict change, rather than
-  distrusting the whole output because one input was off.
+  person's situation, so rent, everyday costs, loans and bills are fields: change one and the
+  verdict moves, rather than distrusting the whole output because one input was off.
+- **One picture: the paycheck bar.** A month of pay as one bar, split into taxes, rent,
+  everyday costs, bills and what is left. A shortfall runs past the end of the pay, striped.
 
 ## How it is built
 
-- Next.js App Router, TypeScript, Tailwind, Framer Motion
-- `src/lib/calculator.ts` for tax and budget math, `src/data/taxes.ts` for 2025 state and
-  local income tax rules (with sources), `src/data/cities.ts` for cost of living
-- 2025 federal, state, and local tax brackets; rent as of November 2025
-- Client side only, shareable by URL, nothing stored
+- Next.js App Router, TypeScript, Tailwind 4, CSS-only motion
+- `src/lib/calculator.ts` for tax and budget math; `src/data/taxes.ts` for 2026 state, city
+  and payroll rules (with sources); `src/data/cities.ts` for rent (Zumper, October 2026) and
+  everyday costs (MIT Living Wage Calculator, by county)
+- Client side only, shareable by URL; the offer is kept in this tab's session storage
+- `audits/` holds the audit kit: Playwright tests with an independent money oracle, and the
+  scans (`node run.mjs --url <url> --runs 1`)
 
 ## Run it
 
 ```bash
 npm install
 npm run dev
+```
+
+Check it:
+
+```bash
+npm run lint && npm run typecheck && npm run build
+cd audits && npm ci && npm run setup && npx playwright test
 ```
 
 Part of [Cense](https://cense.beehiiv.com).

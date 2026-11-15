@@ -1,79 +1,157 @@
 @import "tailwindcss";
 
-@theme {
-  --color-navy: #275B2D;
-  --color-navy-hover: #1E4623;
-  --color-selected: #EEF3F9;
-  --font-sans: var(--font-inter);
+/* Tokens shared with Decode and Loan Desk (set 2026-09-27), so the Cense
+   tools read as one family. Contrast ratios are measured on the page cream
+   and on white cards; every text token clears 4.5:1 on both. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-soft: var(--soft);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-brand-orange: var(--brand-orange);
+  --color-mark: var(--mark);
+  --color-mark-strong: var(--mark-strong);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-seg-tax: var(--seg-tax);
+  --color-seg-rent: var(--seg-rent);
+  --color-seg-essentials: var(--seg-essentials);
+  --color-seg-bills: var(--seg-bills);
+  --font-sans: var(--font-cense-body), system-ui, sans-serif;
+  --font-display: var(--font-cense-display), var(--font-cense-body), system-ui, sans-serif;
+  /* The floor. Nothing in the interface is set smaller than 13px. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.2rem;
 }
 
 :root {
-  --background: #FFFCEC;
-  --foreground: #275B2D;
+  --background: #fffcec;
+  --foreground: #275b2d; /* 7.8:1 on the page */
+  --soft: #3a6b3e; /* body copy one step quieter, 6.1:1 */
+  --card: #ffffff;
+  --primary: #275b2d;
+  --primary-hover: #1e4623;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf3e7;
+  --muted: #f6f3e1;
+  --muted-foreground: #4a6e4d; /* labels and captions, 5.6:1 */
+  --brand-orange: #a8531f; /* 5.2:1. The lighter #C1652E fails as text. */
+  --mark: #f7e4d6;
+  --mark-strong: #c1652e;
+  --border: #dce7d8;
+  --border-strong: #bfdcb8;
+  --input: #729470; /* field outline, 3.4:1 on white */
+  --ring: #275b2d;
+
+  /* The paycheck bar: a green ramp from what you never see (tax) to what you
+     choose (bills), then the left-over in the Decode mark colour. Each
+     segment also has a text label, so colour is never the only cue. */
+  --seg-tax: #1e4623;
+  --seg-rent: #3a6b3e;
+  --seg-essentials: #6f916c;
+  --seg-bills: #bfdcb8;
 }
 
-html, body {
-  background: #f8fafc;
-  color: var(--foreground);
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
-/* Numeric tabular layout for currency */
 .tabular {
   font-variant-numeric: tabular-nums;
 }
 
-/* Smooth focus ring */
 *:focus-visible {
-  outline: 2px solid #1E3A5F;
+  outline: 2px solid var(--ring);
   outline-offset: 2px;
-  border-radius: 6px;
 }
 
-/* Hide scrollbar in city picker dropdown */
-.scrollbar-thin::-webkit-scrollbar {
-  width: 6px;
-}
-.scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
-}
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 3px;
+.card-soft {
+  box-shadow: 0 1px 0 rgba(39, 91, 45, 0.04),
+    0 8px 24px -12px rgba(39, 91, 45, 0.18);
 }
 
-/* ---- Cense brand theme ----
-   Overrides Tailwind's stock neutral ramps so existing slate and gray
-   utility classes render as the warm green-on-cream Cense palette.
-   Semantic colors (red, amber, emerald) are deliberately left untouched. */
-@theme {
-  --color-slate-50: #F6F3E1;
-  --color-slate-100: #EAF3E7;
-  --color-slate-200: #DCE7D8;
-  --color-slate-300: #BFDCB8;
-  --color-slate-400: #8CA98E;
-  --color-slate-500: #5C7F5F;
-  --color-slate-600: #4A6E4D;
-  --color-slate-700: #3A6B3E;
-  --color-slate-800: #2F6133;
-  --color-slate-900: #275B2D;
+/* Shortfall: costs that run past the paycheck. Stripes plus a label, so it
+   never depends on colour alone. */
+.seg-short {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--mark-strong) 0 6px,
+    var(--mark) 6px 11px
+  );
+}
 
-  --color-gray-50: #F6F3E1;
-  --color-gray-100: #EAF3E7;
-  --color-gray-200: #DCE7D8;
-  --color-gray-300: #BFDCB8;
-  --color-gray-400: #8CA98E;
-  --color-gray-500: #5C7F5F;
-  --color-gray-600: #4A6E4D;
-  --color-gray-700: #3A6B3E;
-  --color-gray-800: #2F6133;
-  --color-gray-900: #275B2D;
+/* The same stripes laid over the costs that run past the end of the pay,
+   so the cost colours still show through. */
+.seg-short-over {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--mark-strong) 0 5px,
+    transparent 5px 10px
+  );
+}
 
-  --color-brand: #275B2D;
-  --color-brand-hover: #1E4623;
-  --color-brand-light: #EAF3E7;
-  --color-page: #FFFCEC;
-  --color-line: #DCE7D8;
+/* One orchestrated moment: the paycheck bar fills left to right when an
+   answer appears. CSS only, so nothing waits on script and a background tab
+   still shows the content. */
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.bar-grow {
+  transform-origin: left center;
+  animation: grow 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 360ms ease-out both;
+}
+
+/* A saved offer or a share link is restored after hydration. Until then the
+   blank form is hidden (it keeps its space, so nothing below it jumps). */
+html[data-restoring] [data-view="quiz"] {
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
