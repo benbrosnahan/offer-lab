@@ -18,7 +18,7 @@ export default function VerdictCard({ analysis }: { analysis: OfferAnalysis }) {
         >
           {verdict.label}
         </span>
-        After rent, everyday costs and bills
+        After rent, electricity, everyday costs and bills
       </p>
       <h2
         id="verdict"

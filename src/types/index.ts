@@ -6,6 +6,10 @@ export interface Offer {
   // Optional overrides (user can edit on results page)
   rentOverride?: number;
   necessitiesOverride?: number;
+  /** People sharing the rent besides you, 0 to 3. Missing means living alone. */
+  roommates?: number;
+  /** Your share of the electricity bill, when you enter your own. */
+  utilitiesOverride?: number;
 }
 
 export interface City {
@@ -15,6 +19,10 @@ export interface City {
   /** Median 1-bedroom asking rent, monthly USD (see src/data/cities.ts). */
   rent: number;
   rentSource: "report" | "cityPage";
+  /** Median 2-bedroom asking rent from the same Zumper report, or null when the city is not in it. */
+  rent2: number | null;
+  /** HUD FY2026 Fair Market Rents for the city's area: 1, 2, 3 and 4 bedrooms. */
+  fmr: [number, number, number, number];
   /** The county whose MIT Living Wage figures are used. */
   county: string;
   /** MIT annual costs: food, medical, transportation, internet and mobile, other. */
@@ -47,6 +55,14 @@ export interface OfferAnalysis {
   tax: TaxBreakdown;
   rent: number;
   rentIsOverride: boolean;
+  /** The rent estimate for your share, used when there is no override. */
+  rentEstimate: number;
+  /** Roommates (0 to 3) and the people the rent and electricity are split between. */
+  roommates: number;
+  people: number;
+  utilities: number;
+  utilitiesIsOverride: boolean;
+  utilitiesEstimate: number;
   necessities: number;
   necessitiesIsOverride: boolean;
   loanPayment: number;

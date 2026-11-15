@@ -19,7 +19,7 @@ const body = Instrument_Sans({
 
 const SITE_URL = "https://offer-lab-ivory.vercel.app";
 const DESCRIPTION =
-  "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.";
+  "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent, electricity and everyday costs, and what is left each month. Compare two offers.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

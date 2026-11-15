@@ -141,11 +141,11 @@ export default function OfferLab() {
                 Second offer
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Your loan and bills carry over from the first offer.
+                Your loan, bills and roommates carry over from the first offer.
               </p>
               <div className="mt-5">
                 <OfferForm
-                  initial={{ loanPayment: a.offer.loanPayment, otherFixed: a.offer.otherFixed }}
+                  initial={{ loanPayment: a.offer.loanPayment, otherFixed: a.offer.otherFixed, roommates: a.offer.roommates }}
                   onSubmit={submitSecond}
                   submitLabel="Compare offers"
                   compact
@@ -215,8 +215,8 @@ export default function OfferLab() {
           Is your offer enough to live on?
         </h1>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-soft">
-          Type the salary and the city. You get take-home pay after {TAX_YEAR} taxes, a typical rent and
-          everyday costs there, and what is left each month.
+          Type the salary and the city. You get take-home pay after {TAX_YEAR} taxes, a typical rent,
+          electricity and everyday costs there, and what is left each month.
         </p>
       </div>
 

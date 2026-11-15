@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { Offer } from "@/types";
+import { MAX_ROOMMATES } from "@/data/cities";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -64,8 +65,15 @@ export function sanitizeOffer(
   };
   const rent = amount(o.rentOverride, MAX_MONTHLY);
   const essentials = amount(o.necessitiesOverride, MAX_MONTHLY);
+  const utilities = amount(o.utilitiesOverride, MAX_MONTHLY);
   if (rent !== undefined) offer.rentOverride = rent;
   if (essentials !== undefined) offer.necessitiesOverride = essentials;
+  if (utilities !== undefined) offer.utilitiesOverride = utilities;
+  // Roommates: a whole number from 1 to MAX_ROOMMATES; anything else is living alone.
+  const roommates = o.roommates;
+  if (typeof roommates === "number" && Number.isInteger(roommates) && roommates >= 1 && roommates <= MAX_ROOMMATES) {
+    offer.roommates = roommates;
+  }
   return offer;
 }
 

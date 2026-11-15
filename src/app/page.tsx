@@ -12,7 +12,7 @@ const JSON_LD = {
   isAccessibleForFree: true,
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   description:
-    "Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.",
+    "Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent (alone or shared), electricity and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.",
   publisher: { "@type": "Organization", name: "Cense", url: "https://cense.beehiiv.com" },
 };
 

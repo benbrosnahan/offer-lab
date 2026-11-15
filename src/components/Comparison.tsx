@@ -30,7 +30,7 @@ function why(w: OfferAnalysis, l: OfferAnalysis): string {
     else if (diff <= -NOTABLE) against.push(worse.replace("$", formatCurrency(-diff)));
   };
   add(w.tax.takeHomeMonthly - l.tax.takeHomeMonthly, "take-home is $ higher", "$ less take-home");
-  add(l.rent - w.rent, "rent is $ lower", "$ more rent");
+  add(l.rent + l.utilities - (w.rent + w.utilities), "rent and electricity are $ lower", "$ more in rent and electricity");
   add(l.necessities - w.necessities, "everyday costs are $ lower", "$ more in everyday costs");
   add(
     l.loanPayment + l.otherFixed - (w.loanPayment + w.otherFixed),
@@ -68,7 +68,7 @@ export default function Comparison({ a, b, onUpdateA, onUpdateB, onRemoveB }: Pr
         aria-labelledby="answer"
         className="rise rounded-3xl bg-card p-5 ring-1 ring-border card-soft sm:p-7"
       >
-        <p className="text-sm text-muted-foreground">After rent, everyday costs and bills</p>
+        <p className="text-sm text-muted-foreground">After rent, electricity, everyday costs and bills</p>
         <h2
           id="answer"
           className="mt-1 font-display text-[2rem] font-bold leading-[1.1] tracking-tight text-foreground sm:text-[2.5rem]"
@@ -93,7 +93,7 @@ export default function Comparison({ a, b, onUpdateA, onUpdateB, onRemoveB }: Pr
         )}
         {a.discretionary < 0 && b.discretionary < 0 && (
           <p className="mt-2 max-w-prose text-base leading-relaxed text-soft">
-            Both come up short at a median 1-bedroom. Try the rent you would really pay in each.
+            Both come up short at these rents. Try roommates or the rent you would really pay in each.
           </p>
         )}
 

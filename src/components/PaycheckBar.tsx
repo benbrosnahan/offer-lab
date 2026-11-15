@@ -15,7 +15,7 @@ export function paycheckSegments(a: OfferAnalysis): Segment[] {
   const bills = a.loanPayment + a.otherFixed;
   const segments: Segment[] = [
     { key: "tax", label: "Taxes and payroll", amount: taxes, className: "bg-seg-tax" },
-    { key: "rent", label: "Rent", amount: a.rent, className: "bg-seg-rent" },
+    { key: "rent", label: "Rent and electricity", amount: a.rent + a.utilities, className: "bg-seg-rent" },
     { key: "essentials", label: "Everyday costs", amount: a.necessities, className: "bg-seg-essentials" },
   ];
   if (bills > 0) {
@@ -53,7 +53,8 @@ interface Props {
 }
 
 /**
- * The signature element: the month's pay as one bar, split into taxes, rent,
+ * The signature element: the month's pay as one bar, split into taxes, rent
+ * and electricity,
  * everyday costs, bills and what is left. A shortfall runs past the end of
  * the pay, striped. The list underneath carries the same figures in text, so
  * the bar itself is hidden from screen readers.

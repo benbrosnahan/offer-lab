@@ -4,7 +4,8 @@
 
 You got a job offer. Is the number good? Offer Lab converts a salary into what it actually
 means in a specific city: take-home after federal, state and city tax and payroll premiums,
-a typical rent and everyday costs, and what is left over each month.
+a typical rent (alone or split with roommates), electricity and everyday costs, and what is
+left over each month.
 
 ## Why it works this way
 
@@ -18,7 +19,7 @@ Two decisions worth calling out:
   place under the figure it explains. A tool that produces a confident dollar figure from
   hidden assumptions is worse than no tool, because people act on it.
 - **The results are editable in place.** The city rent estimate will be wrong for a specific
-  person's situation, so rent, everyday costs, loans and bills are fields: change one and the
+  person's situation, so roommates, rent, electricity, everyday costs, loans and bills are fields: change one and the
   verdict moves, rather than distrusting the whole output because one input was off.
 - **One picture: the paycheck bar.** A month of pay as one bar, split into taxes, rent,
   everyday costs, bills and what is left. A shortfall runs past the end of the pay, striped.
@@ -27,8 +28,9 @@ Two decisions worth calling out:
 
 - Next.js App Router, TypeScript, Tailwind 4, CSS-only motion
 - `src/lib/calculator.ts` for tax and budget math; `src/data/taxes.ts` for 2026 state, city
-  and payroll rules (with sources); `src/data/cities.ts` for rent (Zumper, October 2026) and
-  everyday costs (MIT Living Wage Calculator, by county)
+  and payroll rules (with sources); `src/data/cities.ts` for rent (Zumper, October 2026, with
+  HUD FY2026 Fair Market Rents for shared places) and everyday costs (MIT Living Wage
+  Calculator, by county); `src/data/utilities.ts` for electricity (EIA, 2024, by state)
 - Client side only, shareable by URL; the offer is kept in this tab's session storage
 - `audits/` holds the audit kit: Playwright tests with an independent money oracle, and the
   scans (`node run.mjs --url <url> --runs 1`)

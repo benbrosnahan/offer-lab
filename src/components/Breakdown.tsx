@@ -2,7 +2,8 @@
 
 import { Offer, OfferAnalysis } from "@/types";
 import AmountField from "@/components/AmountField";
-import { ESSENTIAL_PARTS, RENT_AS_OF } from "@/data/cities";
+import { ESSENTIAL_PARTS, MAX_ROOMMATES, RENT_AS_OF } from "@/data/cities";
+import { ELECTRICITY_YEAR } from "@/data/utilities";
 import { TAX_YEAR } from "@/data/taxes";
 import { cn, formatCurrency } from "@/lib/utils";
 
@@ -103,18 +104,44 @@ export default function Breakdown({ analysis, slot, onUpdate, heading, onRemove 
           </div>
         </Row>
 
+        <Roommates
+          name={id("roommates")}
+          value={analysis.roommates}
+          onChange={(n) => onUpdate({ roommates: n || undefined })}
+        />
+
         <EditRow
           id={id("rent")}
-          label="Rent"
+          label={analysis.roommates ? "Your rent" : "Rent"}
           note={
             analysis.rentIsOverride
               ? "Your number"
-              : `Median 1-bedroom listing, Zumper, ${city.rentSource === "report" ? RENT_AS_OF : "November 2026"}. Sharing a place? Put in your part.`
+              : analysis.roommates
+                ? `Your ${SHARE[analysis.people]} of a typical ${analysis.people}-bedroom. Zumper ${
+                    analysis.people === 2 && city.rent2 ? "2-bedroom median" : "median scaled by HUD"
+                  }, ${RENT_AS_OF}.`
+                : `Median 1-bedroom listing, Zumper, ${city.rentSource === "report" ? RENT_AS_OF : "November 2026"}. Sharing a place? Set roommates above or put in your part.`
           }
           value={analysis.rent}
           onChange={(v) => onUpdate({ rentOverride: v })}
           onReset={analysis.rentIsOverride ? () => onUpdate({ rentOverride: undefined }) : undefined}
-          resetLabel={`Use the median, ${formatCurrency(city.rent)}`}
+          resetLabel={`Use the ${analysis.roommates ? "estimate" : "median"}, ${formatCurrency(analysis.rentEstimate)}`}
+        />
+
+        <EditRow
+          id={id("electricity")}
+          label="Electricity"
+          note={
+            analysis.utilitiesIsOverride
+              ? "Your number"
+              : `Average home's bill in ${stateName}, EIA ${ELECTRICITY_YEAR}${
+                  analysis.people > 1 ? `, split ${analysis.people} ways` : ""
+                }. Gas or heat not included.`
+          }
+          value={analysis.utilities}
+          onChange={(v) => onUpdate({ utilitiesOverride: v })}
+          onReset={analysis.utilitiesIsOverride ? () => onUpdate({ utilitiesOverride: undefined }) : undefined}
+          resetLabel={`Use the EIA average, ${formatCurrency(analysis.utilitiesEstimate)}`}
         />
 
         <EditRow
@@ -138,8 +165,8 @@ export default function Breakdown({ analysis, slot, onUpdate, heading, onRemove 
                 <MathLine key={name} label={name} value={parts[i]} plain />
               ))}
               <li className="pt-2 text-muted-foreground">
-                Utilities are not in this or in the rent. Health care is your share of premiums plus
-                typical out-of-pocket costs.
+                Electricity is its own line, under the rent. Gas or heating bills are not counted.
+                Health care is your share of premiums plus typical out-of-pocket costs.
               </li>
             </ul>
           </details>
@@ -172,6 +199,57 @@ export default function Breakdown({ analysis, slot, onUpdate, heading, onRemove 
         </div>
       </div>
     </section>
+  );
+}
+
+const SHARE: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
+const ROOMMATE_OPTIONS = Array.from({ length: MAX_ROOMMATES + 1 }, (_, n) => n);
+
+/**
+ * Who splits the rent: native radios drawn as one pill track, so arrow keys,
+ * labels and screen readers all work the way they do for any radio group.
+ */
+function Roommates({ name, value, onChange }: { name: string; value: number; onChange: (n: number) => void }) {
+  return (
+    <div className="px-5 py-3 sm:px-6">
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+        <span id={`${name}-label`} className="text-base text-foreground">
+          Roommates
+        </span>
+        <div
+          role="radiogroup"
+          aria-labelledby={`${name}-label`}
+          aria-describedby={`${name}-note`}
+          className="flex rounded-full bg-muted p-1 ring-1 ring-inset ring-border"
+        >
+          {ROOMMATE_OPTIONS.map((n) => (
+            <label
+              key={n}
+              className={cn(
+                "relative inline-flex min-h-10 min-w-12 cursor-pointer items-center justify-center rounded-full px-3 text-base font-semibold transition-colors",
+                "has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ring",
+                value === n ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )}
+            >
+              <input
+                type="radio"
+                name={name}
+                value={n}
+                checked={value === n}
+                onChange={() => onChange(n)}
+                className="sr-only"
+              />
+              {n === 0 ? "None" : n}
+            </label>
+          ))}
+        </div>
+      </div>
+      <p id={`${name}-note`} className="mt-1 text-sm leading-snug text-muted-foreground">
+        {value === 0
+          ? "Living alone. Pick a number to split rent and electricity evenly."
+          : `Rent and electricity split ${value + 1} ways, one bedroom each.`}
+      </p>
+    </div>
   );
 }
 

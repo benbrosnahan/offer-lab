@@ -6,7 +6,8 @@ import {
   Verdict,
   VerdictTier,
 } from "@/types";
-import { CityRecord, essentialsFor, getCityById } from "@/data/cities";
+import { CityRecord, essentialsFor, getCityById, MAX_ROOMMATES, rentShare } from "@/data/cities";
+import { electricityShare } from "@/data/utilities";
 import {
   Brackets,
   LOCAL_TAX,
@@ -412,7 +413,13 @@ export function calcTax(gross: number, city: CityRecord): TaxBreakdown {
  */
 export const VERDICT_BANDS = { lean: 0, comfortable: 300, strong: 800 } as const;
 
-function getVerdict(discretionary: number): Verdict {
+/** What the rent in the answer stands for, so the copy can name it. */
+interface RentBasis {
+  shared: boolean;
+  ownRent: boolean;
+}
+
+function getVerdict(discretionary: number, basis: RentBasis): Verdict {
   const amount = formatMoney(Math.abs(discretionary));
   let tier: VerdictTier;
   let label: string;
@@ -423,8 +430,11 @@ function getVerdict(discretionary: number): Verdict {
     tier = "tight";
     label = "Short";
     headline = `About ${amount} short each month`;
-    description =
-      "That is with a median 1-bedroom and typical costs here. A roommate or a cheaper place would close the gap, so try the rent you would really pay.";
+    description = basis.ownRent
+      ? "That is with your rent and typical costs here. Check the other costs below against your own numbers."
+      : basis.shared
+        ? "That is with your share of a typical shared place and typical costs here. Try the rent you would really pay."
+        : "That is with a median 1-bedroom and typical costs here. Splitting rent with roommates or a cheaper place would close the gap, so try the roommates setting or the rent you would really pay.";
   } else if (discretionary < VERDICT_BANDS.comfortable) {
     tier = "lean";
     label = "Little left";
@@ -454,9 +464,18 @@ export function analyzeOffer(offer: Offer): OfferAnalysis | null {
 
   const tax = calcTax(offer.salary, city);
 
+  const roommates = Math.min(Math.max(0, Math.round(offer.roommates ?? 0)), MAX_ROOMMATES);
+  const people = roommates + 1;
+
   const rentIsOverride =
     typeof offer.rentOverride === "number" && offer.rentOverride >= 0;
-  const rent = rentIsOverride ? offer.rentOverride! : city.rent;
+  const rentEstimate = rentShare(city, roommates);
+  const rent = rentIsOverride ? offer.rentOverride! : rentEstimate;
+
+  const utilitiesIsOverride =
+    typeof offer.utilitiesOverride === "number" && offer.utilitiesOverride >= 0;
+  const utilitiesEstimate = electricityShare(city.state, people);
+  const utilities = utilitiesIsOverride ? offer.utilitiesOverride! : utilitiesEstimate;
 
   const necessitiesIsOverride =
     typeof offer.necessitiesOverride === "number" &&
@@ -468,7 +487,7 @@ export function analyzeOffer(offer: Offer): OfferAnalysis | null {
   const loanPayment = Math.max(0, offer.loanPayment ?? 0);
   const otherFixed = Math.max(0, offer.otherFixed ?? 0);
 
-  const totalMonthlyCosts = rent + necessities + loanPayment + otherFixed;
+  const totalMonthlyCosts = rent + utilities + necessities + loanPayment + otherFixed;
   const discretionary = tax.takeHomeMonthly - totalMonthlyCosts;
 
   return {
@@ -477,13 +496,19 @@ export function analyzeOffer(offer: Offer): OfferAnalysis | null {
     tax,
     rent,
     rentIsOverride,
+    rentEstimate,
+    roommates,
+    people,
+    utilities,
+    utilitiesIsOverride,
+    utilitiesEstimate,
     necessities,
     necessitiesIsOverride,
     loanPayment,
     otherFixed,
     totalMonthlyCosts,
     discretionary,
-    verdict: getVerdict(discretionary),
+    verdict: getVerdict(discretionary, { shared: roommates > 0, ownRent: rentIsOverride }),
   };
 }
 

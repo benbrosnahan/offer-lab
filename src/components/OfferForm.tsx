@@ -54,6 +54,7 @@ export default function OfferForm({
       cityId,
       loanPayment: compact ? initial?.loanPayment ?? 0 : parseDollarInput(loan),
       otherFixed: compact ? initial?.otherFixed ?? 0 : parseDollarInput(other),
+      ...(compact && initial?.roommates ? { roommates: initial.roommates } : {}),
     });
   };
 
@@ -120,7 +121,7 @@ export default function OfferForm({
             <MoneyInput
               id={fid("other")}
               label="Other monthly bills"
-              helper="A car loan, insurance, subscriptions. Not rent, food or phone."
+              helper="A car loan, insurance, subscriptions, a gas bill. Not rent, electricity, food or phone."
               value={other}
               onChange={setOther}
               placeholder="0"

@@ -1,6 +1,7 @@
 import { CITIES, COSTS_AS_OF, NATIONAL_MEDIAN_RENT_1BR, RENT_AS_OF } from "@/data/cities";
 import { LOCAL_TAX, STATE_PAYROLL, TAX_YEAR } from "@/data/taxes";
 import { FEDERAL_STANDARD_DEDUCTION, SS_WAGE_BASE, VERDICT_BANDS } from "@/lib/calculator";
+import { ELECTRICITY_YEAR } from "@/data/utilities";
 import { formatCurrency } from "@/lib/utils";
 
 const cityTaxCount = Object.keys(LOCAL_TAX).length;
@@ -28,8 +29,28 @@ const ITEMS: Array<{ title: string; body: React.ReactNode }> = [
         The median asking rent for a 1-bedroom listing in the city, from Zumper&apos;s National Rent Report
         for {RENT_AS_OF} (national median {formatCurrency(NATIONAL_MEDIAN_RENT_1BR)}). For ten smaller
         cities that report leaves out, Zumper&apos;s 30-day city average from November 2026. New listings
-        run above what current tenants pay, and most do not include utilities. Sharing a place? Put in
-        your part.
+        run above what current tenants pay, and most do not include utilities.
+        <br />
+        <br />
+        With roommates, the rent is a place with one bedroom each, split evenly. For one roommate that is
+        Zumper&apos;s median 2-bedroom from the same report. Zumper does not report 3- and 4-bedrooms, so
+        for those (and for a 2-bedroom in the ten smaller cities) the Zumper median is scaled by how much
+        more each extra bedroom costs in HUD&apos;s Fair Market Rents for the area (fiscal year 2026). A
+        shared place with a living room priced as a bedroom, or an uneven split, will differ: put in your
+        real share.
+      </>
+    ),
+  },
+  {
+    title: "Electricity",
+    body: (
+      <>
+        The average monthly electricity bill for a home in the state, from the U.S. Energy Information
+        Administration (Electric Sales, Revenue, and Average Price, table 5A, {ELECTRICITY_YEAR}, the
+        latest year published). It averages every home, houses included, so a small apartment often pays
+        less. With roommates it is split evenly. Gas and heating bills are not counted: many rentals
+        include heat or heat with electricity, and no federal source gives a current renter&apos;s gas
+        bill by state. If you will pay for gas, add it under other bills.
       </>
     ),
   },
@@ -40,7 +61,7 @@ const ITEMS: Array<{ title: string; body: React.ReactNode }> = [
         The MIT Living Wage Calculator&apos;s budget for one adult in the city&apos;s county (data from{" "}
         {COSTS_AS_OF}): food, health care, getting around, phone and internet, and clothing and personal
         items. Housing and child care are left out, and so is MIT&apos;s line for entertainment and
-        community, since that is your call. Utilities are not counted yet.
+        community, since that is your call. Electricity has its own line; gas and heat are not counted.
       </>
     ),
   },
@@ -48,7 +69,7 @@ const ITEMS: Array<{ title: string; body: React.ReactNode }> = [
     title: "The verdict",
     body: (
       <>
-        Short: costs run past take-home. Little left: {formatCurrency(VERDICT_BANDS.lean)} to{" "}
+        Short: rent, electricity and other costs run past take-home. Little left: {formatCurrency(VERDICT_BANDS.lean)} to{" "}
         {formatCurrency(VERDICT_BANDS.comfortable - 1)} a month. Some room:{" "}
         {formatCurrency(VERDICT_BANDS.comfortable)} to {formatCurrency(VERDICT_BANDS.strong - 1)}. Room to
         save: {formatCurrency(VERDICT_BANDS.strong)} or more. These are rough bands, not advice.
