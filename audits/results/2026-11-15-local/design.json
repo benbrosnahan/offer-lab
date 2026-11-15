@@ -1,0 +1,5618 @@
+{
+ "url": "http://localhost:3202/",
+ "engineVersion": "1.3.0",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "states": {
+  "empty": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "3 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 3,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 60,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 253,
+           "h": 40,
+           "sample": "Add a loan payment or other bi",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "4 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Yearly base pay, before tax."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Where you would live and work."
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "No sign-up. Nothing you type leaves this"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "2 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Cense"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "div.mt-7.rounded-3xl",
+           "value": "24px · 2 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 21,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 5,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 7,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        60
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 4,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Yearly base pay, before tax."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Where you would live and work."
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "No sign-up. Nothing you type leaves this"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 2,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Cense"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 6,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 0,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 3,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 60,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 253,
+         "h": 40,
+         "sample": "Add a loan payment or other bi",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 3,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 6,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:51:54.291Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 47,
+      "elementsTotal": 91,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 10.2
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense",
+       "selector": "a.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "Add a loan payment or other bi",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "See what is left",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Cense",
+       "selector": "a.font-semibold",
+       "changes": false
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2242
+   },
+   "mobile": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "3 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 3,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 54,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 253,
+           "h": 40,
+           "sample": "Add a loan payment or other bi",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "4 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Yearly base pay, before tax."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Where you would live and work."
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "No sign-up. Nothing you type leaves this"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "2 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Cense"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "div.mt-7.rounded-3xl",
+           "value": "24px · 2 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 21,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 5,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 6,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        24,
+        40
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 4,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Yearly base pay, before tax."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Where you would live and work."
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "No sign-up. Nothing you type leaves this"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 2,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Cense"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 6,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 0,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 3,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 54,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 253,
+         "h": 40,
+         "sample": "Add a loan payment or other bi",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 3,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 6,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:03.123Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 47,
+      "elementsTotal": 91,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 4.4
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2429
+   },
+   "designScore": 68,
+   "designGrade": "D",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 54,
+    "performance": 66
+   }
+  },
+  "debts-open": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (2 via the inline exception).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 68,
+           "h": 18,
+           "sample": "Loan Desk",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 60,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 143,
+           "h": 40,
+           "sample": "Hide loan and bills",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "6 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 6,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Yearly base pay, before tax."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Where you would live and work."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Your servicer shows it. Not sure? Loan D"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "A car loan, insurance, subscriptions. No"
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "No sign-up. Nothing you type leaves this"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "3 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 3,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Loan Desk"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Cense"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "div.mt-7.rounded-3xl",
+           "value": "24px · 3 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 26,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 5,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 7,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        60
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 6,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Yearly base pay, before tax."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Where you would live and work."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Your servicer shows it. Not sure? Loan D"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "A car loan, insurance, subscriptions. No"
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "No sign-up. Nothing you type leaves this"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 3,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Loan Desk"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Cense"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 9,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 0,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 4,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 68,
+         "h": 18,
+         "sample": "Loan Desk",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 60,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 143,
+         "h": 40,
+         "sample": "Hide loan and bills",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 4,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 9,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:10.238Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 59,
+      "elementsTotal": 91,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 6.7
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense",
+       "selector": "a.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "Hide loan and bills",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "Loan Desk",
+       "selector": "a.font-semibold",
+       "changes": false
+      },
+      {
+       "label": "See what is left",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Cense",
+       "selector": "a.font-semibold",
+       "changes": false
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2430
+   },
+   "mobile": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "4 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 54,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 143,
+           "h": 40,
+           "sample": "Hide loan and bills",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 241,
+           "h": 37,
+           "sample": "Loan Desk",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "6 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 6,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Yearly base pay, before tax."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Where you would live and work."
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Your servicer shows it. Not sure? Loan D"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "A car loan, insurance, subscriptions. No"
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "No sign-up. Nothing you type leaves this"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "3 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 3,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Loan Desk"
+          },
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Cense"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "div.mt-7.rounded-3xl",
+           "value": "24px · 3 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 26,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 5,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 6,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        24,
+        40
+       ],
+       "distinctLineHeights": 8,
+       "smallBodyCount": 6,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Yearly base pay, before tax."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Where you would live and work."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Your servicer shows it. Not sure? Loan D"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "A car loan, insurance, subscriptions. No"
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "No sign-up. Nothing you type leaves this"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 3,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Loan Desk"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Cense"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        16,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 9,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 0,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 4,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 54,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 143,
+         "h": 40,
+         "sample": "Hide loan and bills",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 241,
+         "h": 37,
+         "sample": "Loan Desk",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 4,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 9,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:19.718Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 59,
+      "elementsTotal": 91,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 9.2
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2445
+   },
+   "designScore": 68,
+   "designGrade": "D",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 54,
+    "performance": 66
+   }
+  },
+  "results": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "7 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 60,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 117,
+           "h": 40,
+           "sample": "Copy link",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "2,980",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "1,872",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "7 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Single filer, 2026 tax rules, rent from "
+          },
+          {
+           "sig": "p.flex.flex-wrap",
+           "px": 14,
+           "sample": "ShortAfter rent, everyday costs and bill"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "21.3% of your pay. 2026 rules, single fi"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Median 1-bedroom listing, Zumper, Octobe"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "MIT estimate for one adult in Suffolk Co"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "Utilities are not in this or in the rent"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "34 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 34,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "px": 14,
+           "sample": "Copy link"
+          },
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 14,
+           "sample": "Short"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "$5,417 a month before tax"
+          },
+          {
+           "sig": "span.flex.items-center",
+           "px": 14,
+           "sample": "Taxes and payroll"
+          },
+          {
+           "sig": "span.tabular.font-semibold",
+           "px": 14,
+           "sample": "$1,152"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "section.rise.rounded-3xl",
+           "value": "24px · 4 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 69,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 4,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 7,
+       "sizes": [
+        13,
+        14,
+        16,
+        20,
+        24,
+        40,
+        44
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 7,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Single filer, 2026 tax rules, rent from "
+        },
+        {
+         "sig": "p.flex.flex-wrap",
+         "px": 14,
+         "sample": "ShortAfter rent, everyday costs and bill"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "21.3% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in Suffolk Co"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 34,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "px": 14,
+         "sample": "Copy link"
+        },
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 14,
+         "sample": "Short"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "$5,417 a month before tax"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Taxes and payroll"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,152"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Rent"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,980"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Everyday costs"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,872"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Short"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$587"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 4,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        12,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 9,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 2,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 7,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 60,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 117,
+         "h": 40,
+         "sample": "Copy link",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "2,980",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,872",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 7,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 9,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:26.072Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 137,
+      "elementsTotal": 183,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 5.8
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense",
+       "selector": "a.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "Copy link",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Compare a second offer",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Start over",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Cense",
+       "selector": "a.font-semibold",
+       "changes": false
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 2,
+       "running": 0,
+       "anims": [
+        {
+         "target": "section.rise.rounded-3xl",
+         "name": "rise",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        },
+        {
+         "target": "div.bar-grow.relative",
+         "name": "grow",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        }
+       ]
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2430
+   },
+   "mobile": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "7 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 54,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 117,
+           "h": 40,
+           "sample": "Copy link",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "2,980",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "1,872",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "7 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Single filer, 2026 tax rules, rent from "
+          },
+          {
+           "sig": "p.flex.flex-wrap",
+           "px": 14,
+           "sample": "ShortAfter rent, everyday costs and bill"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "21.3% of your pay. 2026 rules, single fi"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Median 1-bedroom listing, Zumper, Octobe"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "MIT estimate for one adult in Suffolk Co"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "Utilities are not in this or in the rent"
+          },
+          {
+           "sig": "p.mt-6.text-sm",
+           "px": 14,
+           "sample": "Made by Cense, free money tools for stud"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "34 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 34,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "px": 14,
+           "sample": "Copy link"
+          },
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 14,
+           "sample": "Short"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "$5,417 a month before tax"
+          },
+          {
+           "sig": "span.flex.items-center",
+           "px": 14,
+           "sample": "Taxes and payroll"
+          },
+          {
+           "sig": "span.tabular.font-semibold",
+           "px": 14,
+           "sample": "$1,152"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "section.rise.rounded-3xl",
+           "value": "24px · 4 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 69,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 4,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        30,
+        32
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 7,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Single filer, 2026 tax rules, rent from "
+        },
+        {
+         "sig": "p.flex.flex-wrap",
+         "px": 14,
+         "sample": "ShortAfter rent, everyday costs and bill"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "21.3% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in Suffolk Co"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 34,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "px": 14,
+         "sample": "Copy link"
+        },
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 14,
+         "sample": "Short"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "$5,417 a month before tax"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Taxes and payroll"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,152"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Rent"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,980"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Everyday costs"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,872"
+        },
+        {
+         "sig": "span.flex.items-center",
+         "px": 14,
+         "sample": "Short"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$587"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 4,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        12,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 9,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 2,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 7,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 54,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 117,
+         "h": 40,
+         "sample": "Copy link",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "2,980",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,872",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 7,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 9,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:35.294Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 137,
+      "elementsTotal": 183,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 10.5
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 2,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     }
+    },
+    "durationMs": 2644
+   },
+   "designScore": 68,
+   "designGrade": "D",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 54,
+    "performance": 66
+   }
+  },
+  "comparison": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "12 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 12,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 60,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.-mr-2.-mt-1",
+           "tag": "button",
+           "w": 77,
+           "h": 40,
+           "sample": "Remove",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 117,
+           "h": 40,
+           "sample": "Copy link",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "2,980",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "1,872",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "12 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 12,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Single filer, 2026 tax rules, rent from "
+          },
+          {
+           "sig": "p.text-sm.text-muted-foreground",
+           "px": 14,
+           "sample": "After rent, everyday costs and bills"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Short, past the end of the pay"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "21.3% of your pay. 2026 rules, single fi"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Median 1-bedroom listing, Zumper, Octobe"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "MIT estimate for one adult in Suffolk Co"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "Utilities are not in this or in the rent"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "25.4% of your pay. 2026 rules, single fi"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "57 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 57,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "px": 14,
+           "sample": "Copy link"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "Boston, $65,000: $5,417 a month before t"
+          },
+          {
+           "sig": "span.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Boston, $65,000:"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "New York City, $72,000: $6,000 a month b"
+          },
+          {
+           "sig": "span.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "New York City, $72,000:"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "section.rise.rounded-3xl",
+           "value": "24px · 4 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 109,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 4,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 7,
+       "sizes": [
+        13,
+        14,
+        16,
+        20,
+        24,
+        40,
+        44
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 12,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Single filer, 2026 tax rules, rent from "
+        },
+        {
+         "sig": "p.text-sm.text-muted-foreground",
+         "px": 14,
+         "sample": "After rent, everyday costs and bills"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Short, past the end of the pay"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "21.3% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in Suffolk Co"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "25.4% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in New York C"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 57,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "px": 14,
+         "sample": "Copy link"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "Boston, $65,000: $5,417 a month before t"
+        },
+        {
+         "sig": "span.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Boston, $65,000:"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "New York City, $72,000: $6,000 a month b"
+        },
+        {
+         "sig": "span.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "New York City, $72,000:"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Taxes and payroll"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Rent"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Everyday costs"
+        },
+        {
+         "sig": "span.block.text-sm",
+         "px": 14,
+         "sample": "$65,000 a year"
+        },
+        {
+         "sig": "span.block.text-sm",
+         "px": 14,
+         "sample": "Show the math"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "Federal income tax"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 5,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        12,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 13,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 3,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 12,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 60,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.-mr-2.-mt-1",
+         "tag": "button",
+         "w": 77,
+         "h": 40,
+         "sample": "Remove",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 117,
+         "h": 40,
+         "sample": "Copy link",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "2,980",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,872",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "4,610",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,905",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 12,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 13,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/?q=eyJhIjp7InNhbGFyeSI6NjUwMDAsImNpdHlJZCI6ImJvc3Rvbi1tYSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfSwiYiI6eyJzYWxhcnkiOjcyMDAwLCJjaXR5SWQiOiJuZXcteW9yay1ueSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfX0%3D",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:43.256Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 217,
+      "elementsTotal": 279,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 8.3
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "hoverProbe": [
+      {
+       "label": "Cense",
+       "selector": "a.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "Copy link",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Remove",
+       "selector": "button.-mr-2",
+       "changes": true
+      },
+      {
+       "label": "Start over",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "Cense",
+       "selector": "a.font-semibold",
+       "changes": false
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 3,
+       "running": 0,
+       "anims": [
+        {
+         "target": "section.rise.rounded-3xl",
+         "name": "rise",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        },
+        {
+         "target": "div.bar-grow.relative",
+         "name": "grow",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        },
+        {
+         "target": "div.bar-grow.relative",
+         "name": "grow",
+         "dur": 0,
+         "infinite": false,
+         "state": "finished"
+        }
+       ]
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2443
+   },
+   "mobile": {
+    "report": {
+     "score": 68,
+     "grade": "D",
+     "buckets": {
+      "accessibility": {
+       "score": 22.8,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "12 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (1 via the inline exception).",
+         "count": 12,
+         "examples": [
+          {
+           "sig": "a.font-semibold.text-foreground",
+           "tag": "a",
+           "w": 42,
+           "h": 18,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "inline"
+          },
+          {
+           "sig": "a.inline-flex.min-h-10",
+           "tag": "a",
+           "w": 54,
+           "h": 40,
+           "sample": "Cense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.-mr-2.-mt-1",
+           "tag": "button",
+           "w": 77,
+           "h": 40,
+           "sample": "Remove",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "tag": "button",
+           "w": 117,
+           "h": 40,
+           "sample": "Copy link",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "2,980",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "1,872",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "input.tabular.block",
+           "tag": "input",
+           "w": 128,
+           "h": 44,
+           "sample": "0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "12 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 12,
+         "examples": [
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Single filer, 2026 tax rules, rent from "
+          },
+          {
+           "sig": "p.text-sm.text-muted-foreground",
+           "px": 14,
+           "sample": "After rent, everyday costs and bills"
+          },
+          {
+           "sig": "li.flex.items-center",
+           "px": 14,
+           "sample": "Short, past the end of the pay"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "21.3% of your pay. 2026 rules, single fi"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "Median 1-bedroom listing, Zumper, Octobe"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "MIT estimate for one adult in Suffolk Co"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "Utilities are not in this or in the rent"
+          },
+          {
+           "sig": "li.pt-2.text-muted-foreground",
+           "px": 14,
+           "sample": "25.4% of your pay. 2026 rules, single fi"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "57 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 57,
+         "examples": [
+          {
+           "sig": "span.inline-flex.items-center",
+           "px": 13,
+           "sample": "Runs in your browser"
+          },
+          {
+           "sig": "button.inline-flex.min-h-10",
+           "px": 14,
+           "sample": "Copy link"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "Boston, $65,000: $5,417 a month before t"
+          },
+          {
+           "sig": "span.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "Boston, $65,000:"
+          },
+          {
+           "sig": "span",
+           "px": 14,
+           "sample": "New York City, $72,000: $6,000 a month b"
+          },
+          {
+           "sig": "span.font-semibold.text-foreground",
+           "px": 14,
+           "sample": "New York City, $72,000:"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6,
+          24
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "section.rise.rounded-3xl",
+           "value": "24px · 4 node(s)"
+          },
+          {
+           "selector": "a.inline-flex.min-h-10",
+           "value": "6px · 1 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 13.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "duration-too-short",
+         "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+         "examples": [
+          {
+           "selector": "*, ::before, ::after",
+           "sig": "*, ::before, ::after",
+           "ms": 0
+          }
+         ],
+         "scope": "element",
+         "required": "50–1000ms"
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 109,
+       "skippedUnknownBg": 0,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 4,
+       "failureCount": 0,
+       "failures": []
+      },
+      "typography": {
+       "distinctFamilies": 2,
+       "families": [
+        "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+        "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+       ],
+       "distinctSizes": 8,
+       "sizes": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        24,
+        30,
+        32
+       ],
+       "distinctLineHeights": 9,
+       "smallBodyCount": 12,
+       "smallBody": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Single filer, 2026 tax rules, rent from "
+        },
+        {
+         "sig": "p.text-sm.text-muted-foreground",
+         "px": 14,
+         "sample": "After rent, everyday costs and bills"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Short, past the end of the pay"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "21.3% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in Suffolk Co"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "25.4% of your pay. 2026 rules, single fi"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Median 1-bedroom listing, Zumper, Octobe"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "MIT estimate for one adult in New York C"
+        },
+        {
+         "sig": "li.pt-2.text-muted-foreground",
+         "px": 14,
+         "sample": "Utilities are not in this or in the rent"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "smallLabelCount": 57,
+       "smallLabels": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "px": 14,
+         "sample": "Copy link"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "Boston, $65,000: $5,417 a month before t"
+        },
+        {
+         "sig": "span.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Boston, $65,000:"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "New York City, $72,000: $6,000 a month b"
+        },
+        {
+         "sig": "span.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "New York City, $72,000:"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Taxes and payroll"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Rent"
+        },
+        {
+         "sig": "li.flex.items-center",
+         "px": 14,
+         "sample": "Everyday costs"
+        },
+        {
+         "sig": "span.block.text-sm",
+         "px": 14,
+         "sample": "$65,000 a year"
+        },
+        {
+         "sig": "span.block.text-sm",
+         "px": 14,
+         "sample": "Show the math"
+        },
+        {
+         "sig": "span",
+         "px": 14,
+         "sample": "Federal income tax"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 4,
+       "headingCount": 5,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        12,
+        24,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6,
+        24
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 2,
+       "levels": 6,
+       "recipes": [
+        "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 13,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": true,
+       "reducedMotionStatus": "present",
+       "activeAnimations": 3,
+       "tooShort": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 12,
+       "smallTargets": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 54,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.-mr-2.-mt-1",
+         "tag": "button",
+         "w": 77,
+         "h": 40,
+         "sample": "Remove",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 117,
+         "h": 40,
+         "sample": "Copy link",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "2,980",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,872",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "4,610",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "1,905",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "input.tabular.block",
+         "tag": "input",
+         "w": 128,
+         "h": 44,
+         "sample": "0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 12,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 13,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "http://localhost:3202/?q=eyJhIjp7InNhbGFyeSI6NjUwMDAsImNpdHlJZCI6ImJvc3Rvbi1tYSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfSwiYiI6eyJzYWxhcnkiOjcyMDAwLCJjaXR5SWQiOiJuZXcteW9yay1ueSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfX0%3D",
+      "title": "Offer Lab by Cense: is your job offer enough to live on?",
+      "timestamp": "2026-11-15T18:52:53.948Z",
+      "contentFingerprint": "rm7war",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 217,
+      "elementsTotal": 279,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 12.6
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     },
+     "animationsAfterScroll": {
+      "count": 3,
+      "running": 0,
+      "anims": [
+       {
+        "target": "section.rise.rounded-3xl",
+        "name": "rise",
+        "dur": 360,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       },
+       {
+        "target": "div.bar-grow.relative",
+        "name": "grow",
+        "dur": 700,
+        "infinite": false,
+        "state": "finished"
+       }
+      ]
+     }
+    },
+    "durationMs": 2849
+   },
+   "designScore": 68,
+   "designGrade": "D",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 76,
+    "consistency": 76,
+    "motion": 54,
+    "performance": 66
+   }
+  }
+ },
+ "notAutoDetectable": [
+  "Spatial coherence — whether elements enter/exit from where they logically belong (a menu growing from its anchor, a sheet rising from the edge it docks to). The audit sees durations and easings, not spatial origin.",
+  "Clean fades — whether opacity transitions are free of mid-fade color shifts, banding, or double-compositing. Only a human eye (or pixel diff) can judge fade quality.",
+  "Jump cuts — abrupt state changes with no transition where one is expected (content swaps, route changes). Absence of animation is not itself in the DOM.",
+  "Unified direction — whether a group of elements animates along a consistent axis/choreography rather than each doing its own thing.",
+  "Perceived hierarchy / emphasis — whether motion draws the eye to the right thing at the right time.",
+  "Content-appropriate personality — expressive vs. standard scheme being the right call for the brand and context.",
+  "Interruptibility & continuity — whether in-flight animations respond gracefully to new input rather than snapping.",
+  "Real contrast under imagery/gradients — text over photos or gradient backgrounds (the audit samples solid computed backgrounds only).",
+  "Closed shadow roots — their internals are structurally unreachable from script and are not scanned."
+ ]
+}

@@ -1,0 +1,1388 @@
+{
+ "state": "debts-open",
+ "formFactor": "desktop",
+ "pageContext": {
+  "indexable": true,
+  "siteType": "saas"
+ },
+ "report": {
+  "uxScore": null,
+  "typographyScore": null,
+  "contrastScore": null,
+  "layoutScore": null,
+  "responsiveScore": null,
+  "navigationScore": null,
+  "contentScore": null,
+  "totalIssues": 6,
+  "p1Count": 1,
+  "p2Count": 5,
+  "p3Count": 0,
+  "findings": [
+   {
+    "id": "2c6e9e13-a1bc-4c46-8f85-377a1d514954",
+    "severity": "P2",
+    "category": "Accessibility",
+    "device": "desktop",
+    "title": "4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "description": "4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (2 via the inline exception). Examples: a.font-semibold.text-foreground \"Cense\" (42×18px); a.font-semibold.text-foreground \"Loan Desk\" (68×18px); a.inline-flex.min-h-10 \"Cense\" (60×40px). Measured at the 1440×900px desktop viewport.",
+    "recommendation": "Fix it once in the shared style or component that produces it, so every instance changes together.",
+    "source": "engine",
+    "themeId": "eng:tap-target-comfort",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "wcagCriterion": "2.5.8",
+    "evidence": {
+     "measured": "42×18px",
+     "required": "≥48×48px",
+     "selector": "a.font-semibold.text-foreground",
+     "sample": "Cense",
+     "count": 4
+    }
+   },
+   {
+    "id": "3b9e0fed-c6e4-4b42-aefa-9fe84e841de0",
+    "severity": "P2",
+    "category": "Accessibility",
+    "device": "desktop",
+    "title": "Missing landmark(s): nav.",
+    "description": "Missing landmark(s): nav.",
+    "recommendation": "Add the missing landmark elements (main, nav, header, footer) so assistive tech can navigate the page.",
+    "source": "engine",
+    "themeId": "eng:missing-landmarks",
+    "scope": "page",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "0 matches for nav, [role=\"navigation\"]",
+     "contributors": [
+      {
+       "selector": "nav, [role=\"navigation\"]",
+       "value": "no matching element"
+      }
+     ]
+    }
+   },
+   {
+    "id": "52c4e8a2-e3f1-44f1-9679-998ec2a02acf",
+    "severity": "P2",
+    "category": "Typography",
+    "device": "desktop",
+    "title": "6 reading-copy text node(s) below 16px (or any text below 11px).",
+    "description": "6 reading-copy text node(s) below 16px (or any text below 11px). Examples: p.mt-1.text-sm \"Yearly base pay, before tax.\" (14px); p.mt-1.text-sm \"Where you would live and work.\" (14px); p.mt-1.text-sm \"Your servicer shows it. Not sure? Loan D\" (14px). Measured at the 1440×900px desktop viewport.",
+    "recommendation": "Raise reading copy to at least 16px (12px absolute minimum for any text).",
+    "source": "engine",
+    "themeId": "eng:small-body-text",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "14px",
+     "required": "≥16px (≥11px absolute)",
+     "selector": "p.mt-1.text-sm",
+     "sample": "Yearly base pay, before tax.",
+     "count": 6
+    }
+   },
+   {
+    "id": "8b21727a-9e94-41eb-909c-5d14504e6f5f",
+    "severity": "P2",
+    "category": "Design Consistency",
+    "device": "desktop",
+    "title": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "description": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "recommendation": "Consolidate to a small token set: define CSS variables for the sanctioned values and replace ad-hoc ones.",
+    "source": "engine",
+    "themeId": "eng:radius-off-scale",
+    "scope": "page",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "0 matches for div.mt-7.rounded-3xl",
+     "contributors": [
+      {
+       "selector": "div.mt-7.rounded-3xl",
+       "value": "24px · 3 node(s)"
+      },
+      {
+       "selector": "a.inline-flex.min-h-10",
+       "value": "6px · 1 node(s)"
+      }
+     ]
+    }
+   },
+   {
+    "id": "3d4369b5-f578-41b4-ab52-6ab35ab679c9",
+    "severity": "P2",
+    "category": "Motion",
+    "device": "desktop",
+    "title": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "description": "1 animation/transition(s) under 50ms (non-instant but too fast to read). Examples: *, ::before, ::after.",
+    "recommendation": "Keep animation durations within the 50–1000ms scale — long enough to read, short enough to feel responsive.",
+    "source": "engine",
+    "themeId": "eng:duration-too-short",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "1 occurrence(s)",
+     "required": "50–1000ms",
+     "selector": "*, ::before, ::after",
+     "count": 1
+    }
+   },
+   {
+    "id": "102ee450-5435-4781-a093-ba802e21a23d",
+    "severity": "P1",
+    "category": "Motion",
+    "device": "desktop",
+    "title": "1 transition(s) animate layout props (width/height/top/left/margin)",
+    "description": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank). Examples: .transition-all.",
+    "recommendation": "Animate transform/opacity instead of layout properties (width/height/top/left/margin) to avoid jank.",
+    "source": "engine",
+    "themeId": "eng:layout-animated",
+    "scope": "element",
+    "renderContext": "dom",
+    "observedOn": 1,
+    "sampleSize": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false
+    },
+    "evidence": {
+     "measured": "1 transition(s) animating layout properties",
+     "selector": ".transition-all",
+     "count": 1
+    }
+   }
+  ],
+  "pageContext": {
+   "indexable": true,
+   "siteType": "saas"
+  },
+  "scanData": {
+   "domContext": {
+    "textElements": [
+     {
+      "tag": "p",
+      "text": "CenseOffer Lab",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 384,
+      "y": 28,
+      "width": 157,
+      "height": 40
+     },
+     {
+      "tag": "a",
+      "text": "Cense",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "color": "rgb(168, 83, 31)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.92,
+      "x": 384,
+      "y": 28,
+      "width": 60,
+      "height": 40
+     },
+     {
+      "tag": "span",
+      "text": "Offer Lab",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 450,
+      "y": 34,
+      "width": 90,
+      "height": 28
+     },
+     {
+      "tag": "span",
+      "text": "Runs in your browser",
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "lineHeight": "19.2px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgb(234, 243, 231)",
+      "contrastRatio": 7.05,
+      "x": 885,
+      "y": 32,
+      "width": 171,
+      "height": 31
+     },
+     {
+      "tag": "h1",
+      "text": "Is your offer enough to live on?",
+      "fontSize": "60px",
+      "fontWeight": "700",
+      "lineHeight": "61.2px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 384,
+      "y": 124,
+      "width": 672,
+      "height": 122
+     },
+     {
+      "tag": "p",
+      "text": "Type the salary and the city. You get take-home pa",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "29.25px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 384,
+      "y": 262,
+      "width": 576,
+      "height": 59
+     },
+     {
+      "tag": "label",
+      "text": "Salary in the offer",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 412,
+      "y": 377,
+      "width": 616,
+      "height": 24
+     },
+     {
+      "tag": "p",
+      "text": "Yearly base pay, before tax.",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "19.25px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 412,
+      "y": 405,
+      "width": 616,
+      "height": 19
+     },
+     {
+      "tag": "span",
+      "text": "$",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 428,
+      "y": 445,
+      "width": 10,
+      "height": 24
+     },
+     {
+      "tag": "span",
+      "text": "a year",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 974,
+      "y": 447,
+      "width": 38,
+      "height": 20
+     },
+     {
+      "tag": "label",
+      "text": "City",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 412,
+      "y": 502,
+      "width": 616,
+      "height": 24
+     },
+     {
+      "tag": "p",
+      "text": "Where you would live and work.",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "19.25px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 412,
+      "y": 530,
+      "width": 616,
+      "height": 19
+     },
+     {
+      "tag": "button",
+      "text": "Hide loan and bills",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 412,
+      "y": 627,
+      "width": 143,
+      "height": 40
+     },
+     {
+      "tag": "label",
+      "text": "Student loan payment",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 432,
+      "y": 699,
+      "width": 576,
+      "height": 24
+     },
+     {
+      "tag": "p",
+      "text": "Your servicer shows it. Not sure? Loan Desk estima",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "19.25px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 432,
+      "y": 727,
+      "width": 576,
+      "height": 19
+     },
+     {
+      "tag": "a",
+      "text": "Loan Desk",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "19.25px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 641,
+      "y": 727,
+      "width": 68,
+      "height": 18
+     },
+     {
+      "tag": "span",
+      "text": "$",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 448,
+      "y": 768,
+      "width": 10,
+      "height": 24
+     },
+     {
+      "tag": "span",
+      "text": "a month",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 939,
+      "y": 770,
+      "width": 53,
+      "height": 20
+     },
+     {
+      "tag": "label",
+      "text": "Other monthly bills",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 432,
+      "y": 825,
+      "width": 576,
+      "height": 24
+     },
+     {
+      "tag": "p",
+      "text": "A car loan, insurance, subscriptions. Not rent, fo",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "19.25px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 432,
+      "y": 853,
+      "width": 576,
+      "height": 19
+     },
+     {
+      "tag": "span",
+      "text": "$",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "lineHeight": "24px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 448,
+      "y": 893,
+      "width": 10,
+      "height": 24
+     },
+     {
+      "tag": "span",
+      "text": "a month",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 939,
+      "y": 895,
+      "width": 53,
+      "height": 20
+     },
+     {
+      "tag": "button",
+      "text": "See what is left",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(39, 91, 45)",
+      "contrastRatio": 8.01,
+      "x": 412,
+      "y": 970,
+      "width": 616,
+      "height": 48
+     },
+     {
+      "tag": "p",
+      "text": "No sign-up. Nothing you type leaves this browser t",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 384,
+      "y": 1062,
+      "width": 672,
+      "height": 20
+     },
+     {
+      "tag": "h2",
+      "text": "How the numbers work",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "lineHeight": "32px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 384,
+      "y": 1179,
+      "width": 672,
+      "height": 32
+     },
+     {
+      "tag": "p",
+      "text": "Every figure is an estimate you can change. Here i",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 384,
+      "y": 1219,
+      "width": 672,
+      "height": 48
+     },
+     {
+      "tag": "p",
+      "text": "2026 federal brackets and the $16,100 standard ded",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 408,
+      "y": 1343,
+      "width": 624,
+      "height": 176
+     },
+     {
+      "tag": "p",
+      "text": "The median asking rent for a 1-bedroom listing in ",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 408,
+      "y": 1400,
+      "width": 624,
+      "height": 150
+     },
+     {
+      "tag": "p",
+      "text": "The MIT Living Wage Calculator's budget for one ad",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 408,
+      "y": 1457,
+      "width": 624,
+      "height": 124
+     },
+     {
+      "tag": "p",
+      "text": "Short: costs run past take-home. Little left: $0 t",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 408,
+      "y": 1514,
+      "width": 624,
+      "height": 98
+     },
+     {
+      "tag": "p",
+      "text": "401(k) contributions and other pre-tax benefits, b",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26px",
+      "color": "rgb(58, 107, 62)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.35,
+      "x": 408,
+      "y": 1571,
+      "width": 624,
+      "height": 124
+     },
+     {
+      "tag": "p",
+      "text": "Made by Cense, free money tools for students. This",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "color": "rgb(74, 110, 77)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 3.63,
+      "x": 384,
+      "y": 1595,
+      "width": 672,
+      "height": 40
+     },
+     {
+      "tag": "a",
+      "text": "Cense",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "color": "rgb(39, 91, 45)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "contrastRatio": 2.62,
+      "x": 442,
+      "y": 1596,
+      "width": 42,
+      "height": 18
+     }
+    ],
+    "interactiveElements": [
+     {
+      "tag": "a",
+      "text": "Cense",
+      "width": 60,
+      "height": 40,
+      "x": 384,
+      "y": 28
+     },
+     {
+      "tag": "button",
+      "text": "Hide loan and bills",
+      "width": 143,
+      "height": 40,
+      "x": 412,
+      "y": 627
+     },
+     {
+      "tag": "a",
+      "text": "Loan Desk",
+      "width": 68,
+      "height": 18,
+      "x": 641,
+      "y": 727
+     },
+     {
+      "tag": "button",
+      "text": "See what is left",
+      "width": 616,
+      "height": 48,
+      "x": 412,
+      "y": 970
+     },
+     {
+      "tag": "a",
+      "text": "Cense",
+      "width": 42,
+      "height": 18,
+      "x": 442,
+      "y": 1596
+     }
+    ],
+    "images": [],
+    "headings": [
+     {
+      "tag": "h1",
+      "text": "Is your offer enough to live on?",
+      "fontSize": "60px",
+      "x": 384,
+      "y": 124,
+      "width": 672,
+      "height": 122
+     },
+     {
+      "tag": "h2",
+      "text": "How the numbers work",
+      "fontSize": "24px",
+      "x": 384,
+      "y": 1179,
+      "width": 672,
+      "height": 32
+     }
+    ],
+    "overflowElements": [],
+    "stickyElements": [],
+    "documentDimensions": {
+     "scrollHeight": 1699,
+     "clientHeight": 900,
+     "scrollWidth": 1440,
+     "clientWidth": 1440
+    }
+   }
+  }
+ },
+ "design": {
+  "report": {
+   "score": 68,
+   "grade": "D",
+   "buckets": {
+    "accessibility": {
+     "score": 22.8,
+     "max": 30,
+     "findings": [
+      {
+       "severity": "warn",
+       "ruleId": "tap-target-comfort",
+       "message": "4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (2 via the inline exception).",
+       "count": 4,
+       "examples": [
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 42,
+         "h": 18,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "tag": "a",
+         "w": 68,
+         "h": 18,
+         "sample": "Loan Desk",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "inline"
+        },
+        {
+         "sig": "a.inline-flex.min-h-10",
+         "tag": "a",
+         "w": 60,
+         "h": 40,
+         "sample": "Cense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.min-h-10",
+         "tag": "button",
+         "w": 143,
+         "h": 40,
+         "sample": "Hide loan and bills",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "scope": "element",
+       "required": "≥48×48px",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       },
+       "wcagCriterion": "2.5.8"
+      },
+      {
+       "severity": "warn",
+       "ruleId": "missing-landmarks",
+       "message": "Missing landmark(s): nav.",
+       "landmarks": [
+        "nav"
+       ],
+       "scope": "page",
+       "contributors": [
+        {
+         "selector": "nav, [role=\"navigation\"]",
+         "value": "no matching element"
+        }
+       ]
+      }
+     ]
+    },
+    "consistency": {
+     "score": 15.2,
+     "max": 20,
+     "findings": [
+      {
+       "severity": "warn",
+       "ruleId": "small-body-text",
+       "message": "6 reading-copy text node(s) below 16px (or any text below 11px).",
+       "count": 6,
+       "examples": [
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Yearly base pay, before tax."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Where you would live and work."
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "Your servicer shows it. Not sure? Loan D"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "A car loan, insurance, subscriptions. No"
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "No sign-up. Nothing you type leaves this"
+        },
+        {
+         "sig": "p.mt-6.text-sm",
+         "px": 14,
+         "sample": "Made by Cense, free money tools for stud"
+        }
+       ],
+       "scope": "element",
+       "renderContext": "dom",
+       "required": "≥16px (≥11px absolute)",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "severity": "info",
+       "ruleId": "small-ui-labels",
+       "message": "3 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+       "count": 3,
+       "examples": [
+        {
+         "sig": "span.inline-flex.items-center",
+         "px": 13,
+         "sample": "Runs in your browser"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Loan Desk"
+        },
+        {
+         "sig": "a.font-semibold.text-foreground",
+         "px": 14,
+         "sample": "Cense"
+        }
+       ],
+       "scope": "element",
+       "renderContext": "dom",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "severity": "warn",
+       "ruleId": "radius-off-scale",
+       "message": "2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+       "values": [
+        6,
+        24
+       ],
+       "scope": "page",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       },
+       "contributors": [
+        {
+         "selector": "div.mt-7.rounded-3xl",
+         "value": "24px · 3 node(s)"
+        },
+        {
+         "selector": "a.inline-flex.min-h-10",
+         "value": "6px · 1 node(s)"
+        }
+       ]
+      }
+     ]
+    },
+    "motion": {
+     "score": 13.5,
+     "max": 25,
+     "findings": [
+      {
+       "severity": "warn",
+       "ruleId": "duration-too-short",
+       "message": "1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+       "examples": [
+        {
+         "selector": "*, ::before, ::after",
+         "sig": "*, ::before, ::after",
+         "ms": 0
+        }
+       ],
+       "scope": "element",
+       "required": "50–1000ms"
+      },
+      {
+       "severity": "error",
+       "ruleId": "layout-animated",
+       "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+       "examples": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "scope": "element"
+      }
+     ]
+    },
+    "performance": {
+     "score": 16.5,
+     "max": 25,
+     "findings": [
+      {
+       "severity": "error",
+       "ruleId": "layout-animated",
+       "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+       "examples": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "scope": "element",
+       "reusedFrom": "motion"
+      }
+     ]
+    }
+   },
+   "sections": {
+    "color": {
+     "sampled": 26,
+     "skippedUnknownBg": 0,
+     "skippedUnparseable": 0,
+     "skippedRenderContext": 0,
+     "distinctTextColors": 5,
+     "failureCount": 0,
+     "failures": []
+    },
+    "typography": {
+     "distinctFamilies": 2,
+     "families": [
+      "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", \"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif",
+      "\"Instrument Sans\", \"Instrument Sans Fallback\", system-ui, sans-serif"
+     ],
+     "distinctSizes": 7,
+     "sizes": [
+      13,
+      14,
+      16,
+      18,
+      20,
+      24,
+      60
+     ],
+     "distinctLineHeights": 8,
+     "smallBodyCount": 6,
+     "smallBody": [
+      {
+       "sig": "p.mt-1.text-sm",
+       "px": 14,
+       "sample": "Yearly base pay, before tax."
+      },
+      {
+       "sig": "p.mt-1.text-sm",
+       "px": 14,
+       "sample": "Where you would live and work."
+      },
+      {
+       "sig": "p.mt-1.text-sm",
+       "px": 14,
+       "sample": "Your servicer shows it. Not sure? Loan D"
+      },
+      {
+       "sig": "p.mt-1.text-sm",
+       "px": 14,
+       "sample": "A car loan, insurance, subscriptions. No"
+      },
+      {
+       "sig": "p.mt-4.text-sm",
+       "px": 14,
+       "sample": "No sign-up. Nothing you type leaves this"
+      },
+      {
+       "sig": "p.mt-6.text-sm",
+       "px": 14,
+       "sample": "Made by Cense, free money tools for stud"
+      }
+     ],
+     "smallLabelCount": 3,
+     "smallLabels": [
+      {
+       "sig": "span.inline-flex.items-center",
+       "px": 13,
+       "sample": "Runs in your browser"
+      },
+      {
+       "sig": "a.font-semibold.text-foreground",
+       "px": 14,
+       "sample": "Loan Desk"
+      },
+      {
+       "sig": "a.font-semibold.text-foreground",
+       "px": 14,
+       "sample": "Cense"
+      }
+     ],
+     "tightLeadingCount": 0,
+     "tightLeading": [],
+     "displayLeadingRelaxed": 0,
+     "formattedBlocksSkipped": 0,
+     "distinctHeadingSizes": 2,
+     "headingCount": 2,
+     "skippedRenderContext": 0
+    },
+    "shape": {
+     "distinctRadii": 4,
+     "radii": [
+      6,
+      16,
+      24,
+      9999
+     ],
+     "scale": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      28,
+      9999
+     ],
+     "offScaleValues": [
+      6,
+      24
+     ]
+    },
+    "elevation": {
+     "distinctShadows": 2,
+     "levels": 6,
+     "recipes": [
+      "rgba(39, 91, 45, 0.04) 0px 1px 0px 0px, rgba(39, 91, 45, 0.18) 0px 8px 24px -12px",
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(220, 231, 216) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+     ]
+    },
+    "states": {
+     "interactiveCount": 9,
+     "hasHoverRules": true,
+     "hasFocusVisibleRules": true,
+     "stylesheetsReachable": true,
+     "sheetsSkipped": 0,
+     "noVisibleFocusCount": 0,
+     "noVisibleFocusExamples": []
+    },
+    "motion": {
+     "hasReducedMotionQuery": true,
+     "reducedMotionStatus": "present",
+     "activeAnimations": 0,
+     "tooShort": [
+      {
+       "selector": "*, ::before, ::after",
+       "sig": "*, ::before, ::after",
+       "ms": 0
+      }
+     ],
+     "tooLong": [],
+     "linearMovement": [],
+     "easeInEntrance": [],
+     "layoutAnimated": [
+      {
+       "selector": ".transition-all",
+       "sig": ".transition-all",
+       "props": [
+        "all (may hit layout props)"
+       ],
+       "kind": "transition"
+      }
+     ],
+     "infiniteLoops": [],
+     "sheetsSkipped": 0
+    },
+    "a11yLayout": {
+     "smallTargetCount": 4,
+     "smallTargets": [
+      {
+       "sig": "a.font-semibold.text-foreground",
+       "tag": "a",
+       "w": 42,
+       "h": 18,
+       "sample": "Cense",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       },
+       "exception": "inline"
+      },
+      {
+       "sig": "a.font-semibold.text-foreground",
+       "tag": "a",
+       "w": 68,
+       "h": 18,
+       "sample": "Loan Desk",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       },
+       "exception": "inline"
+      },
+      {
+       "sig": "a.inline-flex.min-h-10",
+       "tag": "a",
+       "w": 60,
+       "h": 40,
+       "sample": "Cense",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      },
+      {
+       "sig": "button.inline-flex.min-h-10",
+       "tag": "button",
+       "w": 143,
+       "h": 40,
+       "sample": "Hide loan and bills",
+       "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "isMobile": false,
+        "w": 1440,
+        "h": 900
+       }
+      }
+     ],
+     "undersizedCount": 0,
+     "belowComfortCount": 4,
+     "spacingExceptionChecked": true,
+     "spacingExceptionSkipReason": null,
+     "targetCount": 9,
+     "missingAltCount": 0,
+     "missingAlt": [],
+     "headingJumpCount": 0,
+     "headingJumps": [],
+     "h1Count": 1,
+     "missingLandmarks": [
+      "nav"
+     ]
+    }
+   },
+   "notAutoDetectable": [
+    "Spatial coherence — whether elements enter/exit from where they logically belong (a menu growing from its anchor, a sheet rising from the edge it docks to). The audit sees durations and easings, not spatial origin.",
+    "Clean fades — whether opacity transitions are free of mid-fade color shifts, banding, or double-compositing. Only a human eye (or pixel diff) can judge fade quality.",
+    "Jump cuts — abrupt state changes with no transition where one is expected (content swaps, route changes). Absence of animation is not itself in the DOM.",
+    "Unified direction — whether a group of elements animates along a consistent axis/choreography rather than each doing its own thing.",
+    "Perceived hierarchy / emphasis — whether motion draws the eye to the right thing at the right time.",
+    "Content-appropriate personality — expressive vs. standard scheme being the right call for the brand and context.",
+    "Interruptibility & continuity — whether in-flight animations respond gracefully to new input rather than snapping.",
+    "Real contrast under imagery/gradients — text over photos or gradient backgrounds (the audit samples solid computed backgrounds only).",
+    "Closed shadow roots — their internals are structurally unreachable from script and are not scanned."
+   ],
+   "meta": {
+    "url": "http://localhost:3202/",
+    "title": "Offer Lab by Cense: is your job offer enough to live on?",
+    "timestamp": "2026-11-15T18:52:10.238Z",
+    "contentFingerprint": "rm7war",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "viewport": {
+     "width": 1440,
+     "height": 900,
+     "dpr": 1,
+     "isMobile": false,
+     "w": 1440,
+     "h": 900
+    },
+    "siteType": "saas",
+    "elementsScanned": 59,
+    "elementsTotal": 91,
+    "sampleCap": 1500,
+    "sampleCapped": false,
+    "sheetsSkipped": 0,
+    "openShadowRoots": 1,
+    "notes": [
+     "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+    ],
+    "durationMs": 6.7
+   }
+  },
+  "probes": {
+   "animationsAtLoad": {
+    "count": 0,
+    "running": 0,
+    "anims": []
+   },
+   "animationsAfterScroll": {
+    "count": 0,
+    "running": 0,
+    "anims": []
+   },
+   "hoverProbe": [
+    {
+     "label": "Cense",
+     "selector": "a.inline-flex",
+     "changes": false
+    },
+    {
+     "label": "Hide loan and bills",
+     "selector": "button.inline-flex",
+     "changes": false
+    },
+    {
+     "label": "Loan Desk",
+     "selector": "a.font-semibold",
+     "changes": false
+    },
+    {
+     "label": "See what is left",
+     "selector": "button.inline-flex",
+     "changes": true
+    },
+    {
+     "label": "Cense",
+     "selector": "a.font-semibold",
+     "changes": false
+    }
+   ],
+   "reducedMotion": {
+    "emulated": true,
+    "snapshot": {
+     "count": 0,
+     "running": 0,
+     "anims": []
+    },
+    "ungatedCount": 0
+   }
+  },
+  "durationMs": 2430
+ },
+ "extras": [
+  {
+   "id": "0e63a5b8-dbd4-4f9e-95d3-25e4df873167",
+   "severity": "P3",
+   "category": "Accessibility",
+   "device": "desktop",
+   "title": "Primary controls show no hover feedback",
+   "description": "4 of 5 sampled primary controls showed no visual change on hover (Cense, Hide loan and bills, Loan Desk).",
+   "recommendation": "Add :hover feedback (background, color, or elevation change) to interactive elements.",
+   "source": "engine",
+   "scope": "page",
+   "renderContext": "dom",
+   "observedOn": 1,
+   "sampleSize": 1,
+   "viewport": {
+    "width": 1440,
+    "height": 900,
+    "dpr": 1,
+    "isMobile": false
+   },
+   "themeId": "eng:hover-no-feedback",
+   "evidence": {
+    "measured": "4/5 unresponsive",
+    "contributors": [
+     {
+      "selector": "a.inline-flex",
+      "value": "Cense"
+     },
+     {
+      "selector": "button.inline-flex",
+      "value": "Hide loan and bills"
+     },
+     {
+      "selector": "a.font-semibold",
+      "value": "Loan Desk"
+     },
+     {
+      "selector": "a.font-semibold",
+      "value": "Cense"
+     }
+    ]
+   }
+  }
+ ]
+}

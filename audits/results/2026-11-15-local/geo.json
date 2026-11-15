@@ -1,0 +1,578 @@
+{
+ "url": "http://localhost:3202/",
+ "geoScore": 80,
+ "measurementValid": true,
+ "categories": {
+  "crawlAccess": {
+   "score": 20,
+   "max": 20
+  },
+  "serverContent": {
+   "score": 28,
+   "max": 30
+  },
+  "structuredData": {
+   "score": 16,
+   "max": 20
+  },
+  "socialMeta": {
+   "score": 11,
+   "max": 15
+  },
+  "discovery": {
+   "score": 0,
+   "max": 10
+  },
+  "indexability": {
+   "score": 5,
+   "max": 5
+  }
+ },
+ "contentParity": 100,
+ "ssrWordCount": 405,
+ "csrWordCount": 405,
+ "checks": [
+  {
+   "category": "LLM Crawl Access",
+   "name": "AI Bot Access in robots.txt",
+   "score": 20,
+   "maxScore": 20,
+   "status": "pass",
+   "detail": "14/14 LLM bots allowed (0 blocked)"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Title in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "\"Offer Lab by Cense: is your job offer enough to live on?\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Meta Description in SSR",
+   "score": 7,
+   "maxScore": 7,
+   "status": "pass",
+   "detail": "\"Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs,\""
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "H1 Tag in SSR",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "H1 present & matches CSR"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Heading Hierarchy",
+   "score": 1,
+   "maxScore": 3,
+   "status": "warn",
+   "detail": "2 headings in SSR (2 in CSR)"
+  },
+  {
+   "category": "Server-Side Content",
+   "name": "Body Text Parity (SSR vs CSR)",
+   "score": 10,
+   "maxScore": 10,
+   "status": "pass",
+   "detail": "SSR matches CSR exactly (405 words, parity 100%) — LLMs see everything users see."
+  },
+  {
+   "category": "Structured Data",
+   "name": "JSON-LD in SSR",
+   "score": 12,
+   "maxScore": 12,
+   "status": "pass",
+   "detail": "1 JSON-LD block(s) in server-rendered HTML"
+  },
+  {
+   "category": "Structured Data",
+   "name": "Rich Schema Types",
+   "score": 4,
+   "maxScore": 8,
+   "status": "warn",
+   "detail": "Types in SSR: WebApplication"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Open Graph Tags",
+   "score": 3,
+   "maxScore": 7,
+   "status": "warn",
+   "detail": "Missing OG: og:image"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Twitter Card",
+   "score": 4,
+   "maxScore": 4,
+   "status": "pass",
+   "detail": "Card type: summary"
+  },
+  {
+   "category": "Social & Meta Tags",
+   "name": "Canonical URL",
+   "score": 4,
+   "maxScore": 4,
+   "status": "pass",
+   "detail": "https://offer-lab-ivory.vercel.app"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "llms.txt",
+   "score": 0,
+   "maxScore": 5,
+   "status": "info",
+   "detail": "No /llms.txt — consider adding one for AI crawlers"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "Markdown Content Negotiation",
+   "score": 0,
+   "maxScore": 3,
+   "status": "info",
+   "detail": "No markdown via content negotiation"
+  },
+  {
+   "category": "LLM Discovery",
+   "name": "AI Plugin / MCP Discovery",
+   "score": 0,
+   "maxScore": 2,
+   "status": "info",
+   "detail": "No AI plugin manifest"
+  },
+  {
+   "category": "Indexability",
+   "name": "Meta Robots",
+   "score": 5,
+   "maxScore": 5,
+   "status": "pass",
+   "detail": "No restrictive meta robots"
+  }
+ ],
+ "recommendations": [
+  {
+   "severity": "medium",
+   "title": "Complete Open Graph tags",
+   "detail": "OG tags provide AI systems with canonical title, description, and image. Missing tags mean LLMs must guess what to show users."
+  },
+  {
+   "severity": "low",
+   "title": "Create /llms.txt",
+   "detail": "The llms.txt convention (like robots.txt for AI) provides a structured summary of your site for LLM crawlers. See llmstxt.org for the spec."
+  },
+  {
+   "severity": "low",
+   "title": "Serve markdown via Accept header",
+   "detail": "Some AI crawlers request text/markdown. Serving a markdown version improves content extraction quality. Cloudflare and some CDNs can automate this."
+  }
+ ],
+ "comparison": {
+  "title": {
+   "status": "match",
+   "ssr": "Offer Lab by Cense: is your job offer enough to live on?",
+   "csr": "Offer Lab by Cense: is your job offer enough to live on?"
+  },
+  "description": {
+   "status": "match",
+   "ssr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+   "csr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers."
+  },
+  "og": [
+   {
+    "key": "og:title",
+    "ssr": "Offer Lab by Cense",
+    "csr": "Offer Lab by Cense",
+    "match": true
+   },
+   {
+    "key": "og:description",
+    "ssr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "csr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "match": true
+   },
+   {
+    "key": "og:url",
+    "ssr": "https://offer-lab-ivory.vercel.app",
+    "csr": "https://offer-lab-ivory.vercel.app",
+    "match": true
+   },
+   {
+    "key": "og:site_name",
+    "ssr": "Cense",
+    "csr": "Cense",
+    "match": true
+   },
+   {
+    "key": "og:type",
+    "ssr": "website",
+    "csr": "website",
+    "match": true
+   }
+  ],
+  "twitter": [
+   {
+    "key": "twitter:card",
+    "ssr": "summary",
+    "csr": "summary",
+    "match": true
+   },
+   {
+    "key": "twitter:title",
+    "ssr": "Offer Lab by Cense",
+    "csr": "Offer Lab by Cense",
+    "match": true
+   },
+   {
+    "key": "twitter:description",
+    "ssr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "csr": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "match": true
+   }
+  ],
+  "h1": {
+   "status": "match",
+   "ssr": [
+    "Is your offer enough to live on?"
+   ],
+   "csr": [
+    "Is your offer enough to live on?"
+   ]
+  },
+  "parity": {
+   "ssrWords": 405,
+   "csrWords": 405,
+   "pct": 100,
+   "gapDirection": "even",
+   "ssrChunkCount": 15,
+   "csrChunkCount": 15,
+   "onlyInSSR": [],
+   "onlyInCSR": []
+  },
+  "structuredData": {
+   "ssrTypes": [
+    "WebApplication"
+   ],
+   "csrTypes": [
+    "WebApplication"
+   ],
+   "onlyCSR": [],
+   "onlySSR": [],
+   "match": true
+  },
+  "headingsOnlyCSR": [],
+  "headingsOnlySSR": [],
+  "canonical": {
+   "ssr": "https://offer-lab-ivory.vercel.app",
+   "csr": "https://offer-lab-ivory.vercel.app"
+  },
+  "robotsMeta": {
+   "ssr": "",
+   "csr": ""
+  },
+  "lang": {
+   "ssr": "en",
+   "csr": "en"
+  }
+ },
+ "robots": {
+  "found": true,
+  "bots": [
+   {
+    "name": "GPTBot",
+    "owner": "OpenAI",
+    "status": "allowed"
+   },
+   {
+    "name": "ChatGPT-User",
+    "owner": "OpenAI",
+    "status": "allowed"
+   },
+   {
+    "name": "ClaudeBot",
+    "owner": "Anthropic",
+    "status": "allowed"
+   },
+   {
+    "name": "anthropic-ai",
+    "owner": "Anthropic",
+    "status": "allowed"
+   },
+   {
+    "name": "CCBot",
+    "owner": "Common Crawl",
+    "status": "allowed"
+   },
+   {
+    "name": "Google-Extended",
+    "owner": "Google",
+    "status": "allowed"
+   },
+   {
+    "name": "GoogleOther",
+    "owner": "Google",
+    "status": "allowed"
+   },
+   {
+    "name": "PerplexityBot",
+    "owner": "Perplexity",
+    "status": "allowed"
+   },
+   {
+    "name": "cohere-ai",
+    "owner": "Cohere",
+    "status": "allowed"
+   },
+   {
+    "name": "Bytespider",
+    "owner": "ByteDance",
+    "status": "allowed"
+   },
+   {
+    "name": "Amazonbot",
+    "owner": "Amazon",
+    "status": "allowed"
+   },
+   {
+    "name": "Meta-ExternalAgent",
+    "owner": "Meta",
+    "status": "allowed"
+   },
+   {
+    "name": "Applebot-Extended",
+    "owner": "Apple",
+    "status": "allowed"
+   },
+   {
+    "name": "Diffbot",
+    "owner": "Diffbot",
+    "status": "allowed"
+   }
+  ]
+ },
+ "discovery": {
+  "llmsTxt": {
+   "found": false
+  },
+  "llmsFullTxt": {
+   "found": false
+  },
+  "markdown": {
+   "served": false,
+   "contentType": "text/html; charset=utf-8"
+  },
+  "aiPlugin": {
+   "found": false
+  }
+ },
+ "metaResult": {
+  "url": "http://localhost:3202/",
+  "tags": [
+   {
+    "name": "title",
+    "content": "Offer Lab by Cense: is your job offer enough to live on?",
+    "status": "good",
+    "recommendation": "Title is 56 chars. Good length."
+   },
+   {
+    "name": "meta description",
+    "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "status": "warning",
+    "recommendation": "Description is 169 chars. Keep under 160."
+   },
+   {
+    "name": "viewport",
+    "content": "width=device-width, initial-scale=1",
+    "status": "good",
+    "recommendation": "Viewport is set."
+   },
+   {
+    "name": "canonical",
+    "content": "https://offer-lab-ivory.vercel.app",
+    "status": "good",
+    "recommendation": "Canonical URL: https://offer-lab-ivory.vercel.app"
+   },
+   {
+    "name": "og:title",
+    "content": "Offer Lab by Cense",
+    "status": "good",
+    "recommendation": "Set to: Offer Lab by Cense"
+   },
+   {
+    "name": "og:description",
+    "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "status": "good",
+    "recommendation": "Set to: Type a salary and a city. See take-home pay after 2026 federal, state and city t..."
+   },
+   {
+    "name": "og:image",
+    "content": null,
+    "status": "missing",
+    "recommendation": "Add og:image for better social media sharing."
+   },
+   {
+    "name": "og:url",
+    "content": "https://offer-lab-ivory.vercel.app",
+    "status": "good",
+    "recommendation": "Set to: https://offer-lab-ivory.vercel.app"
+   },
+   {
+    "name": "og:type",
+    "content": "website",
+    "status": "good",
+    "recommendation": "Set to: website"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary",
+    "status": "good",
+    "recommendation": "Set to: summary"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Offer Lab by Cense",
+    "status": "good",
+    "recommendation": "Set to: Offer Lab by Cense"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "status": "good",
+    "recommendation": "Set to: Type a salary and a city. See take-home pay after 2026 federal, state and city t..."
+   },
+   {
+    "name": "twitter:image",
+    "content": null,
+    "status": "warning",
+    "recommendation": "Add twitter:image for Twitter card previews."
+   },
+   {
+    "name": "lang attribute",
+    "content": "en",
+    "status": "good",
+    "recommendation": "Language: en"
+   },
+   {
+    "name": "favicon",
+    "content": "/icon.svg?icon.21i73rao8j1wj.svg",
+    "status": "good",
+    "recommendation": "Favicon found: /icon.svg?icon.21i73rao8j1wj.svg"
+   }
+  ],
+  "preview": {
+   "title": "Offer Lab by Cense",
+   "description": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+   "image": null,
+   "url": "https://offer-lab-ivory.vercel.app",
+   "siteName": "Cense"
+  },
+  "summary": {
+   "good": 12,
+   "warnings": 2,
+   "missing": 1,
+   "total": 15
+  },
+  "score": 80
+ },
+ "structuredDataResult": {
+  "url": "http://localhost:3202/",
+  "totalSchemas": 1,
+  "items": [
+   {
+    "type": "WebApplication",
+    "source": "json-ld",
+    "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Offer Lab\",\"url\":\"https://offer-lab-ivory.vercel.app/\",\"applicationCategory\":\"FinanceApplication\",\"operatingSystem\":\"Any\",\"isAccessibleForFree\":true,\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"description\":\"Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Cense\",\"url\":\"https://cense.beehiiv.com\"}}",
+    "parsed": {
+     "@context": "https://schema.org",
+     "@type": "WebApplication",
+     "name": "Offer Lab",
+     "url": "https://offer-lab-ivory.vercel.app/",
+     "applicationCategory": "FinanceApplication",
+     "operatingSystem": "Any",
+     "isAccessibleForFree": true,
+     "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+     },
+     "description": "Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.",
+     "publisher": {
+      "@type": "Organization",
+      "name": "Cense",
+      "url": "https://cense.beehiiv.com"
+     }
+    },
+    "errors": [],
+    "warnings": [
+     "Schema type \"WebApplication\" is valid but not in our validation database. Basic checks only."
+    ],
+    "properties": [
+     {
+      "name": "name",
+      "value": "Offer Lab",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "url",
+      "value": "https://offer-lab-ivory.vercel.app/",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "applicationCategory",
+      "value": "FinanceApplication",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "operatingSystem",
+      "value": "Any",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "isAccessibleForFree",
+      "value": "true",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "offers",
+      "value": "{Offer}",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "description",
+      "value": "Free calculator for new graduates: take-home pay after 2026 federal, state and c...",
+      "required": false,
+      "present": true
+     },
+     {
+      "name": "publisher",
+      "value": "{Organization}",
+      "required": false,
+      "present": true
+     }
+    ]
+   }
+  ],
+  "summary": {
+   "total": 1,
+   "valid": 1,
+   "withErrors": 0,
+   "totalErrors": 0,
+   "totalWarnings": 1,
+   "jsonLd": 1,
+   "microdata": 0
+  },
+  "richResultEligibility": {
+   "eligible": false,
+   "types": []
+  }
+ }
+}

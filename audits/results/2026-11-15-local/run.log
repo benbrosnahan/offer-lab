@@ -1,0 +1,194 @@
+Auditing http://localhost:3202/: lighthouse, flow, security, geo, design, ux, tools, responsive, inp, readable. Results go to /Users/benjaminbrosnahan/Desktop/dev/offer-lab/audits/results/2026-11-15-local
+
+== lighthouse
+  empty-mobile run 1/1: perf 100 a11y 100 bp 100 seo 100 lcp 758.021 fcp 758.021 cls 0 tbt 49
+  empty-desktop run 1/1: perf 100 a11y 100 bp 100 seo 100 lcp 206.112 fcp 206.112 cls 0 tbt 0
+  seeded-mobile run 1/1: perf 98 a11y 100 bp 100 seo 100 lcp 2489.098 fcp 755.399 cls 0 tbt 31
+  seeded-desktop run 1/1: perf 100 a11y 100 bp 100 seo 100 lcp 510.824 fcp 207.216 cls 0.042 tbt 0
+  lighthouse: ok in 24.3 s
+
+== flow
+  mobile [navigation] First load (empty): perf 100 a11y 100 bp 100 seo 100 cls 0 tbt 33
+  mobile [timespan] Enter an offer: perf 100 bp 100 inp 60.549 cls 0 tbt 2.125
+  mobile [snapshot] Results: a11y 100 bp 100 seo 100
+  mobile [timespan] Override the rent: perf 100 bp 100 inp 20.056 cls 0 tbt 0
+  mobile [timespan] Compare a second offer: perf 100 bp 100 inp 45.916 cls 0 tbt 0
+  mobile [snapshot] Comparison: a11y 100 bp 100 seo 100
+  desktop [navigation] First load (empty): perf 100 a11y 100 bp 100 seo 100 cls 0 tbt 0
+  desktop [timespan] Enter an offer: perf 100 bp 100 inp 45.497 cls 0 tbt 0
+  desktop [snapshot] Results: a11y 100 bp 100 seo 100
+  desktop [timespan] Override the rent: perf 100 bp 100 inp 21.13 cls 0 tbt 0
+  desktop [timespan] Compare a second offer: perf 100 bp 100 inp 24.34 cls 0 tbt 0
+  desktop [snapshot] Comparison: a11y 100 bp 100 seo 100
+  flow: ok in 97.5 s
+
+== security
+  score 35 {"https":0,"headers":0,"cookies":100,"content":100,"deps":null}
+  security: ok in under 0.1 s
+
+== geo
+  score 80 parity 100% raw words 405 rendered words 405
+  geo: ok in 10.7 s
+
+== design
+  empty: desktop 68 D, mobile 68 D, merged 68 D
+  debts-open: desktop 68 D, mobile 68 D, merged 68 D
+  results: desktop 68 D, mobile 68 D, merged 68 D
+  comparison: desktop 68 D, mobile 68 D, merged 68 D
+  design: ok in 66.4 s
+
+== ux
+  empty-desktop: 6 rule findings (P1 1, P2 5, P3 0), 1 probe findings, design 68
+  empty-mobile: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  debts-open-desktop: 6 rule findings (P1 1, P2 5, P3 0), 1 probe findings, design 68
+  debts-open-mobile: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  results-desktop: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  results-mobile: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  comparison-desktop: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  comparison-mobile: 6 rule findings (P1 1, P2 5, P3 0), 0 probe findings, design 68
+  ux: ok in under 0.1 s
+
+== tools
+  header-check: score 80: 8 good, 1 warnings, 1 missing
+  meta-validate: score 80: 12 good, 2 warnings, 1 missing
+  structured-data: 1 schemas, 0 errors, 1 warnings
+  sitemap-validate: found, 1 URLs, 1 issues
+  redirect-check: 0 redirects, final status 200: No redirects detected. URL resolves directly.
+  broken-links: 14 links, 0 broken, 0 redirects, 0 errors, 0 timeouts
+  webmcp-check: AI readiness 0
+  tools: ok in 0.8 s
+
+== responsive
+  empty@320: scrollWidth=320 clientWidth=320 height=1563
+  empty@375: scrollWidth=375 clientWidth=375 height=1430
+  empty@768: scrollWidth=768 clientWidth=768 height=1416
+  empty@1024: scrollWidth=1024 clientWidth=1024 height=1416
+  empty@1440: scrollWidth=1440 clientWidth=1440 height=1416
+  debts-open@320: scrollWidth=320 clientWidth=320 height=1888
+  debts-open@375: scrollWidth=375 clientWidth=375 height=1743
+  debts-open@768: scrollWidth=768 clientWidth=768 height=1699
+  debts-open@1024: scrollWidth=1024 clientWidth=1024 height=1699
+  debts-open@1440: scrollWidth=1440 clientWidth=1440 height=1699
+  results@320: scrollWidth=320 clientWidth=320 height=2534
+  results@375: scrollWidth=375 clientWidth=375 height=2370
+  results@768: scrollWidth=768 clientWidth=768 height=2106
+  results@1024: scrollWidth=1024 clientWidth=1024 height=2106
+  results@1440: scrollWidth=1440 clientWidth=1440 height=2106
+  comparison@320: scrollWidth=320 clientWidth=320 height=3357
+  comparison@375: scrollWidth=375 clientWidth=375 height=3173
+  comparison@768: scrollWidth=768 clientWidth=768 height=2844
+  comparison@1024: scrollWidth=1024 clientWidth=1024 height=2118
+  comparison@1440: scrollWidth=1440 clientWidth=1440 height=2118
+  responsive: ok in 48.2 s
+
+== inp
+  cpu1x loans=1 run1 typeSalary5:48ms/70t pickCity:24ms/23t submit:16ms/26t editRent:16ms/32t openCompare:16ms/12t typeSalaryB5:24ms/33t pickCityB:16ms/33t submitCompare:16ms/17t
+  cpu1x loans=1 run2 typeSalary5:48ms/62t pickCity:16ms/22t submit:16ms/21t editRent:24ms/28t openCompare:16ms/15t typeSalaryB5:16ms/20t pickCityB:16ms/25t submitCompare:16ms/20t
+  cpu4x loans=1 run1 typeSalary5:72ms/103t pickCity:24ms/46t submit:32ms/48t editRent:24ms/49t openCompare:16ms/19t typeSalaryB5:16ms/37t pickCityB:16ms/51t submitCompare:24ms/26t
+  cpu4x loans=1 run2 typeSalary5:88ms/117t pickCity:24ms/45t submit:32ms/45t editRent:24ms/56t openCompare:16ms/26t typeSalaryB5:24ms/44t pickCityB:24ms/46t submitCompare:24ms/33t
+  inp: ok in 39.1 s
+
+== readable
+  first run1 fp 1404 fcp 1404 skeleton – real 1392 readable 1392 lcp 1404 (lcp on p "Type the salary and the city. You get ta")
+  returning run1 fp 1404 fcp 1404 skeleton – real 1393 readable 1393 lcp 2956 (lcp on h1 "$65,000 in Boston")
+  readable: ok in 8.9 s
+
+Scoreboard for http://localhost:3202/, median of 1 run
+
+| Page | Perf | A11y | BP | SEO | LCP | FCP | CLS |
+|---|---|---|---|---|---|---|---|
+| Empty, mobile | 100 | 100 | 100 | 100 | 758 ms | 758 ms | 0 |
+| Empty, desktop | 100 | 100 | 100 | 100 | 206 ms | 206 ms | 0 |
+| Seeded, mobile | 98 | 100 | 100 | 100 | 2489 ms | 755 ms | 0 |
+| Seeded, desktop | 100 | 100 | 100 | 100 | 511 ms | 207 ms | 0.042 |
+
+Security 35 · GEO 80 · Design 68-68 · Flow INP mobile 61 ms · Flow INP desktop 45 ms · INP probe worst 88 ms · Overflow 0 of 20 · Readable first visit 1392 ms, returning 1393 ms
+Budgets PASS: 28 passed, 0 failed
+Changes since results/2026-11-15-live:
+  WORSE  lighthouse.empty-mobile.tti: 2157.687 -> 2511.032
+  WORSE  lighthouse.seeded-desktop.cls: 0.01 -> 0.042
+  WORSE  lighthouse.seeded-mobile.lcp: 2190.826 -> 2489.098
+  WORSE  lighthouse.seeded-mobile.tti: 2190.826 -> 2489.098
+  WORSE  security.headers: 27 -> 0
+  WORSE  security.https: 100 -> 0
+  WORSE  security.score: 71 -> 35
+  WORSE  ux.comparison-desktop.p2: 4 -> 5
+  WORSE  ux.comparison-mobile.p2: 4 -> 5
+  WORSE  ux.debts-open-desktop.extras: 0 -> 1
+  WORSE  ux.debts-open-desktop.p2: 3 -> 5
+  WORSE  ux.debts-open-mobile.p2: 3 -> 5
+  WORSE  ux.empty-desktop.extras: 0 -> 1
+  WORSE  ux.empty-desktop.p2: 3 -> 5
+  WORSE  ux.empty-mobile.p2: 3 -> 5
+  better design.comparison.desktop: 42.1 -> 68
+  better design.comparison.merged: 42 -> 68
+  better design.comparison.mobile: 42.1 -> 68
+  better design.debts-open.desktop: 54.7 -> 68
+  better design.debts-open.merged: 55 -> 68
+  better design.debts-open.mobile: 54.7 -> 68
+  better design.empty.desktop: 54.7 -> 68
+  better design.empty.merged: 55 -> 68
+  better design.empty.mobile: 54.7 -> 68
+  better design.results.desktop: 39.7 -> 68
+  better design.results.merged: 40 -> 68
+  better design.results.mobile: 39.7 -> 68
+  better flow.desktop.comparison.accessibility: 91 -> 100
+  better flow.desktop.first-load-empty.accessibility: 89 -> 100
+  better flow.desktop.results.accessibility: 89 -> 100
+  better flow.mobile.comparison.accessibility: 91 -> 100
+  better flow.mobile.first-load-empty.accessibility: 89 -> 100
+  better flow.mobile.first-load-empty.performance: 99 -> 100
+  better flow.mobile.results.accessibility: 89 -> 100
+  better geo.contentParity: 0 -> 100
+  better geo.score: 44 -> 80
+  better geo.serverContent: 12 -> 28
+  better geo.socialMeta: 7 -> 11
+  better geo.structuredData: 0 -> 16
+  better inp.cpu1x.loans1.editRent: 368 -> 24
+  better inp.cpu1x.loans1.worst: 368 -> 48
+  better inp.cpu4x.loans1.editRent: 272 -> 24
+  better inp.cpu4x.loans1.worst: 272 -> 88
+  better lighthouse.empty-desktop.accessibility: 89 -> 100
+  better lighthouse.empty-desktop.lcp: 459.705 -> 206.112
+  better lighthouse.empty-desktop.si: 308.824 -> 206.112
+  better lighthouse.empty-desktop.tti: 459.705 -> 206.112
+  better lighthouse.empty-mobile.accessibility: 89 -> 100
+  better lighthouse.empty-mobile.lcp: 2129.087 -> 758.021
+  better lighthouse.empty-mobile.performance: 99 -> 100
+  better lighthouse.empty-mobile.si: 1089.973 -> 758.021
+  better lighthouse.seeded-desktop.accessibility: 89 -> 100
+  better lighthouse.seeded-desktop.si: 398.3 -> 207.216
+  better lighthouse.seeded-mobile.accessibility: 89 -> 100
+  better lighthouse.seeded-mobile.fcp: 841.826 -> 755.399
+  better lighthouse.seeded-mobile.si: 1297.804 -> 755.399
+  better lighthouse.seeded-mobile.tbt: 108 -> 31
+  better readable.first.fcp: 2992 -> 1404
+  better readable.first.fp: 1580 -> 1404
+  better readable.first.lcp: 3016 -> 1404
+  better readable.first.readable: 2949 -> 1392
+  better readable.first.real: 2949 -> 1392
+  better readable.returning.fcp: 3112 -> 1404
+  better readable.returning.fp: 1664 -> 1404
+  better readable.returning.lcp: 3464 -> 2956
+  better readable.returning.readable: 3050 -> 1393
+  better readable.returning.real: 3050 -> 1393
+  better security.content: 80 -> 100
+  better tools.header-check.score: 40 -> 80
+  better tools.meta-validate.score: 67 -> 80
+  better tools.sitemap-validate.found: 0 -> 1
+  better tools.structured-data.totalSchemas: 0 -> 1
+  better ux.comparison-desktop.extras: 1 -> 0
+  better ux.comparison-desktop.findings: 8 -> 6
+  better ux.comparison-desktop.p1: 4 -> 1
+  better ux.comparison-mobile.findings: 8 -> 6
+  better ux.comparison-mobile.p1: 4 -> 1
+  better ux.debts-open-desktop.p1: 3 -> 1
+  better ux.debts-open-mobile.p1: 3 -> 1
+  better ux.empty-desktop.p1: 3 -> 1
+  better ux.empty-mobile.p1: 3 -> 1
+  better ux.results-desktop.extras: 1 -> 0
+  better ux.results-desktop.findings: 9 -> 6
+  better ux.results-desktop.p1: 4 -> 1
+  better ux.results-mobile.findings: 9 -> 6
+  better ux.results-mobile.p1: 4 -> 1
+Summary: /Users/benjaminbrosnahan/Desktop/dev/offer-lab/audits/results/2026-11-15-local/SUMMARY.md

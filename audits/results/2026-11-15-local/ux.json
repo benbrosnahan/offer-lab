@@ -1,0 +1,183 @@
+{
+ "url": "http://localhost:3202/",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "note": "Deterministic findings only. UX scores come from the AI review: it writes ux/ai/<tag>.json, then node lib/merge-ux.mjs <this folder>/ux scores and merges them.",
+ "screens": [
+  {
+   "tag": "empty-desktop",
+   "state": "empty",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 3 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 4 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "empty-mobile",
+   "state": "empty",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 3 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 4 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "debts-open-desktop",
+   "state": "debts-open",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 4 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 6 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "debts-open-mobile",
+   "state": "debts-open",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 4 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 6 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "results-desktop",
+   "state": "results",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 7 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 7 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "results-mobile",
+   "state": "results",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 7 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 7 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "comparison-desktop",
+   "state": "comparison",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 12 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 12 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "comparison-mobile",
+   "state": "comparison",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 1,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 68,
+   "designGrade": "D",
+   "findingTitles": [
+    "P2 12 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 12 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 2 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P2 1 animation/transition(s) under 50ms (non-instant but too fast to read).",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  }
+ ]
+}

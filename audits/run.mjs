@@ -32,7 +32,7 @@ const UX_VIEWPORTS = {
   mobile: { width: 375, height: 812, dpr: 1, isMobile: true },
 };
 const SITE_TYPE = 'saas';
-// A first visit, and a returning borrower with the eight-loan fixture in localStorage before any app code runs.
+// A first visit, and a returning student with one saved offer in sessionStorage before any app code runs.
 const LIGHTHOUSE_PAGES = [
   { page: 'empty', seeded: false },
   { page: 'seeded', seeded: true },
@@ -1007,7 +1007,7 @@ function renderSummary({ ctx, startedAt, steps, results, checks, targets, bundle
     scoreboardTable(results.lighthouse),
     '',
     results.lighthouse
-      ? `Median of ${ctx.runs} Lighthouse run${ctx.runs === 1 ? '' : 's'} per page, chosen by performance score. Empty is a first visit; seeded has the eight-loan fixture in localStorage before load. TBT: ${Object.entries(results.lighthouse.pages).map(([k, p]) => `${pageLabel(k).toLowerCase()} ${fmt.ms(p.summary?.tbt)}`).join(', ')}.`
+      ? `Median of ${ctx.runs} Lighthouse run${ctx.runs === 1 ? '' : 's'} per page, chosen by performance score. Empty is a first visit; seeded has one saved offer in sessionStorage before load, so it opens on the results. TBT: ${Object.entries(results.lighthouse.pages).map(([k, p]) => `${pageLabel(k).toLowerCase()} ${fmt.ms(p.summary?.tbt)}`).join(', ')}.`
       : 'Lighthouse did not run in this invocation.',
     '',
     ...budgetsSection(checks, targets, bundle, ctx),

@@ -1,0 +1,400 @@
+{
+ "url": "http://localhost:3202/",
+ "journey": "Offer Lab core journey",
+ "formFactors": {
+  "mobile": {
+   "steps": [
+    {
+     "name": "First load (empty)",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 754.438,
+     "fcp": 754.438,
+     "cls": 0,
+     "tbt": 33,
+     "si": 754.438,
+     "tti": 2489.656,
+     "inp": null,
+     "failing": [
+      {
+       "id": "max-potential-fid",
+       "title": "Max Potential First Input Delay",
+       "score": 0.98,
+       "displayValue": "80 ms"
+      },
+      {
+       "id": "interactive",
+       "title": "Time to Interactive",
+       "score": 0.98,
+       "displayValue": "2.5 s"
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 55 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 14 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0,
+       "displayValue": "Est savings of 150 ms"
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0.5,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 55 KiB",
+       "numericValue": null,
+       "numericUnit": "millisecond",
+       "savingsBytes": 56112,
+       "items": [
+        {
+         "url": "http://localhost:3202/_next/static/chunks/3wbm-994r45kr.js",
+         "wastedBytes": 29930,
+         "wastedMs": null,
+         "totalBytes": 72027
+        },
+        {
+         "url": "http://localhost:3202/_next/static/chunks/0r-yur70-ku2o.js",
+         "wastedBytes": 26182,
+         "wastedMs": null,
+         "totalBytes": 49636
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Enter an offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 2.125,
+     "si": null,
+     "tti": null,
+     "inp": 60.549,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 2
+     }
+    },
+    {
+     "name": "Results",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Override the rent",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 20.056,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 4
+     }
+    },
+    {
+     "name": "Compare a second offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 45.916,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 3
+     }
+    },
+    {
+     "name": "Comparison",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  },
+  "desktop": {
+   "steps": [
+    {
+     "name": "First load (empty)",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 205.649,
+     "fcp": 205.649,
+     "cls": 0,
+     "tbt": 0,
+     "si": 205.649,
+     "tti": 205.649,
+     "inp": null,
+     "failing": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 55 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 14 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0.5,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0.5,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 55 KiB",
+       "numericValue": null,
+       "numericUnit": "millisecond",
+       "savingsBytes": 56112,
+       "items": [
+        {
+         "url": "http://localhost:3202/_next/static/chunks/3wbm-994r45kr.js",
+         "wastedBytes": 29930,
+         "wastedMs": null,
+         "totalBytes": 72027
+        },
+        {
+         "url": "http://localhost:3202/_next/static/chunks/0r-yur70-ku2o.js",
+         "wastedBytes": 26182,
+         "wastedMs": null,
+         "totalBytes": 49636
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Enter an offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 45.497,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 3
+     }
+    },
+    {
+     "name": "Results",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Override the rent",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 21.13,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 4
+     }
+    },
+    {
+     "name": "Compare a second offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 24.34,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 4
+     }
+    },
+    {
+     "name": "Comparison",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 100,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  }
+ }
+}

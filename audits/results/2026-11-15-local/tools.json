@@ -1,0 +1,594 @@
+{
+ "url": "http://localhost:3202/",
+ "results": {
+  "header-check": {
+   "url": "http://localhost:3202/",
+   "statusCode": 200,
+   "allHeaders": {
+    "cache-control": "s-maxage=31536000",
+    "connection": "close",
+    "content-length": "31087",
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 15 Nov 2026 18:52:55 GMT",
+    "etag": "\"cwu5df4dhknzj\"",
+    "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-nextjs-cache": "HIT",
+    "x-nextjs-prerender": "1, 1",
+    "x-nextjs-stale-time": "300"
+   },
+   "analysis": [
+    {
+     "name": "Cache-Control",
+     "value": "s-maxage=31536000",
+     "status": "good",
+     "recommendation": "Cache-Control is configured."
+    },
+    {
+     "name": "Content-Encoding",
+     "value": null,
+     "status": "warning",
+     "recommendation": "Enable gzip or Brotli compression to reduce transfer sizes by 60-80%."
+    },
+    {
+     "name": "Strict-Transport-Security",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add HSTS header: \"max-age=63072000; includeSubDomains; preload\""
+    },
+    {
+     "name": "X-Content-Type-Options",
+     "value": "nosniff",
+     "status": "good",
+     "recommendation": "X-Content-Type-Options is set."
+    },
+    {
+     "name": "X-Frame-Options",
+     "value": "DENY",
+     "status": "good",
+     "recommendation": "X-Frame-Options is set."
+    },
+    {
+     "name": "Content-Security-Policy",
+     "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
+     "status": "good",
+     "recommendation": "Content-Security-Policy is set."
+    },
+    {
+     "name": "Referrer-Policy",
+     "value": "strict-origin-when-cross-origin",
+     "status": "good",
+     "recommendation": "Referrer-Policy is set."
+    },
+    {
+     "name": "Permissions-Policy",
+     "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+     "status": "good",
+     "recommendation": "Permissions-Policy is set."
+    },
+    {
+     "name": "ETag",
+     "value": "\"cwu5df4dhknzj\"",
+     "status": "good",
+     "recommendation": "ETag is set for conditional requests."
+    },
+    {
+     "name": "Vary",
+     "value": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+     "status": "good",
+     "recommendation": "Vary header set: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+    }
+   ],
+   "summary": {
+    "good": 8,
+    "warnings": 1,
+    "missing": 1,
+    "total": 10
+   },
+   "score": 80
+  },
+  "meta-validate": {
+   "url": "http://localhost:3202/",
+   "tags": [
+    {
+     "name": "title",
+     "content": "Offer Lab by Cense: is your job offer enough to live on?",
+     "status": "good",
+     "recommendation": "Title is 56 chars. Good length."
+    },
+    {
+     "name": "meta description",
+     "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+     "status": "warning",
+     "recommendation": "Description is 169 chars. Keep under 160."
+    },
+    {
+     "name": "viewport",
+     "content": "width=device-width, initial-scale=1",
+     "status": "good",
+     "recommendation": "Viewport is set."
+    },
+    {
+     "name": "canonical",
+     "content": "https://offer-lab-ivory.vercel.app",
+     "status": "good",
+     "recommendation": "Canonical URL: https://offer-lab-ivory.vercel.app"
+    },
+    {
+     "name": "og:title",
+     "content": "Offer Lab by Cense",
+     "status": "good",
+     "recommendation": "Set to: Offer Lab by Cense"
+    },
+    {
+     "name": "og:description",
+     "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+     "status": "good",
+     "recommendation": "Set to: Type a salary and a city. See take-home pay after 2026 federal, state and city t..."
+    },
+    {
+     "name": "og:image",
+     "content": null,
+     "status": "missing",
+     "recommendation": "Add og:image for better social media sharing."
+    },
+    {
+     "name": "og:url",
+     "content": "https://offer-lab-ivory.vercel.app",
+     "status": "good",
+     "recommendation": "Set to: https://offer-lab-ivory.vercel.app"
+    },
+    {
+     "name": "og:type",
+     "content": "website",
+     "status": "good",
+     "recommendation": "Set to: website"
+    },
+    {
+     "name": "twitter:card",
+     "content": "summary",
+     "status": "good",
+     "recommendation": "Set to: summary"
+    },
+    {
+     "name": "twitter:title",
+     "content": "Offer Lab by Cense",
+     "status": "good",
+     "recommendation": "Set to: Offer Lab by Cense"
+    },
+    {
+     "name": "twitter:description",
+     "content": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+     "status": "good",
+     "recommendation": "Set to: Type a salary and a city. See take-home pay after 2026 federal, state and city t..."
+    },
+    {
+     "name": "twitter:image",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add twitter:image for Twitter card previews."
+    },
+    {
+     "name": "lang attribute",
+     "content": "en",
+     "status": "good",
+     "recommendation": "Language: en"
+    },
+    {
+     "name": "favicon",
+     "content": "/icon.svg?icon.21i73rao8j1wj.svg",
+     "status": "good",
+     "recommendation": "Favicon found: /icon.svg?icon.21i73rao8j1wj.svg"
+    }
+   ],
+   "preview": {
+    "title": "Offer Lab by Cense",
+    "description": "Type a salary and a city. See take-home pay after 2026 federal, state and city taxes, a typical rent and everyday costs, and what is left each month. Compare two offers.",
+    "image": null,
+    "url": "https://offer-lab-ivory.vercel.app",
+    "siteName": "Cense"
+   },
+   "summary": {
+    "good": 12,
+    "warnings": 2,
+    "missing": 1,
+    "total": 15
+   },
+   "score": 80
+  },
+  "structured-data": {
+   "url": "http://localhost:3202/",
+   "totalSchemas": 1,
+   "items": [
+    {
+     "type": "WebApplication",
+     "source": "json-ld",
+     "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Offer Lab\",\"url\":\"https://offer-lab-ivory.vercel.app/\",\"applicationCategory\":\"FinanceApplication\",\"operatingSystem\":\"Any\",\"isAccessibleForFree\":true,\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"description\":\"Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Cense\",\"url\":\"https://cense.beehiiv.com\"}}",
+     "parsed": {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Offer Lab",
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "offers": {
+       "@type": "Offer",
+       "price": "0",
+       "priceCurrency": "USD"
+      },
+      "description": "Free calculator for new graduates: take-home pay after 2026 federal, state and city taxes, typical rent and everyday costs, and what is left each month, for 75 US cities. Compare two job offers.",
+      "publisher": {
+       "@type": "Organization",
+       "name": "Cense",
+       "url": "https://cense.beehiiv.com"
+      }
+     },
+     "errors": [],
+     "warnings": [
+      "Schema type \"WebApplication\" is valid but not in our validation database. Basic checks only."
+     ],
+     "properties": [
+      {
+       "name": "name",
+       "value": "Offer Lab",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "url",
+       "value": "https://offer-lab-ivory.vercel.app/",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "applicationCategory",
+       "value": "FinanceApplication",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "operatingSystem",
+       "value": "Any",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "isAccessibleForFree",
+       "value": "true",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "offers",
+       "value": "{Offer}",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "description",
+       "value": "Free calculator for new graduates: take-home pay after 2026 federal, state and c...",
+       "required": false,
+       "present": true
+      },
+      {
+       "name": "publisher",
+       "value": "{Organization}",
+       "required": false,
+       "present": true
+      }
+     ]
+    }
+   ],
+   "summary": {
+    "total": 1,
+    "valid": 1,
+    "withErrors": 0,
+    "totalErrors": 0,
+    "totalWarnings": 1,
+    "jsonLd": 1,
+    "microdata": 0
+   },
+   "richResultEligibility": {
+    "eligible": false,
+    "types": []
+   }
+  },
+  "sitemap-validate": {
+   "sitemapUrl": "http://localhost:3202/sitemap.xml",
+   "found": true,
+   "isSitemapIndex": false,
+   "totalUrls": 1,
+   "checkedUrls": 1,
+   "urls": [
+    {
+     "loc": "https://offer-lab-ivory.vercel.app/",
+     "lastmod": "2026-11-15T00:00:00.000Z",
+     "status": 200,
+     "statusText": "ok",
+     "responseTimeMs": 84,
+     "issues": []
+    }
+   ],
+   "uncheckedUrls": [],
+   "missingCommonPages": [
+    "http://localhost:3202/"
+   ],
+   "duplicates": [],
+   "issues": [
+    "1 common page(s) exist but are missing from sitemap: http://localhost:3202/"
+   ],
+   "summary": {
+    "total": 1,
+    "checked": 1,
+    "ok": 1,
+    "redirects": 0,
+    "errors": 0,
+    "dead": 0,
+    "slow": 0,
+    "duplicates": 0,
+    "missingCommon": 1
+   }
+  },
+  "redirect-check": {
+   "url": "http://localhost:3202/",
+   "finalUrl": "http://localhost:3202/",
+   "finalStatus": 200,
+   "hops": [
+    {
+     "url": "http://localhost:3202/",
+     "statusCode": 200,
+     "location": null,
+     "timeMs": 1
+    }
+   ],
+   "redirectCount": 0,
+   "totalTimeMs": 1,
+   "status": "good",
+   "message": "No redirects detected. URL resolves directly."
+  },
+  "broken-links": {
+   "url": "http://localhost:3202/",
+   "depth": "page",
+   "pagesScanned": 1,
+   "pagesScannedList": [
+    "http://localhost:3202/"
+   ],
+   "totalLinks": 14,
+   "totalDiscoveredLinks": 14,
+   "links": [
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "https://cense.beehiiv.com/",
+     "anchorText": "Cense",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 643,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "https://cense-loan-desk.vercel.app/",
+     "anchorText": "Loan Desk",
+     "linkType": "a",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 314,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/0r-yur70-ku2o.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/3wbm-994r45kr.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/0umf92h1sb77c.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 5,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/277vvv-fl9udu.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/0cz1d0mv5g_q7.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/3cfn99dbrcvvp.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/media/4cf231d25563e07b-s.p.2874ccu1_u7jf.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/media/8056169c9d560660-s.p.41rroleoq1br7.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 5,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/_next/static/chunks/1qqjfk6qwfeg9.css",
+     "anchorText": "stylesheet",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 4,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/",
+     "anchorText": "canonical",
+     "linkType": "link",
+     "isInternal": false,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 312,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    },
+    {
+     "sourceUrl": "http://localhost:3202/",
+     "targetUrl": "http://localhost:3202/icon.svg?icon.21i73rao8j1wj.svg",
+     "anchorText": "icon",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 5,
+     "sources": [
+      "http://localhost:3202/"
+     ]
+    }
+   ],
+   "summary": {
+    "total": 14,
+    "ok": 14,
+    "broken": 0,
+    "redirects": 0,
+    "errors": 0,
+    "timeouts": 0
+   }
+  },
+  "webmcp-check": {
+   "url": "http://localhost:3202/",
+   "aiReadinessScore": 0,
+   "mcpDiscovery": {
+    "score": 0,
+    "found": false,
+    "valid": false,
+    "hasAuth": false,
+    "data": null,
+    "errors": [
+     "HTTP 404 response from http://localhost:3202/.well-known/mcp.json."
+    ]
+   },
+   "webmcpDeclarative": {
+    "score": 0,
+    "toolCount": 0,
+    "tools": [],
+    "findings": [
+     "No declarative WebMCP tools found (no toolname attributes in HTML)."
+    ]
+   },
+   "webmcpImperative": {
+    "score": 0,
+    "detected": false,
+    "registerToolCalls": 0,
+    "findings": [
+     "No imperative WebMCP tool registration detected in inline scripts.",
+     "Note: This check cannot detect tools registered via external JavaScript files."
+    ]
+   },
+   "recommendations": [
+    "Add a .well-known/mcp.json file to enable MCP server discovery. This lets AI agents find and connect to your API endpoints automatically.",
+    "Add WebMCP declarative tools to your HTML using toolname attributes on <form> elements. Example: <form toolname=\"search\" tooldescription=\"Search products\"> to expose functionality to AI agents.",
+    "Consider implementing imperative WebMCP tools using navigator.modelContext.registerTool() for dynamic tool registration that depends on runtime state.",
+    "This page has no AI/MCP integration. Start with .well-known/mcp.json for server discovery or add toolname attributes to existing forms for quick wins."
+   ]
+  }
+ }
+}
