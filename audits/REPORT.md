@@ -223,3 +223,21 @@ Watch item after the redesign: with a saved offer, desktop CLS went from 0.01 to
 ## Method
 
 Every figure the app shows or computes was listed from `src/` and checked against a primary source as of November 2026. State rules were read from each revenue department's 2026 withholding formula, indexed-amount notice, 2026 form or statute; city rules from the city's own page or form. Six profiles were computed by hand and by the oracle, and compared with the live site. The scans are the kit from Loan Desk with Offer Lab fixtures; run them with `node run.mjs --url <url> --runs 1` from this folder.
+
+## Follow-ups, 2026-11-15
+
+Ben's answers to the open questions: add utilities, add a roommates split, keep 2026 tax figures.
+
+### MONEY-12 (update)
+**P2. Utilities are in neither number.** Status: fixed (electricity); heat disclosed. Electricity is now its own editable line: the U.S. EIA average monthly residential bill for the state, 2024 (Electric Sales, Revenue, and Average Price, Table 5A, released 2025-10-07; EIA lists the next release as discontinued, so 2024 is the latest annual year). Massachusetts $167.20, New York $139.53, Texas $163.72. It averages every home, houses included, so a small apartment often pays less. Gas and heating are not counted: many rentals include heat or heat with electricity, and no federal source gives a current renter's gas bill by state; the page says so and points gas to Other bills. Effect on the profiles: left over falls by $114 (Seattle) to $167 (Boston). Boston at $65,000 is now -$754 a month living alone.
+- Source: https://www.eia.gov/electricity/sales_revenue_price/xls/table_5A.xlsx
+- Test: `money-oracle.spec.mjs` "MONEY-12 electricity matches the EIA average bill" (six profiles) and "electricity is its own editable line".
+
+Electricity by profile: Boston $167, New York City $140, Austin $164, San Francisco $161, Columbus $135, Seattle $114. Each profile's left over in the table above drops by that amount.
+
+### SCOPE-01 (update)
+**P2. The model assumes living alone in a median 1-bedroom.** Status: fixed. A Roommates control (None, 1, 2, 3) splits the rent and electricity evenly, one bedroom each. One roommate: half of Zumper's October 2026 median 2-bedroom (Boston $3,500 / 2 = $1,750). Two or three: Zumper does not report 3- or 4-bedrooms, so its 2-bedroom median is scaled by the area's HUD FY2026 Fair Market Rent ratio (Boston 3-bedroom = 3,500 x 3,526 / 2,941 = $4,196, so $1,399 each); the ten cities outside the report scale the 1-bedroom the same way. A typed rent is kept as the student's own share. Everyday costs are not split (MIT budgets one adult). Boston at $65,000 goes from -$754 alone to +$559 with one roommate and +$938 with two.
+- Sources: https://www.zumper.com/blog/rental-price-data/ (October 2026, 1BR and 2BR); https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26_FMRs_revised.xlsx
+- Test: `roommates.spec.mjs`, hand-worked cases for Boston (0 to 3), New York City and Austin (0 to 2) and Ann Arbor (1).
+
+Not verified: the Zumper 2-bedroom figures were read through a page-summary fetch (Zumper blocks plain requests); two separate fetches agreed for 17 cities. HUD Fair Market Rents include utilities and are used only as size ratios.
