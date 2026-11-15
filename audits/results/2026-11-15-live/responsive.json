@@ -1,0 +1,232 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "widths": [
+  {
+   "w": 320,
+   "h": 640,
+   "mobile": true
+  },
+  {
+   "w": 375,
+   "h": 812,
+   "mobile": true
+  },
+  {
+   "w": 768,
+   "h": 1024,
+   "mobile": true
+  },
+  {
+   "w": 1024,
+   "h": 768,
+   "mobile": false
+  },
+  {
+   "w": 1440,
+   "h": 900,
+   "mobile": false
+  }
+ ],
+ "rows": [
+  {
+   "state": "empty",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 912,
+   "overflow": false,
+   "screenshot": "responsive/empty-320.jpg"
+  },
+  {
+   "state": "empty",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 912,
+   "overflow": false,
+   "screenshot": "responsive/empty-375.jpg"
+  },
+  {
+   "state": "empty",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 1024,
+   "overflow": false,
+   "screenshot": "responsive/empty-768.jpg"
+  },
+  {
+   "state": "empty",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 869,
+   "overflow": false,
+   "screenshot": "responsive/empty-1024.jpg"
+  },
+  {
+   "state": "empty",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 900,
+   "overflow": false,
+   "screenshot": "responsive/empty-1440.jpg"
+  },
+  {
+   "state": "debts-open",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 1237,
+   "overflow": false,
+   "screenshot": "responsive/debts-open-320.jpg"
+  },
+  {
+   "state": "debts-open",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 1237,
+   "overflow": false,
+   "screenshot": "responsive/debts-open-375.jpg"
+  },
+  {
+   "state": "debts-open",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 1145,
+   "overflow": false,
+   "screenshot": "responsive/debts-open-768.jpg"
+  },
+  {
+   "state": "debts-open",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 1145,
+   "overflow": false,
+   "screenshot": "responsive/debts-open-1024.jpg"
+  },
+  {
+   "state": "debts-open",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 1145,
+   "overflow": false,
+   "screenshot": "responsive/debts-open-1440.jpg"
+  },
+  {
+   "state": "results",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 1450,
+   "overflow": false,
+   "screenshot": "responsive/results-320.jpg"
+  },
+  {
+   "state": "results",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 1358,
+   "overflow": false,
+   "screenshot": "responsive/results-375.jpg"
+  },
+  {
+   "state": "results",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 1269,
+   "overflow": false,
+   "screenshot": "responsive/results-768.jpg"
+  },
+  {
+   "state": "results",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 1269,
+   "overflow": false,
+   "screenshot": "responsive/results-1024.jpg"
+  },
+  {
+   "state": "results",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 1269,
+   "overflow": false,
+   "screenshot": "responsive/results-1440.jpg"
+  },
+  {
+   "state": "comparison",
+   "width": 320,
+   "viewportHeight": 640,
+   "scrollWidth": 320,
+   "clientWidth": 320,
+   "pageHeight": 1927,
+   "overflow": false,
+   "screenshot": "responsive/comparison-320.jpg"
+  },
+  {
+   "state": "comparison",
+   "width": 375,
+   "viewportHeight": 812,
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "pageHeight": 1842,
+   "overflow": false,
+   "screenshot": "responsive/comparison-375.jpg"
+  },
+  {
+   "state": "comparison",
+   "width": 768,
+   "viewportHeight": 1024,
+   "scrollWidth": 768,
+   "clientWidth": 768,
+   "pageHeight": 1694,
+   "overflow": false,
+   "screenshot": "responsive/comparison-768.jpg"
+  },
+  {
+   "state": "comparison",
+   "width": 1024,
+   "viewportHeight": 768,
+   "scrollWidth": 1024,
+   "clientWidth": 1024,
+   "pageHeight": 1213,
+   "overflow": false,
+   "screenshot": "responsive/comparison-1024.jpg"
+  },
+  {
+   "state": "comparison",
+   "width": 1440,
+   "viewportHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "pageHeight": 1213,
+   "overflow": false,
+   "screenshot": "responsive/comparison-1440.jpg"
+  }
+ ]
+}

@@ -1,0 +1,459 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "results": {
+  "header-check": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "statusCode": 200,
+   "allHeaders": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "1575960",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "connection": "close",
+    "content-disposition": "inline",
+    "content-length": "8684",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 15 Nov 2026 17:44:31 GMT",
+    "etag": "\"4f7a483abbd1b5b352ee0a3e8969b2cc\"",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "x-matched-path": "/",
+    "x-nextjs-prerender": "1",
+    "x-nextjs-stale-time": "300",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "iad1::nkjhw-1794764671912-3bf7f43ebc38"
+   },
+   "analysis": [
+    {
+     "name": "Cache-Control",
+     "value": "public, max-age=0, must-revalidate",
+     "status": "good",
+     "recommendation": "Cache-Control is configured."
+    },
+    {
+     "name": "Content-Encoding",
+     "value": null,
+     "status": "warning",
+     "recommendation": "Enable gzip or Brotli compression to reduce transfer sizes by 60-80%."
+    },
+    {
+     "name": "Strict-Transport-Security",
+     "value": "max-age=63072000; includeSubDomains; preload",
+     "status": "good",
+     "recommendation": "Strict-Transport-Security is set."
+    },
+    {
+     "name": "X-Content-Type-Options",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"X-Content-Type-Options: nosniff\" to prevent MIME sniffing."
+    },
+    {
+     "name": "X-Frame-Options",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"X-Frame-Options: DENY\" or \"SAMEORIGIN\" to prevent clickjacking."
+    },
+    {
+     "name": "Content-Security-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add a Content-Security-Policy to prevent XSS and data injection."
+    },
+    {
+     "name": "Referrer-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add \"Referrer-Policy: strict-origin-when-cross-origin\" for privacy."
+    },
+    {
+     "name": "Permissions-Policy",
+     "value": null,
+     "status": "missing",
+     "recommendation": "Add Permissions-Policy to control browser features (camera, geolocation, etc.)."
+    },
+    {
+     "name": "ETag",
+     "value": "\"4f7a483abbd1b5b352ee0a3e8969b2cc\"",
+     "status": "good",
+     "recommendation": "ETag is set for conditional requests."
+    },
+    {
+     "name": "Vary",
+     "value": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+     "status": "good",
+     "recommendation": "Vary header set: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+    }
+   ],
+   "summary": {
+    "good": 4,
+    "warnings": 1,
+    "missing": 5,
+    "total": 10
+   },
+   "score": 40
+  },
+  "meta-validate": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "tags": [
+    {
+     "name": "title",
+     "content": "Offer Lab by Cense — Is your job offer enough to live on?",
+     "status": "good",
+     "recommendation": "Title is 57 chars. Good length."
+    },
+    {
+     "name": "meta description",
+     "content": "Find out what your job offer actually means. See take-home pay, real cost of living, and whether you can afford the city — based on 2025 tax brackets and rent data as of November 2025.",
+     "status": "warning",
+     "recommendation": "Description is 184 chars. Keep under 160."
+    },
+    {
+     "name": "viewport",
+     "content": "width=device-width, initial-scale=1",
+     "status": "good",
+     "recommendation": "Viewport is set."
+    },
+    {
+     "name": "canonical",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add a canonical URL to prevent duplicate content issues."
+    },
+    {
+     "name": "og:title",
+     "content": "Offer Lab — What your job offer actually means",
+     "status": "good",
+     "recommendation": "Set to: Offer Lab — What your job offer actually means"
+    },
+    {
+     "name": "og:description",
+     "content": "Compare salary, cost of living, and take-home pay across cities. Real numbers, no signup.",
+     "status": "good",
+     "recommendation": "Set to: Compare salary, cost of living, and take-home pay across cities. Real numbers, n..."
+    },
+    {
+     "name": "og:image",
+     "content": null,
+     "status": "missing",
+     "recommendation": "Add og:image for better social media sharing."
+    },
+    {
+     "name": "og:url",
+     "content": null,
+     "status": "missing",
+     "recommendation": "Add og:url for better social media sharing."
+    },
+    {
+     "name": "og:type",
+     "content": "website",
+     "status": "good",
+     "recommendation": "Set to: website"
+    },
+    {
+     "name": "twitter:card",
+     "content": "summary_large_image",
+     "status": "good",
+     "recommendation": "Set to: summary_large_image"
+    },
+    {
+     "name": "twitter:title",
+     "content": "Offer Lab — What your job offer actually means",
+     "status": "good",
+     "recommendation": "Set to: Offer Lab — What your job offer actually means"
+    },
+    {
+     "name": "twitter:description",
+     "content": "Compare salary, cost of living, and take-home pay across cities. Real numbers, no signup.",
+     "status": "good",
+     "recommendation": "Set to: Compare salary, cost of living, and take-home pay across cities. Real numbers, n..."
+    },
+    {
+     "name": "twitter:image",
+     "content": null,
+     "status": "warning",
+     "recommendation": "Add twitter:image for Twitter card previews."
+    },
+    {
+     "name": "lang attribute",
+     "content": "en",
+     "status": "good",
+     "recommendation": "Language: en"
+    },
+    {
+     "name": "favicon",
+     "content": "/favicon.ico?favicon.0x3dzn~oxb6tn.ico",
+     "status": "good",
+     "recommendation": "Favicon found: /favicon.ico?favicon.0x3dzn~oxb6tn.ico"
+    }
+   ],
+   "preview": {
+    "title": "Offer Lab — What your job offer actually means",
+    "description": "Compare salary, cost of living, and take-home pay across cities. Real numbers, no signup.",
+    "image": null,
+    "url": "https://offer-lab-ivory.vercel.app/",
+    "siteName": "offer-lab-ivory.vercel.app"
+   },
+   "summary": {
+    "good": 10,
+    "warnings": 3,
+    "missing": 2,
+    "total": 15
+   },
+   "score": 67
+  },
+  "structured-data": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "totalSchemas": 0,
+   "items": [],
+   "summary": {
+    "total": 0,
+    "valid": 0,
+    "withErrors": 0,
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "jsonLd": 0,
+    "microdata": 0
+   },
+   "richResultEligibility": {
+    "eligible": false,
+    "types": []
+   }
+  },
+  "sitemap-validate": {
+   "sitemapUrl": "https://offer-lab-ivory.vercel.app/sitemap.xml",
+   "found": false,
+   "urls": [],
+   "issues": [
+    "Sitemap not found. Try providing a direct URL to your sitemap.xml."
+   ],
+   "summary": {
+    "total": 0,
+    "ok": 0,
+    "redirects": 0,
+    "errors": 0,
+    "dead": 0,
+    "slow": 0
+   },
+   "error": "Sitemap not found at https://offer-lab-ivory.vercel.app/sitemap.xml. HTTP 404"
+  },
+  "redirect-check": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "finalUrl": "https://offer-lab-ivory.vercel.app/",
+   "finalStatus": 200,
+   "hops": [
+    {
+     "url": "https://offer-lab-ivory.vercel.app/",
+     "statusCode": 200,
+     "location": null,
+     "timeMs": 191
+    }
+   ],
+   "redirectCount": 0,
+   "totalTimeMs": 191,
+   "status": "good",
+   "message": "No redirects detected. URL resolves directly."
+  },
+  "broken-links": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "depth": "page",
+   "pagesScanned": 1,
+   "pagesScannedList": [
+    "https://offer-lab-ivory.vercel.app/"
+   ],
+   "totalLinks": 11,
+   "totalDiscoveredLinks": 11,
+   "links": [
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/0k8fcq_tsf70-.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 71,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/07lhk_q6pmm3r.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 154,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/05y_wnopcz~9b.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 154,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/turbopack-03t.q21eu.8.g.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 154,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/0dbhjjzl8qfwv.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 182,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/00x_lhpv32.f6.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 156,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/03~yq9q893hmn.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 156,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/15xrurgzs99gv.js",
+     "anchorText": "",
+     "linkType": "script",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 154,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+     "anchorText": "preload",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 155,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/_next/static/chunks/10kk_.xd6549l.css",
+     "anchorText": "stylesheet",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 154,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    },
+    {
+     "sourceUrl": "https://offer-lab-ivory.vercel.app/",
+     "targetUrl": "https://offer-lab-ivory.vercel.app/favicon.ico?favicon.0x3dzn~oxb6tn.ico",
+     "anchorText": "icon",
+     "linkType": "link",
+     "isInternal": true,
+     "statusCode": 200,
+     "statusText": "ok",
+     "responseTimeMs": 152,
+     "sources": [
+      "https://offer-lab-ivory.vercel.app/"
+     ]
+    }
+   ],
+   "summary": {
+    "total": 11,
+    "ok": 11,
+    "broken": 0,
+    "redirects": 0,
+    "errors": 0,
+    "timeouts": 0
+   }
+  },
+  "webmcp-check": {
+   "url": "https://offer-lab-ivory.vercel.app/",
+   "aiReadinessScore": 0,
+   "mcpDiscovery": {
+    "score": 0,
+    "found": false,
+    "valid": false,
+    "hasAuth": false,
+    "data": null,
+    "errors": [
+     "HTTP 404 response from https://offer-lab-ivory.vercel.app/.well-known/mcp.json."
+    ]
+   },
+   "webmcpDeclarative": {
+    "score": 0,
+    "toolCount": 0,
+    "tools": [],
+    "findings": [
+     "No declarative WebMCP tools found (no toolname attributes in HTML)."
+    ]
+   },
+   "webmcpImperative": {
+    "score": 0,
+    "detected": false,
+    "registerToolCalls": 0,
+    "findings": [
+     "No imperative WebMCP tool registration detected in inline scripts.",
+     "Note: This check cannot detect tools registered via external JavaScript files."
+    ]
+   },
+   "recommendations": [
+    "Add a .well-known/mcp.json file to enable MCP server discovery. This lets AI agents find and connect to your API endpoints automatically.",
+    "Add WebMCP declarative tools to your HTML using toolname attributes on <form> elements. Example: <form toolname=\"search\" tooldescription=\"Search products\"> to expose functionality to AI agents.",
+    "Consider implementing imperative WebMCP tools using navigator.modelContext.registerTool() for dynamic tool registration that depends on runtime state.",
+    "This page has no AI/MCP integration. Start with .well-known/mcp.json for server discovery or add toolname attributes to existing forms for quick wins."
+   ]
+  }
+ }
+}

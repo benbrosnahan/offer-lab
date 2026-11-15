@@ -1,0 +1,64 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "runs": 1,
+ "throttle": {
+  "latencyMs": 562.5,
+  "downloadKbps": 1474.56,
+  "uploadKbps": 675,
+  "cpu": 4
+ },
+ "viewport": {
+  "width": 412,
+  "height": 823,
+  "deviceScaleFactor": 1.75,
+  "isMobile": true,
+  "hasTouch": true
+ },
+ "method": "Cold loads, each in a fresh browser, on slow 4G applied for real with devtools throttling (not simulated) and 4x CPU. Marks are ms from navigation start, read inside the page: skeleton is the first frame with .animate-pulse in the DOM, real the first frame with main h1 and no .animate-pulse, readable the first frame where the first .rise block is at opacity 0.99 or more (real when there is no .rise); fp and fcp are Paint Timing, lcp the last largest-contentful-paint entry. Each median is per mark, over the loads without an error; with an even count, the higher middle value.",
+ "scenarios": {
+  "first": {
+   "runs": [
+    {
+     "run": 1,
+     "fp": 1580,
+     "fcp": 2992,
+     "skeleton": null,
+     "real": 2949,
+     "readable": 2949,
+     "lcp": 3016,
+     "lcpElement": "p \"See what your salary really gets you aft\""
+    }
+   ],
+   "median": {
+    "fp": 1580,
+    "fcp": 2992,
+    "skeleton": null,
+    "real": 2949,
+    "readable": 2949,
+    "lcp": 3016
+   }
+  },
+  "returning": {
+   "runs": [
+    {
+     "run": 1,
+     "fp": 1664,
+     "fcp": 3112,
+     "skeleton": null,
+     "real": 3050,
+     "readable": 3050,
+     "lcp": 3464,
+     "lcpElement": "p \"You can survive on this — but barely. Ab\""
+    }
+   ],
+   "median": {
+    "fp": 1664,
+    "fcp": 3112,
+    "skeleton": null,
+    "real": 3050,
+    "readable": 3050,
+    "lcp": 3464
+   }
+  }
+ }
+}

@@ -1,0 +1,7330 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "engineVersion": "1.3.0",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "states": {
+  "empty": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 54.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 12.6,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "7 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "p.mt-3.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See what your salary really gets you aft"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Essentials (food, utilities, transit, ph"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "These are estimates for educational purp"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 4 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 4,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "2 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (1 via the spacing exception).",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.text-sm.text-navy",
+           "tag": "button",
+           "w": 214,
+           "h": 20,
+           "sample": "Add monthly debts (optional)",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 17.6,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "8 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 8,
+         "examples": [
+          {
+           "sig": "p.hidden.sm:block",
+           "px": 12,
+           "sample": "No data stored. All calculations run loc"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Your base offer before taxes — what's in"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Where you'll be living and working."
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "px": 12,
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Essentials (food, utilities, transit, ph"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "These are estimates for educational purp"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "9 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 9,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Annual salary"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "City"
+          },
+          {
+           "sig": "button.text-sm.text-navy",
+           "px": 14,
+           "sample": "Add monthly debts (optional)"
+          },
+          {
+           "sig": "button.w-full.py-4",
+           "px": 14,
+           "sample": "See my results"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "px": 12,
+           "sample": "How we calculate this →"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 2 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 2,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 18,
+       "skippedUnknownBg": 4,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 7,
+       "failures": [
+        {
+         "sig": "p.mt-3.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See what your salary really gets you aft"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 4,
+       "sizes": [
+        12,
+        14,
+        16,
+        36
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 8,
+       "smallBody": [
+        {
+         "sig": "p.hidden.sm:block",
+         "px": 12,
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Your base offer before taxes — what's in"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Where you'll be living and working."
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "px": 12,
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 9,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Annual salary"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "City"
+        },
+        {
+         "sig": "button.text-sm.text-navy",
+         "px": 14,
+         "sample": "Add monthly debts (optional)"
+        },
+        {
+         "sig": "button.w-full.py-4",
+         "px": 14,
+         "sample": "See my results"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "px": 12,
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Rent"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Essentials"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 1,
+       "headingCount": 1,
+       "skippedRenderContext": 2
+      },
+      "shape": {
+       "distinctRadii": 3,
+       "radii": [
+        8,
+        12,
+        16
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": []
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 5,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 2,
+       "smallTargets": [
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.text-sm.text-navy",
+         "tag": "button",
+         "w": 214,
+         "h": 20,
+         "sample": "Add monthly debts (optional)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 2,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 5,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:43:28.764Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 46,
+      "elementsTotal": 58,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 14.4
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "CCense",
+       "selector": "a.flex",
+       "changes": false
+      },
+      {
+       "label": "Add monthly debts (optional)",
+       "selector": "button.text-sm",
+       "changes": true
+      },
+      {
+       "label": "See my results",
+       "selector": "button.w-full",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2252
+   },
+   "mobile": {
+    "report": {
+     "score": 54.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 12.6,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "7 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "p.mt-3.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See what your salary really gets you aft"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Essentials (food, utilities, transit, ph"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "These are estimates for educational purp"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 3 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 3,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "2 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (1 via the spacing exception).",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.text-sm.text-navy",
+           "tag": "button",
+           "w": 214,
+           "h": 20,
+           "sample": "Add monthly debts (optional)",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 17.6,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "7 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Your base offer before taxes — what's in"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Where you'll be living and working."
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "px": 12,
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Essentials (food, utilities, transit, ph"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "These are estimates for educational purp"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "9 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 9,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Annual salary"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "City"
+          },
+          {
+           "sig": "button.text-sm.text-navy",
+           "px": 14,
+           "sample": "Add monthly debts (optional)"
+          },
+          {
+           "sig": "button.w-full.py-4",
+           "px": 14,
+           "sample": "See my results"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "px": 12,
+           "sample": "How we calculate this →"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 2 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 2,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 18,
+       "skippedUnknownBg": 3,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 7,
+       "failures": [
+        {
+         "sig": "p.mt-3.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See what your salary really gets you aft"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 4,
+       "sizes": [
+        12,
+        14,
+        16,
+        30
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 7,
+       "smallBody": [
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Your base offer before taxes — what's in"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Where you'll be living and working."
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "px": 12,
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 9,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Annual salary"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "City"
+        },
+        {
+         "sig": "button.text-sm.text-navy",
+         "px": 14,
+         "sample": "Add monthly debts (optional)"
+        },
+        {
+         "sig": "button.w-full.py-4",
+         "px": 14,
+         "sample": "See my results"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "px": 12,
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Rent"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Essentials"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 1,
+       "headingCount": 1,
+       "skippedRenderContext": 2
+      },
+      "shape": {
+       "distinctRadii": 3,
+       "radii": [
+        8,
+        12,
+        16
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": []
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 5,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 2,
+       "smallTargets": [
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.text-sm.text-navy",
+         "tag": "button",
+         "w": 214,
+         "h": 20,
+         "sample": "Add monthly debts (optional)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 2,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 5,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:43:37.966Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 45,
+      "elementsTotal": 58,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 8
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2225
+   },
+   "designScore": 55,
+   "designGrade": "F",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 42,
+    "consistency": 88,
+    "motion": 32,
+    "performance": 66
+   }
+  },
+  "debts-open": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 54.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 12.6,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.mt-3.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See what your salary really gets you aft"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Adding fixed monthly costs makes your re"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "From your loan servicer or Loan Lab. Lea"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Car payment, subscriptions, gym, etc. Ex"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 4 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 4,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "1 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum.",
+         "count": 1,
+         "examples": [
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 17.6,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "11 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 11,
+         "examples": [
+          {
+           "sig": "p.hidden.sm:block",
+           "px": 12,
+           "sample": "No data stored. All calculations run loc"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Your base offer before taxes — what's in"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Where you'll be living and working."
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Adding fixed monthly costs makes your re"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "From your loan servicer or Loan Lab. Lea"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Car payment, subscriptions, gym, etc. Ex"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "px": 12,
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "10 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Annual salary"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "City"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Monthly student loan payment"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Other fixed monthly costs"
+          },
+          {
+           "sig": "button.w-full.py-4",
+           "px": 14,
+           "sample": "See my results"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 22,
+       "skippedUnknownBg": 4,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 10,
+       "failures": [
+        {
+         "sig": "p.mt-3.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See what your salary really gets you aft"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Adding fixed monthly costs makes your re"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "From your loan servicer or Loan Lab. Lea"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Car payment, subscriptions, gym, etc. Ex"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 4,
+       "sizes": [
+        12,
+        14,
+        16,
+        36
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 11,
+       "smallBody": [
+        {
+         "sig": "p.hidden.sm:block",
+         "px": 12,
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Your base offer before taxes — what's in"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Where you'll be living and working."
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Adding fixed monthly costs makes your re"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "From your loan servicer or Loan Lab. Lea"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Car payment, subscriptions, gym, etc. Ex"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "px": 12,
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 10,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Annual salary"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "City"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Monthly student loan payment"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Other fixed monthly costs"
+        },
+        {
+         "sig": "button.w-full.py-4",
+         "px": 14,
+         "sample": "See my results"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "px": 12,
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Rent"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Essentials"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 1,
+       "headingCount": 1,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 3,
+       "radii": [
+        8,
+        12,
+        16
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": []
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 6,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 1,
+       "smallTargets": [
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 1,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 6,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:43:45.166Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 56,
+      "elementsTotal": 70,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 6.8
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "CCense",
+       "selector": "a.flex",
+       "changes": false
+      },
+      {
+       "label": "See my results",
+       "selector": "button.w-full",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2237
+   },
+   "mobile": {
+    "report": {
+     "score": 54.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 12.6,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.mt-3.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See what your salary really gets you aft"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Adding fixed monthly costs makes your re"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "From your loan servicer or Loan Lab. Lea"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Car payment, subscriptions, gym, etc. Ex"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 3 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 3,
+         "skippedUnparseable": 0,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "1 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum.",
+         "count": 1,
+         "examples": [
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 17.6,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "10 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Your base offer before taxes — what's in"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Where you'll be living and working."
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Adding fixed monthly costs makes your re"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "From your loan servicer or Loan Lab. Lea"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Car payment, subscriptions, gym, etc. Ex"
+          },
+          {
+           "sig": "p.text-xs.text-slate-400",
+           "px": 12,
+           "sample": "No signup. No data stored. 2025 tax brac"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "10 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Annual salary"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "City"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Monthly student loan payment"
+          },
+          {
+           "sig": "label.block.text-sm",
+           "px": 14,
+           "sample": "Other fixed monthly costs"
+          },
+          {
+           "sig": "button.w-full.py-4",
+           "px": 14,
+           "sample": "See my results"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 22,
+       "skippedUnknownBg": 3,
+       "skippedUnparseable": 0,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 10,
+       "failures": [
+        {
+         "sig": "p.mt-3.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See what your salary really gets you aft"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Adding fixed monthly costs makes your re"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "From your loan servicer or Loan Lab. Lea"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Car payment, subscriptions, gym, etc. Ex"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 4,
+       "sizes": [
+        12,
+        14,
+        16,
+        30
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 10,
+       "smallBody": [
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Your base offer before taxes — what's in"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Where you'll be living and working."
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Adding fixed monthly costs makes your re"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "From your loan servicer or Loan Lab. Lea"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Car payment, subscriptions, gym, etc. Ex"
+        },
+        {
+         "sig": "p.text-xs.text-slate-400",
+         "px": 12,
+         "sample": "No signup. No data stored. 2025 tax brac"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 10,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Annual salary"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "City"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Monthly student loan payment"
+        },
+        {
+         "sig": "label.block.text-sm",
+         "px": 14,
+         "sample": "Other fixed monthly costs"
+        },
+        {
+         "sig": "button.w-full.py-4",
+         "px": 14,
+         "sample": "See my results"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "px": 12,
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Rent"
+        },
+        {
+         "sig": "strong.text-slate-700",
+         "px": 12,
+         "sample": "Essentials"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 1,
+       "headingCount": 1,
+       "skippedRenderContext": 0
+      },
+      "shape": {
+       "distinctRadii": 3,
+       "radii": [
+        8,
+        12,
+        16
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": []
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 6,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 1,
+       "smallTargets": [
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 0,
+       "belowComfortCount": 1,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 6,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:43:54.188Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 55,
+      "elementsTotal": 70,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 5.9
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2229
+   },
+   "designScore": 55,
+   "designGrade": "F",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 42,
+    "consistency": 88,
+    "motion": 32,
+    "performance": 66
+   }
+  },
+  "results": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 39.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 0,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Single filer, 2025 tax brackets, rent as"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See which job actually leaves you with m"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "← Start over"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 15 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 12,
+         "skippedUnparseable": 3,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "error",
+         "ruleId": "tap-target",
+         "message": "2 pointer target(s) below the WCAG 2.5.8 minimum of 24×24px at 1440px wide (2 undersized in both axes).",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          }
+         ],
+         "scope": "element",
+         "wcagCriterion": "2.5.8",
+         "required": "≥24×24px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "8 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (5 via the spacing exception).",
+         "count": 8,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "tag": "button",
+           "w": 84,
+           "h": 20,
+           "sample": "← Start over",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,279/mo",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 83,
+           "h": 24,
+           "sample": "$2,700",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 83,
+           "h": 24,
+           "sample": "$1,416",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 133,
+           "h": 16,
+           "sample": "Copy shareable link",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "heading-order",
+         "message": "1 heading-order jump(s) (e.g. h2 -> h4).",
+         "count": 1,
+         "examples": [
+          {
+           "sig": "h3.text-sm.font-bold",
+           "from": 1,
+           "to": 3,
+           "sample": "Where the money goes"
+          }
+         ],
+         "scope": "element"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "10 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.hidden.sm:block",
+           "px": 12,
+           "sample": "No data stored. All calculations run loc"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "Single filer, 2025 tax brackets, rent as"
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "After all your essentials:"
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "You can survive on this — but barely. Ab"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "See which job actually leaves you with m"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "25 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 25,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "px": 12,
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "span.text-xs.font-bold",
+           "px": 12,
+           "sample": "Living lean"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "left over each month"
+          },
+          {
+           "sig": "span.text-sm.font-semibold",
+           "px": 14,
+           "sample": "Take-home pay"
+          },
+          {
+           "sig": "span.tabular.font-bold",
+           "px": 14,
+           "sample": "$4,279/mo"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 6 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 6,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "button.inline-flex.items-center",
+           "value": "6px · 2 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 27,
+       "skippedUnknownBg": 12,
+       "skippedUnparseable": 3,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 10,
+       "failures": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Single filer, 2025 tax brackets, rent as"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See which job actually leaves you with m"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "← Start over"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 5,
+       "sizes": [
+        12,
+        14,
+        16,
+        30,
+        60
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 10,
+       "smallBody": [
+        {
+         "sig": "p.hidden.sm:block",
+         "px": 12,
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "Single filer, 2025 tax brackets, rent as"
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "After all your essentials:"
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "You can survive on this — but barely. Ab"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "See which job actually leaves you with m"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 25,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "px": 12,
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "span.text-xs.font-bold",
+         "px": 12,
+         "sample": "Living lean"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "left over each month"
+        },
+        {
+         "sig": "span.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "span.tabular.font-bold",
+         "px": 14,
+         "sample": "$4,279/mo"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Rent (1-bedroom in Boston)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,700"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Essentials (food, utilities, transit)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,416"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 6
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        8,
+        16,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 0,
+       "levels": 6,
+       "recipes": []
+      },
+      "states": {
+       "interactiveCount": 11,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 10,
+       "smallTargets": [
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "tag": "button",
+         "w": 84,
+         "h": 20,
+         "sample": "← Start over",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,279/mo",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$2,700",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,416",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 133,
+         "h": 16,
+         "sample": "Copy shareable link",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 2,
+       "belowComfortCount": 8,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 11,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 1,
+       "headingJumps": [
+        {
+         "sig": "h3.text-sm.font-bold",
+         "from": 1,
+         "to": 3,
+         "sample": "Where the money goes"
+        }
+       ],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:44:00.644Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 102,
+      "elementsTotal": 125,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 9
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "CCense",
+       "selector": "a.flex",
+       "changes": false
+      },
+      {
+       "label": "Copy shareable link",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "$4,279/mo",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "$2,700",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "View source",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "$1,416",
+       "selector": "button.inline-flex",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2239
+   },
+   "mobile": {
+    "report": {
+     "score": 39.7,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 0,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 10,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Single filer, 2025 tax brackets, rent as"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "See which job actually leaves you with m"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "← Start over"
+          },
+          {
+           "sig": "summary.cursor-pointer.text-xs",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "How we calculate this →"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 14 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 11,
+         "skippedUnparseable": 3,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "error",
+         "ruleId": "tap-target",
+         "message": "2 tap target(s) below the WCAG 2.5.8 minimum of 24×24px at 375px wide (2 undersized in both axes).",
+         "count": 2,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          }
+         ],
+         "scope": "element",
+         "wcagCriterion": "2.5.8",
+         "required": "≥24×24px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "7 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (4 via the spacing exception).",
+         "count": 7,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "tag": "button",
+           "w": 84,
+           "h": 20,
+           "sample": "← Start over",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,279/mo",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 83,
+           "h": 24,
+           "sample": "$2,700",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 83,
+           "h": 24,
+           "sample": "$1,416",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          },
+          {
+           "sig": "a.flex.items-center",
+           "tag": "a",
+           "w": 90,
+           "h": 32,
+           "sample": "CCense",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           }
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "heading-order",
+         "message": "1 heading-order jump(s) (e.g. h2 -> h4).",
+         "count": 1,
+         "examples": [
+          {
+           "sig": "h3.text-sm.font-bold",
+           "from": 1,
+           "to": 3,
+           "sample": "Where the money goes"
+          }
+         ],
+         "scope": "element"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "9 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 9,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "Single filer, 2025 tax brackets, rent as"
+          },
+          {
+           "sig": "p.mt-4.text-sm",
+           "px": 14,
+           "sample": "After all your essentials:"
+          },
+          {
+           "sig": "p.mt-5.text-sm",
+           "px": 14,
+           "sample": "You can survive on this — but barely. Ab"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "See which job actually leaves you with m"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Take-home payuses 2025 federal tax brack"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Rent uses median 1-bedroom rents as of N"
+          },
+          {
+           "sig": "p",
+           "px": 12,
+           "sample": "Essentials (food, utilities, transit, ph"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "25 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 25,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "px": 12,
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "span.text-xs.font-bold",
+           "px": 12,
+           "sample": "Living lean"
+          },
+          {
+           "sig": "p.mt-1.text-sm",
+           "px": 14,
+           "sample": "left over each month"
+          },
+          {
+           "sig": "span.text-sm.font-semibold",
+           "px": 14,
+           "sample": "Take-home pay"
+          },
+          {
+           "sig": "span.tabular.font-bold",
+           "px": 14,
+           "sample": "$4,279/mo"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 6 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 6,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "button.inline-flex.items-center",
+           "value": "6px · 2 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 27,
+       "skippedUnknownBg": 11,
+       "skippedUnparseable": 3,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 10,
+       "failures": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Single filer, 2025 tax brackets, rent as"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "See which job actually leaves you with m"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "← Start over"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 5,
+       "sizes": [
+        12,
+        14,
+        16,
+        24,
+        48
+       ],
+       "distinctLineHeights": 5,
+       "smallBodyCount": 9,
+       "smallBody": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "Single filer, 2025 tax brackets, rent as"
+        },
+        {
+         "sig": "p.mt-4.text-sm",
+         "px": 14,
+         "sample": "After all your essentials:"
+        },
+        {
+         "sig": "p.mt-5.text-sm",
+         "px": 14,
+         "sample": "You can survive on this — but barely. Ab"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "See which job actually leaves you with m"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 25,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "px": 12,
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "span.text-xs.font-bold",
+         "px": 12,
+         "sample": "Living lean"
+        },
+        {
+         "sig": "p.mt-1.text-sm",
+         "px": 14,
+         "sample": "left over each month"
+        },
+        {
+         "sig": "span.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "span.tabular.font-bold",
+         "px": 14,
+         "sample": "$4,279/mo"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Rent (1-bedroom in Boston)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,700"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Essentials (food, utilities, transit)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,416"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 2,
+       "skippedRenderContext": 6
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        8,
+        16,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 0,
+       "levels": 6,
+       "recipes": []
+      },
+      "states": {
+       "interactiveCount": 11,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 9,
+       "smallTargets": [
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "tag": "button",
+         "w": 84,
+         "h": 20,
+         "sample": "← Start over",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,279/mo",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$2,700",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,416",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 2,
+       "belowComfortCount": 7,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 11,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 1,
+       "headingJumps": [
+        {
+         "sig": "h3.text-sm.font-bold",
+         "from": 1,
+         "to": 3,
+         "sample": "Where the money goes"
+        }
+       ],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:44:10.833Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 101,
+      "elementsTotal": 125,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 12.4
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2440
+   },
+   "designScore": 40,
+   "designGrade": "F",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 0,
+    "consistency": 76,
+    "motion": 32,
+    "performance": 66
+   }
+  },
+  "comparison": {
+   "engineVersion": "1.3.0",
+   "desktop": {
+    "report": {
+     "score": 42.1,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 2.4,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "14 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 14,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Boston vs. New York City, 2025 tax brack"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.3,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer A"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.3,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer B"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.57,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer A — Left over each month"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.57,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer B — Left over each month"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 22 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 15,
+         "skippedUnparseable": 7,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "error",
+         "ruleId": "tap-target",
+         "message": "4 pointer target(s) below the WCAG 2.5.8 minimum of 24×24px at 1440px wide (4 undersized in both axes).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "bothAxes": true
+          }
+         ],
+         "scope": "element",
+         "wcagCriterion": "2.5.8",
+         "required": "≥24×24px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "14 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide — they clear the WCAG 2.5.8 24px minimum (9 via the spacing exception).",
+         "count": 14,
+         "examples": [
+          {
+           "sig": "button.absolute.top-3",
+           "tag": "button",
+           "w": 16,
+           "h": 16,
+           "sample": "Remove this offer",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "tag": "button",
+           "w": 84,
+           "h": 20,
+           "sample": "← Start over",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,279/mo",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,475/mo",
+           "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1,
+            "isMobile": false,
+            "w": 1440,
+            "h": 900
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "14 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 14,
+         "examples": [
+          {
+           "sig": "p.hidden.sm:block",
+           "px": 12,
+           "sample": "No data stored. All calculations run loc"
+          },
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "Boston vs. New York City, 2025 tax brack"
+          },
+          {
+           "sig": "p.mt-3.text-sm",
+           "px": 14,
+           "sample": "Boston at $65,000 beats New York City at"
+          },
+          {
+           "sig": "div.absolute.-top-2.5",
+           "px": 10,
+           "sample": "Wins"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "px": 10,
+           "sample": "Offer A"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "px": 10,
+           "sample": "Offer B"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "42 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 42,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "px": 12,
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-xs.font-bold",
+           "px": 12,
+           "sample": "The verdict"
+          },
+          {
+           "sig": "span.text-sm.font-semibold",
+           "px": 14,
+           "sample": "Take-home pay"
+          },
+          {
+           "sig": "span.tabular.font-bold",
+           "px": 14,
+           "sample": "$4,279/mo"
+          },
+          {
+           "sig": "span.text-sm.text-slate-600",
+           "px": 14,
+           "sample": "Rent (1-bedroom in Boston)"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 4 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy. 2 display-size node(s) at 32px+ not scored against the 1.25 body floor — M3's own display roles are prescribed below it (36/44, 45/52, 57/64), so they are judged against 1.1.",
+         "skippedRenderContext": 4,
+         "displayLeadingRelaxed": 2,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "contributors": [
+          {
+           "selector": "button.inline-flex.items-center",
+           "value": "6px · 4 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 44,
+       "skippedUnknownBg": 15,
+       "skippedUnparseable": 7,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 14,
+       "failures": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Boston vs. New York City, 2025 tax brack"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.3,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer A"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.3,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer B"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer A — Left over each month"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer B — Left over each month"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "← Start over"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 6,
+       "sizes": [
+        10,
+        12,
+        14,
+        16,
+        30,
+        36
+       ],
+       "distinctLineHeights": 7,
+       "smallBodyCount": 14,
+       "smallBody": [
+        {
+         "sig": "p.hidden.sm:block",
+         "px": 12,
+         "sample": "No data stored. All calculations run loc"
+        },
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "Boston vs. New York City, 2025 tax brack"
+        },
+        {
+         "sig": "p.mt-3.text-sm",
+         "px": 14,
+         "sample": "Boston at $65,000 beats New York City at"
+        },
+        {
+         "sig": "div.absolute.-top-2.5",
+         "px": 10,
+         "sample": "Wins"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer A"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer B"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer A — Left over each month"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer B — Left over each month"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 42,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "px": 12,
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-xs.font-bold",
+         "px": 12,
+         "sample": "The verdict"
+        },
+        {
+         "sig": "span.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "span.tabular.font-bold",
+         "px": 14,
+         "sample": "$4,279/mo"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Rent (1-bedroom in Boston)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,700"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Essentials (food, utilities, transit)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,416"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Student loan payment"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 2,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 4,
+       "skippedRenderContext": 4
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        8,
+        16,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(83.9203 -48.7124 13.8849) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 18,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 18,
+       "smallTargets": [
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.absolute.top-3",
+         "tag": "button",
+         "w": 16,
+         "h": 16,
+         "sample": "Remove this offer",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "tag": "button",
+         "w": 84,
+         "h": 20,
+         "sample": "← Start over",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,279/mo",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,475/mo",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$2,700",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,416",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$3,200",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,560",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 133,
+         "h": 16,
+         "sample": "Copy shareable link",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1,
+          "isMobile": false,
+          "w": 1440,
+          "h": 900
+         }
+        }
+       ],
+       "undersizedCount": 4,
+       "belowComfortCount": 14,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 18,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/?q=eyJhIjp7InNhbGFyeSI6NjUwMDAsImNpdHlJZCI6ImJvc3Rvbi1tYSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfSwiYiI6eyJzYWxhcnkiOjcyMDAwLCJjaXR5SWQiOiJuZXcteW9yay1ueSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfX0%3D",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:44:19.018Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 1440,
+       "height": 900,
+       "dpr": 1,
+       "isMobile": false,
+       "w": 1440,
+       "h": 900
+      },
+      "siteType": "saas",
+      "elementsScanned": 151,
+      "elementsTotal": 188,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 8.7
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "hoverProbe": [
+      {
+       "label": "CCense",
+       "selector": "a.flex",
+       "changes": false
+      },
+      {
+       "label": "Copy shareable link",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "$4,279/mo",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "$2,700",
+       "selector": "button.inline-flex",
+       "changes": true
+      },
+      {
+       "label": "View source",
+       "selector": "button.inline-flex",
+       "changes": false
+      },
+      {
+       "label": "$1,416",
+       "selector": "button.inline-flex",
+       "changes": true
+      }
+     ],
+     "reducedMotion": {
+      "emulated": true,
+      "snapshot": {
+       "count": 0,
+       "running": 0,
+       "anims": []
+      },
+      "ungatedCount": 0
+     }
+    },
+    "durationMs": 2232
+   },
+   "mobile": {
+    "report": {
+     "score": 42.1,
+     "grade": "F",
+     "buckets": {
+      "accessibility": {
+       "score": 2.4,
+       "max": 30,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "contrast-fail",
+         "message": "14 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+         "count": 14,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "ratio": 4.31,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Boston vs. New York City, 2025 tax brack"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "ratio": 2.45,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.3,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer A"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.3,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer B"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "ratio": 4.04,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(92, 127, 95)",
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.57,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer A — Left over each month"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "ratio": 2.57,
+           "threshold": 4.5,
+           "large": false,
+           "fg": "rgb(140, 169, 142)",
+           "sample": "Offer B — Left over each month"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "wcagCriterion": "1.4.3",
+         "required": "≥4.5:1 (3:1 large)"
+        },
+        {
+         "severity": "info",
+         "ruleId": "contrast-coverage",
+         "message": "Contrast skipped for 21 element(s) (background images/gradients, colors not resolvable to sRGB, or <svg>/<canvas> artwork) — check those manually.",
+         "skippedUnknownBg": 14,
+         "skippedUnparseable": 7,
+         "skippedRenderContext": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "error",
+         "ruleId": "tap-target",
+         "message": "4 tap target(s) below the WCAG 2.5.8 minimum of 24×24px at 375px wide (4 undersized in both axes).",
+         "count": 4,
+         "examples": [
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 12,
+           "h": 12,
+           "sample": "View source",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "bothAxes": true
+          }
+         ],
+         "scope": "element",
+         "wcagCriterion": "2.5.8",
+         "required": "≥24×24px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "warn",
+         "ruleId": "tap-target-comfort",
+         "message": "13 tap target(s) smaller than M3's comfortable 48×48px at 375px wide — they clear the WCAG 2.5.8 24px minimum (8 via the spacing exception).",
+         "count": 13,
+         "examples": [
+          {
+           "sig": "button.absolute.top-3",
+           "tag": "button",
+           "w": 16,
+           "h": 16,
+           "sample": "Remove this offer",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 36,
+           "h": 20,
+           "sample": "$0",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.text-sm.text-slate-400",
+           "tag": "button",
+           "w": 84,
+           "h": 20,
+           "sample": "← Start over",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,279/mo",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "tag": "button",
+           "w": 92,
+           "h": 20,
+           "sample": "$4,475/mo",
+           "viewport": {
+            "width": 375,
+            "height": 812,
+            "dpr": 1,
+            "isMobile": true,
+            "w": 375,
+            "h": 812
+           },
+           "exception": "spacing"
+          }
+         ],
+         "scope": "element",
+         "required": "≥48×48px",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "wcagCriterion": "2.5.8"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "missing-landmarks",
+         "message": "Missing landmark(s): nav.",
+         "landmarks": [
+          "nav"
+         ],
+         "scope": "page",
+         "contributors": [
+          {
+           "selector": "nav, [role=\"navigation\"]",
+           "value": "no matching element"
+          }
+         ]
+        }
+       ]
+      },
+      "consistency": {
+       "score": 15.2,
+       "max": 20,
+       "findings": [
+        {
+         "severity": "warn",
+         "ruleId": "small-body-text",
+         "message": "13 reading-copy text node(s) below 16px (or any text below 11px).",
+         "count": 13,
+         "examples": [
+          {
+           "sig": "p.text-sm.text-slate-500",
+           "px": 14,
+           "sample": "Boston vs. New York City, 2025 tax brack"
+          },
+          {
+           "sig": "p.mt-3.text-sm",
+           "px": 14,
+           "sample": "Boston at $65,000 beats New York City at"
+          },
+          {
+           "sig": "div.absolute.-top-2.5",
+           "px": 10,
+           "sample": "Wins"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "px": 10,
+           "sample": "Offer A"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "px": 10,
+           "sample": "Offer B"
+          },
+          {
+           "sig": "p.text-xs.text-slate-500",
+           "px": 12,
+           "sample": "Click any number with a pencil to overri"
+          },
+          {
+           "sig": "p.text-[10px].font-bold",
+           "px": 10,
+           "sample": "Offer A — Left over each month"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "required": "≥16px (≥11px absolute)",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "small-ui-labels",
+         "message": "42 UI label(s) at 12-15.9px — legitimate M3 label roles (not scored); verify their tap targets meet 48px.",
+         "count": 42,
+         "examples": [
+          {
+           "sig": "span.text-white.font-bold",
+           "px": 14,
+           "sample": "C"
+          },
+          {
+           "sig": "button.inline-flex.items-center",
+           "px": 12,
+           "sample": "Copy shareable link"
+          },
+          {
+           "sig": "p.text-xs.font-bold",
+           "px": 12,
+           "sample": "The verdict"
+          },
+          {
+           "sig": "span.text-sm.font-semibold",
+           "px": 14,
+           "sample": "Take-home pay"
+          },
+          {
+           "sig": "span.tabular.font-bold",
+           "px": 14,
+           "sample": "$4,279/mo"
+          },
+          {
+           "sig": "span.text-sm.text-slate-600",
+           "px": 14,
+           "sample": "Rent (1-bedroom in Boston)"
+          }
+         ],
+         "scope": "element",
+         "renderContext": "dom",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "severity": "info",
+         "ruleId": "typography-coverage",
+         "message": "Typography skipped for 4 node(s) inside <svg>/<canvas> artwork — sign lettering, chart labels and diagram callouts are not reading copy.",
+         "skippedRenderContext": 4,
+         "displayLeadingRelaxed": 0,
+         "formattedBlocksSkipped": 0,
+         "scope": "page"
+        },
+        {
+         "severity": "warn",
+         "ruleId": "radius-off-scale",
+         "message": "1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+         "values": [
+          6
+         ],
+         "scope": "page",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "contributors": [
+          {
+           "selector": "button.inline-flex.items-center",
+           "value": "6px · 4 node(s)"
+          }
+         ]
+        }
+       ]
+      },
+      "motion": {
+       "score": 8,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "reduced-motion-missing",
+         "message": "No @media (prefers-reduced-motion: reduce) rule found — motion is not gated for reduced-motion users.",
+         "scope": "page",
+         "wcagCriterion": "2.3.3",
+         "contributors": [
+          {
+           "selector": "@media (prefers-reduced-motion: reduce)",
+           "value": "no rule found"
+          }
+         ]
+        },
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element"
+        }
+       ]
+      },
+      "performance": {
+       "score": 16.5,
+       "max": 25,
+       "findings": [
+        {
+         "severity": "error",
+         "ruleId": "layout-animated",
+         "message": "1 transition(s) animate layout props (width/height/top/left/margin) — animate transform/opacity instead (jank).",
+         "examples": [
+          {
+           "selector": ".transition-all",
+           "sig": ".transition-all",
+           "props": [
+            "all (may hit layout props)"
+           ],
+           "kind": "transition"
+          }
+         ],
+         "scope": "element",
+         "reusedFrom": "motion"
+        }
+       ]
+      }
+     },
+     "sections": {
+      "color": {
+       "sampled": 44,
+       "skippedUnknownBg": 14,
+       "skippedUnparseable": 7,
+       "skippedRenderContext": 0,
+       "distinctTextColors": 7,
+       "failureCount": 14,
+       "failures": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Boston vs. New York City, 2025 tax brack"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.3,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer A"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.3,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer B"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "ratio": 4.04,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer A — Left over each month"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "ratio": 2.57,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "Offer B — Left over each month"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "← Start over"
+        },
+        {
+         "sig": "summary.cursor-pointer.text-xs",
+         "ratio": 2.45,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(140, 169, 142)",
+         "sample": "How we calculate this →"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "ratio": 4.31,
+         "threshold": 4.5,
+         "large": false,
+         "fg": "rgb(92, 127, 95)",
+         "sample": "These are estimates for educational purp"
+        }
+       ]
+      },
+      "typography": {
+       "distinctFamilies": 1,
+       "families": [
+        "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+       ],
+       "distinctSizes": 6,
+       "sizes": [
+        10,
+        12,
+        14,
+        16,
+        24,
+        30
+       ],
+       "distinctLineHeights": 6,
+       "smallBodyCount": 13,
+       "smallBody": [
+        {
+         "sig": "p.text-sm.text-slate-500",
+         "px": 14,
+         "sample": "Boston vs. New York City, 2025 tax brack"
+        },
+        {
+         "sig": "p.mt-3.text-sm",
+         "px": 14,
+         "sample": "Boston at $65,000 beats New York City at"
+        },
+        {
+         "sig": "div.absolute.-top-2.5",
+         "px": 10,
+         "sample": "Wins"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer A"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer B"
+        },
+        {
+         "sig": "p.text-xs.text-slate-500",
+         "px": 12,
+         "sample": "Click any number with a pencil to overri"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer A — Left over each month"
+        },
+        {
+         "sig": "p.text-[10px].font-bold",
+         "px": 10,
+         "sample": "Offer B — Left over each month"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Take-home payuses 2025 federal tax brack"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Rent uses median 1-bedroom rents as of N"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "Essentials (food, utilities, transit, ph"
+        },
+        {
+         "sig": "p",
+         "px": 12,
+         "sample": "These are estimates for educational purp"
+        }
+       ],
+       "smallLabelCount": 42,
+       "smallLabels": [
+        {
+         "sig": "span.text-white.font-bold",
+         "px": 14,
+         "sample": "C"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "px": 12,
+         "sample": "Copy shareable link"
+        },
+        {
+         "sig": "p.text-xs.font-bold",
+         "px": 12,
+         "sample": "The verdict"
+        },
+        {
+         "sig": "span.text-sm.font-semibold",
+         "px": 14,
+         "sample": "Take-home pay"
+        },
+        {
+         "sig": "span.tabular.font-bold",
+         "px": 14,
+         "sample": "$4,279/mo"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Rent (1-bedroom in Boston)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$2,700"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Essentials (food, utilities, transit)"
+        },
+        {
+         "sig": "span.tabular.font-semibold",
+         "px": 14,
+         "sample": "$1,416"
+        },
+        {
+         "sig": "span.sr-only",
+         "px": 14,
+         "sample": "View source"
+        },
+        {
+         "sig": "span.text-sm.text-slate-600",
+         "px": 14,
+         "sample": "Student loan payment"
+        }
+       ],
+       "tightLeadingCount": 0,
+       "tightLeading": [],
+       "displayLeadingRelaxed": 0,
+       "formattedBlocksSkipped": 0,
+       "distinctHeadingSizes": 2,
+       "headingCount": 4,
+       "skippedRenderContext": 4
+      },
+      "shape": {
+       "distinctRadii": 4,
+       "radii": [
+        6,
+        8,
+        16,
+        9999
+       ],
+       "scale": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        28,
+        9999
+       ],
+       "offScaleValues": [
+        6
+       ]
+      },
+      "elevation": {
+       "distinctShadows": 1,
+       "levels": 6,
+       "recipes": [
+        "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, lab(83.9203 -48.7124 13.8849) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+       ]
+      },
+      "states": {
+       "interactiveCount": 18,
+       "hasHoverRules": true,
+       "hasFocusVisibleRules": true,
+       "stylesheetsReachable": true,
+       "sheetsSkipped": 0,
+       "noVisibleFocusCount": 0,
+       "noVisibleFocusExamples": []
+      },
+      "motion": {
+       "hasReducedMotionQuery": false,
+       "reducedMotionStatus": "missing",
+       "activeAnimations": 0,
+       "tooShort": [],
+       "tooLong": [],
+       "linearMovement": [],
+       "easeInEntrance": [],
+       "layoutAnimated": [
+        {
+         "selector": ".transition-all",
+         "sig": ".transition-all",
+         "props": [
+          "all (may hit layout props)"
+         ],
+         "kind": "transition"
+        }
+       ],
+       "infiniteLoops": [],
+       "sheetsSkipped": 0
+      },
+      "a11yLayout": {
+       "smallTargetCount": 17,
+       "smallTargets": [
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 12,
+         "h": 12,
+         "sample": "View source",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "bothAxes": true
+        },
+        {
+         "sig": "button.absolute.top-3",
+         "tag": "button",
+         "w": 16,
+         "h": 16,
+         "sample": "Remove this offer",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 36,
+         "h": 20,
+         "sample": "$0",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.text-sm.text-slate-400",
+         "tag": "button",
+         "w": 84,
+         "h": 20,
+         "sample": "← Start over",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,279/mo",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 92,
+         "h": 20,
+         "sample": "$4,475/mo",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         },
+         "exception": "spacing"
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$2,700",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,416",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$3,200",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "button.inline-flex.items-center",
+         "tag": "button",
+         "w": 83,
+         "h": 24,
+         "sample": "$1,560",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        },
+        {
+         "sig": "a.flex.items-center",
+         "tag": "a",
+         "w": 90,
+         "h": 32,
+         "sample": "CCense",
+         "viewport": {
+          "width": 375,
+          "height": 812,
+          "dpr": 1,
+          "isMobile": true,
+          "w": 375,
+          "h": 812
+         }
+        }
+       ],
+       "undersizedCount": 4,
+       "belowComfortCount": 13,
+       "spacingExceptionChecked": true,
+       "spacingExceptionSkipReason": null,
+       "targetCount": 18,
+       "missingAltCount": 0,
+       "missingAlt": [],
+       "headingJumpCount": 0,
+       "headingJumps": [],
+       "h1Count": 1,
+       "missingLandmarks": [
+        "nav"
+       ]
+      }
+     },
+     "meta": {
+      "url": "https://offer-lab-ivory.vercel.app/?q=eyJhIjp7InNhbGFyeSI6NjUwMDAsImNpdHlJZCI6ImJvc3Rvbi1tYSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfSwiYiI6eyJzYWxhcnkiOjcyMDAwLCJjaXR5SWQiOiJuZXcteW9yay1ueSIsImxvYW5QYXltZW50IjowLCJvdGhlckZpeGVkIjowfX0%3D",
+      "title": "Offer Lab by Cense — Is your job offer enough to live on?",
+      "timestamp": "2026-11-15T17:44:29.991Z",
+      "contentFingerprint": "zzo47f",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "viewport": {
+       "width": 375,
+       "height": 812,
+       "dpr": 1,
+       "isMobile": true,
+       "w": 375,
+       "h": 812
+      },
+      "siteType": "saas",
+      "elementsScanned": 150,
+      "elementsTotal": 188,
+      "sampleCap": 1500,
+      "sampleCapped": false,
+      "sheetsSkipped": 0,
+      "openShadowRoots": 1,
+      "notes": [
+       "1 open shadow root(s) traversed. Closed shadow roots (if any) cannot be scanned."
+      ],
+      "durationMs": 12.8
+     }
+    },
+    "probes": {
+     "animationsAtLoad": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     },
+     "animationsAfterScroll": {
+      "count": 0,
+      "running": 0,
+      "anims": []
+     }
+    },
+    "durationMs": 2446
+   },
+   "designScore": 42,
+   "designGrade": "F",
+   "measuredViewports": [
+    "desktop",
+    "mobile"
+   ],
+   "buckets": {
+    "accessibility": 8,
+    "consistency": 76,
+    "motion": 32,
+    "performance": 66
+   }
+  }
+ },
+ "notAutoDetectable": [
+  "Spatial coherence — whether elements enter/exit from where they logically belong (a menu growing from its anchor, a sheet rising from the edge it docks to). The audit sees durations and easings, not spatial origin.",
+  "Clean fades — whether opacity transitions are free of mid-fade color shifts, banding, or double-compositing. Only a human eye (or pixel diff) can judge fade quality.",
+  "Jump cuts — abrupt state changes with no transition where one is expected (content swaps, route changes). Absence of animation is not itself in the DOM.",
+  "Unified direction — whether a group of elements animates along a consistent axis/choreography rather than each doing its own thing.",
+  "Perceived hierarchy / emphasis — whether motion draws the eye to the right thing at the right time.",
+  "Content-appropriate personality — expressive vs. standard scheme being the right call for the brand and context.",
+  "Interruptibility & continuity — whether in-flight animations respond gracefully to new input rather than snapping.",
+  "Real contrast under imagery/gradients — text over photos or gradient backgrounds (the audit samples solid computed backgrounds only).",
+  "Closed shadow roots — their internals are structurally unreachable from script and are not scanned."
+ ]
+}

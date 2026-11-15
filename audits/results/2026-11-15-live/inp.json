@@ -1,0 +1,347 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "quick": false,
+ "method": "Trusted input at a 412x823 viewport. Event Timing entries of 16 ms or more are bucketed by startTime into each step; main-thread time comes from CDP Performance.getMetrics. The page stops scrolling before every step, and each field is centred before it is typed into.",
+ "rows": [
+  {
+   "cpuThrottle": 1,
+   "loans": 1,
+   "run": 1,
+   "typeSalary5": {
+    "worstInteractionMs": 48,
+    "interactions": 3,
+    "taskMs": 82,
+    "scriptMs": 14,
+    "layoutMs": 1,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCity": {
+    "worstInteractionMs": 16,
+    "interactions": 3,
+    "taskMs": 23,
+    "scriptMs": 6,
+    "layoutMs": 3,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submit": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 37,
+    "scriptMs": 11,
+    "layoutMs": 2,
+    "styleMs": 5,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "editRent": {
+    "worstInteractionMs": 264,
+    "interactions": 5,
+    "taskMs": 50,
+    "scriptMs": 17,
+    "layoutMs": 2,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "openCompare": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 22,
+    "scriptMs": 4,
+    "layoutMs": 1,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "typeSalaryB5": {
+    "worstInteractionMs": 16,
+    "interactions": 2,
+    "taskMs": 17,
+    "scriptMs": 4,
+    "layoutMs": 1,
+    "styleMs": 2,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCityB": {
+    "worstInteractionMs": 16,
+    "interactions": 4,
+    "taskMs": 21,
+    "scriptMs": 5,
+    "layoutMs": 1,
+    "styleMs": 2,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submitCompare": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 38,
+    "scriptMs": 7,
+    "layoutMs": 9,
+    "styleMs": 5,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   }
+  },
+  {
+   "cpuThrottle": 1,
+   "loans": 1,
+   "run": 2,
+   "typeSalary5": {
+    "worstInteractionMs": 40,
+    "interactions": 3,
+    "taskMs": 50,
+    "scriptMs": 10,
+    "layoutMs": 1,
+    "styleMs": 1,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCity": {
+    "worstInteractionMs": 16,
+    "interactions": 5,
+    "taskMs": 17,
+    "scriptMs": 5,
+    "layoutMs": 1,
+    "styleMs": 2,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submit": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 35,
+    "scriptMs": 9,
+    "layoutMs": 3,
+    "styleMs": 6,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "editRent": {
+    "worstInteractionMs": 368,
+    "interactions": 5,
+    "taskMs": 24,
+    "scriptMs": 6,
+    "layoutMs": 2,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "openCompare": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 18,
+    "scriptMs": 4,
+    "layoutMs": 1,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "typeSalaryB5": {
+    "worstInteractionMs": 0,
+    "interactions": 0,
+    "taskMs": 16,
+    "scriptMs": 3,
+    "layoutMs": 1,
+    "styleMs": 2,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCityB": {
+    "worstInteractionMs": 16,
+    "interactions": 4,
+    "taskMs": 22,
+    "scriptMs": 5,
+    "layoutMs": 1,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submitCompare": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 39,
+    "scriptMs": 8,
+    "layoutMs": 6,
+    "styleMs": 5,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   }
+  },
+  {
+   "cpuThrottle": 4,
+   "loans": 1,
+   "run": 1,
+   "typeSalary5": {
+    "worstInteractionMs": 72,
+    "interactions": 3,
+    "taskMs": 106,
+    "scriptMs": 39,
+    "layoutMs": 4,
+    "styleMs": 4,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCity": {
+    "worstInteractionMs": 16,
+    "interactions": 5,
+    "taskMs": 93,
+    "scriptMs": 26,
+    "layoutMs": 5,
+    "styleMs": 9,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submit": {
+    "worstInteractionMs": 32,
+    "interactions": 1,
+    "taskMs": 182,
+    "scriptMs": 54,
+    "layoutMs": 24,
+    "styleMs": 26,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "editRent": {
+    "worstInteractionMs": 264,
+    "interactions": 6,
+    "taskMs": 64,
+    "scriptMs": 15,
+    "layoutMs": 7,
+    "styleMs": 8,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "openCompare": {
+    "worstInteractionMs": 24,
+    "interactions": 1,
+    "taskMs": 75,
+    "scriptMs": 15,
+    "layoutMs": 6,
+    "styleMs": 12,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "typeSalaryB5": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 56,
+    "scriptMs": 13,
+    "layoutMs": 4,
+    "styleMs": 3,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCityB": {
+    "worstInteractionMs": 16,
+    "interactions": 4,
+    "taskMs": 71,
+    "scriptMs": 14,
+    "layoutMs": 6,
+    "styleMs": 7,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submitCompare": {
+    "worstInteractionMs": 24,
+    "interactions": 1,
+    "taskMs": 128,
+    "scriptMs": 29,
+    "layoutMs": 24,
+    "styleMs": 15,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   }
+  },
+  {
+   "cpuThrottle": 4,
+   "loans": 1,
+   "run": 2,
+   "typeSalary5": {
+    "worstInteractionMs": 80,
+    "interactions": 3,
+    "taskMs": 145,
+    "scriptMs": 48,
+    "layoutMs": 4,
+    "styleMs": 5,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCity": {
+    "worstInteractionMs": 24,
+    "interactions": 4,
+    "taskMs": 57,
+    "scriptMs": 19,
+    "layoutMs": 8,
+    "styleMs": 5,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submit": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 121,
+    "scriptMs": 41,
+    "layoutMs": 10,
+    "styleMs": 21,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "editRent": {
+    "worstInteractionMs": 272,
+    "interactions": 6,
+    "taskMs": 75,
+    "scriptMs": 20,
+    "layoutMs": 4,
+    "styleMs": 9,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "openCompare": {
+    "worstInteractionMs": 24,
+    "interactions": 1,
+    "taskMs": 82,
+    "scriptMs": 15,
+    "layoutMs": 7,
+    "styleMs": 16,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "typeSalaryB5": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 60,
+    "scriptMs": 11,
+    "layoutMs": 5,
+    "styleMs": 6,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "pickCityB": {
+    "worstInteractionMs": 16,
+    "interactions": 4,
+    "taskMs": 87,
+    "scriptMs": 22,
+    "layoutMs": 6,
+    "styleMs": 8,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   },
+   "submitCompare": {
+    "worstInteractionMs": 16,
+    "interactions": 1,
+    "taskMs": 130,
+    "scriptMs": 26,
+    "layoutMs": 24,
+    "styleMs": 16,
+    "longTasks": 0,
+    "longTaskMaxMs": 0
+   }
+  }
+ ]
+}

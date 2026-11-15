@@ -1,0 +1,550 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "journey": "Offer Lab core journey",
+ "formFactors": {
+  "mobile": {
+   "steps": [
+    {
+     "name": "First load (empty)",
+     "gatherMode": "navigation",
+     "performance": 99,
+     "accessibility": 89,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 2103.273,
+     "fcp": 755.273,
+     "cls": 0,
+     "tbt": 70,
+     "si": 812.665,
+     "tti": 2103.273,
+     "inp": null,
+     "failing": [
+      {
+       "id": "largest-contentful-paint",
+       "title": "Largest Contentful Paint",
+       "score": 0.96,
+       "displayValue": "2.1 s"
+      },
+      {
+       "id": "total-blocking-time",
+       "title": "Total Blocking Time",
+       "score": 0.99,
+       "displayValue": "70 ms"
+      },
+      {
+       "id": "max-potential-fid",
+       "title": "Max Potential First Input Delay",
+       "score": 0.98,
+       "displayValue": "90 ms"
+      },
+      {
+       "id": "interactive",
+       "title": "Time to Interactive",
+       "score": 0.99,
+       "displayValue": "2.1 s"
+      },
+      {
+       "id": "aria-allowed-attr",
+       "title": "`[aria-*]` attributes do not match their roles",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 79 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 14 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0.5,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 79 KiB",
+       "numericValue": 450,
+       "numericUnit": "millisecond",
+       "savingsMs": 450,
+       "savingsBytes": 81270,
+       "items": [
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/00x_lhpv32.f6.js",
+         "wastedBytes": 31629,
+         "wastedMs": null,
+         "totalBytes": 65208
+        },
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/07lhk_q6pmm3r.js",
+         "wastedBytes": 27543,
+         "wastedMs": null,
+         "totalBytes": 72425
+        },
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/05y_wnopcz~9b.js",
+         "wastedBytes": 22098,
+         "wastedMs": null,
+         "totalBytes": 39846
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Enter an offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 47.043,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 3
+     }
+    },
+    {
+     "name": "Results",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 89,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "heading-order",
+       "title": "Heading elements are not in a sequentially-descending order",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "target-size",
+       "title": "Touch targets do not have sufficient size or spacing.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Override the rent",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 27.369,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 5
+     }
+    },
+    {
+     "name": "Compare a second offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 34.952,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 15
+     }
+    },
+    {
+     "name": "Comparison",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 91,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "target-size",
+       "title": "Touch targets do not have sufficient size or spacing.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "mobile",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  },
+  "desktop": {
+   "steps": [
+    {
+     "name": "First load (empty)",
+     "gatherMode": "navigation",
+     "performance": 100,
+     "accessibility": 89,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": 464.982,
+     "fcp": 225.982,
+     "cls": 0,
+     "tbt": 0,
+     "si": 235.609,
+     "tti": 464.982,
+     "inp": null,
+     "failing": [
+      {
+       "id": "aria-allowed-attr",
+       "title": "`[aria-*]` attributes do not match their roles",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "score": 0,
+       "displayValue": "Est savings of 80 KiB"
+      },
+      {
+       "id": "legacy-javascript-insight",
+       "title": "Legacy JavaScript",
+       "score": 0.5,
+       "displayValue": "Est savings of 14 KiB"
+      },
+      {
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0.5,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [
+      {
+       "id": "unused-javascript",
+       "title": "Reduce unused JavaScript",
+       "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+       "score": 0,
+       "scoreDisplayMode": "metricSavings",
+       "displayValue": "Est savings of 80 KiB",
+       "numericValue": 80,
+       "numericUnit": "millisecond",
+       "savingsMs": 80,
+       "savingsBytes": 81821,
+       "items": [
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/00x_lhpv32.f6.js",
+         "wastedBytes": 31629,
+         "wastedMs": null,
+         "totalBytes": 65208
+        },
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/07lhk_q6pmm3r.js",
+         "wastedBytes": 28094,
+         "wastedMs": null,
+         "totalBytes": 72425
+        },
+        {
+         "url": "https://offer-lab-ivory.vercel.app/_next/static/chunks/05y_wnopcz~9b.js",
+         "wastedBytes": 22098,
+         "wastedMs": null,
+         "totalBytes": 39846
+        }
+       ]
+      }
+     ],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Enter an offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 64.806,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 3
+     }
+    },
+    {
+     "name": "Results",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 89,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "heading-order",
+       "title": "Heading elements are not in a sequentially-descending order",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "target-size",
+       "title": "Touch targets do not have sufficient size or spacing.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    },
+    {
+     "name": "Override the rent",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 28.076,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 5
+     }
+    },
+    {
+     "name": "Compare a second offer",
+     "gatherMode": "timespan",
+     "performance": 100,
+     "accessibility": null,
+     "bestPractices": 100,
+     "seo": null,
+     "lcp": null,
+     "fcp": null,
+     "cls": 0,
+     "tbt": 0,
+     "si": null,
+     "tti": null,
+     "inp": 28.234,
+     "failing": [],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": {
+      "counted": 0,
+      "excluded": 4
+     }
+    },
+    {
+     "name": "Comparison",
+     "gatherMode": "snapshot",
+     "performance": 0,
+     "accessibility": 91,
+     "bestPractices": 100,
+     "seo": 100,
+     "lcp": null,
+     "fcp": null,
+     "cls": null,
+     "tbt": null,
+     "si": null,
+     "tti": null,
+     "inp": null,
+     "failing": [
+      {
+       "id": "color-contrast",
+       "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "label-content-name-mismatch",
+       "title": "Elements with visible text labels do not have matching accessible names.",
+       "score": 0,
+       "displayValue": null
+      },
+      {
+       "id": "target-size",
+       "title": "Touch targets do not have sufficient size or spacing.",
+       "score": 0,
+       "displayValue": null
+      }
+     ],
+     "opportunities": [],
+     "diagnostics": [],
+     "formFactor": "desktop",
+     "loadError": null,
+     "shiftEntries": null
+    }
+   ],
+   "warnings": []
+  }
+ }
+}

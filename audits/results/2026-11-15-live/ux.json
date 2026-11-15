@@ -1,0 +1,193 @@
+{
+ "url": "https://offer-lab-ivory.vercel.app/",
+ "siteType": "saas",
+ "viewports": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "dpr": 1,
+   "isMobile": false
+  },
+  "mobile": {
+   "width": 375,
+   "height": 812,
+   "dpr": 1,
+   "isMobile": true
+  }
+ },
+ "note": "Deterministic findings only. UX scores come from the AI review: it writes ux/ai/<tag>.json, then node lib/merge-ux.mjs <this folder>/ux scores and merges them.",
+ "screens": [
+  {
+   "tag": "empty-desktop",
+   "state": "empty",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 3,
+   "p2": 3,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 54.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 7 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 2 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 8 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "empty-mobile",
+   "state": "empty",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 3,
+   "p2": 3,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 54.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 7 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 2 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 7 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "debts-open-desktop",
+   "state": "debts-open",
+   "formFactor": "desktop",
+   "findings": 6,
+   "p1": 3,
+   "p2": 3,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 54.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 1 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 11 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "debts-open-mobile",
+   "state": "debts-open",
+   "formFactor": "mobile",
+   "findings": 6,
+   "p1": 3,
+   "p2": 3,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 54.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P2 1 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 10 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "results-desktop",
+   "state": "results",
+   "formFactor": "desktop",
+   "findings": 9,
+   "p1": 4,
+   "p2": 5,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 39.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P1 2 pointer target(s) below the WCAG 2.5.8 minimum of 24×24px at 1440px wide (2…",
+    "P2 8 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 1 heading-order jump(s) (e.g",
+    "P2 Missing landmark(s): nav.",
+    "P2 10 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "results-mobile",
+   "state": "results",
+   "formFactor": "mobile",
+   "findings": 9,
+   "p1": 4,
+   "p2": 5,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 39.7,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 10 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P1 2 tap target(s) below the WCAG 2.5.8 minimum of 24×24px at 375px wide (2 unde…",
+    "P2 7 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 1 heading-order jump(s) (e.g",
+    "P2 Missing landmark(s): nav.",
+    "P2 9 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  },
+  {
+   "tag": "comparison-desktop",
+   "state": "comparison",
+   "formFactor": "desktop",
+   "findings": 8,
+   "p1": 4,
+   "p2": 4,
+   "p3": 0,
+   "extras": 1,
+   "designScore": 42.1,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 14 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P1 4 pointer target(s) below the WCAG 2.5.8 minimum of 24×24px at 1440px wide (4…",
+    "P2 14 pointer target(s) smaller than M3's comfortable 48×48px at 1440px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 14 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)",
+    "P3 Primary controls show no hover feedback"
+   ]
+  },
+  {
+   "tag": "comparison-mobile",
+   "state": "comparison",
+   "formFactor": "mobile",
+   "findings": 8,
+   "p1": 4,
+   "p2": 4,
+   "p3": 0,
+   "extras": 0,
+   "designScore": 42.1,
+   "designGrade": "F",
+   "findingTitles": [
+    "P1 14 text node(s) below WCAG contrast (4.5:1 normal / 3:1 large).",
+    "P1 4 tap target(s) below the WCAG 2.5.8 minimum of 24×24px at 375px wide (4 unde…",
+    "P2 13 tap target(s) smaller than M3's comfortable 48×48px at 375px wide",
+    "P2 Missing landmark(s): nav.",
+    "P2 13 reading-copy text node(s) below 16px (or any text below 11px).",
+    "P2 1 border-radius value(s) off the 7-step scale (0/4/8/12/16/28/full).",
+    "P1 No @media (prefers-reduced-motion: reduce) rule found",
+    "P1 1 transition(s) animate layout props (width/height/top/left/margin)"
+   ]
+  }
+ ]
+}
