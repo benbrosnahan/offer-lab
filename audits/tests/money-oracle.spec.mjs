@@ -3,7 +3,7 @@
 // rounds to whole dollars, so each check allows $1.
 import { test, expect, openOffer, readFigures, readTaxLines, knownIssue } from './helpers.mjs';
 import {
-  PROFILES, expected, fica, mnTax, nycTaxNoCredits, coTax, caTaxHigh, RENT, essentials,
+  PROFILES, expected, fica, mnTax, nycTaxNoCredits, coTax, caTaxHigh, RENT, essentials, electricity,
 } from './support/offer-oracle.mjs';
 
 function near(shown, want, label) {
@@ -19,6 +19,11 @@ for (const p of PROFILES) {
     test('MONEY-02 rent matches Zumper October 2026', async ({ page }) => {
       await openOffer(page, offer);
       near((await readFigures(page)).rent, RENT[offer.cityId], 'rent');
+    });
+
+    test('MONEY-12 electricity matches the EIA average bill for the state', async ({ page }) => {
+      await openOffer(page, offer);
+      near((await readFigures(page)).electricity, electricity(offer.cityId), 'electricity');
     });
 
     test('MONEY-01 everyday costs match MIT for the county', async ({ page }) => {
@@ -85,10 +90,15 @@ test('MONEY-11 Arkansas low-income table: no tax at $14,000', async ({ page }) =
   expect(lines['Arkansas income tax']).toBe(0);
 });
 
-test('MONEY-12 utilities are counted somewhere', async ({ page }) => {
-  knownIssue('MONEY-12');
+test('MONEY-12 electricity is its own editable line and moves the answer', async ({ page }) => {
   await openOffer(page, PROFILES[0]);
-  await expect(page.locator('main')).toContainText(/Utilities\s*\$\d/);
+  const before = await readFigures(page);
+  await expect(page.locator('main')).toContainText('EIA 2024');
+  await page.locator('#electricity-a').fill('100');
+  const after = await readFigures(page);
+  expect(after.left - before.left).toBe(before.electricity - 100);
+  await page.getByRole('button', { name: /Use the EIA average/ }).click();
+  expect((await readFigures(page)).left).toBe(before.left);
 });
 
 test('MONEY-14 a tie is called even, not a win', async ({ page }) => {

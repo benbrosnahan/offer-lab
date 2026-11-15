@@ -220,13 +220,13 @@ function Roommates({ name, value, onChange }: { name: string; value: number; onC
           role="radiogroup"
           aria-labelledby={`${name}-label`}
           aria-describedby={`${name}-note`}
-          className="flex rounded-full bg-muted p-1 ring-1 ring-inset ring-border"
+          className="flex w-full rounded-full bg-muted p-1 ring-1 ring-inset ring-border sm:w-auto"
         >
           {ROOMMATE_OPTIONS.map((n) => (
             <label
               key={n}
               className={cn(
-                "relative inline-flex min-h-10 min-w-12 cursor-pointer items-center justify-center rounded-full px-3 text-base font-semibold transition-colors",
+                "relative inline-flex min-h-10 min-w-12 flex-1 cursor-pointer items-center justify-center rounded-full px-4 text-base font-semibold transition-colors",
                 "has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ring",
                 value === n ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
               )}
@@ -237,7 +237,7 @@ function Roommates({ name, value, onChange }: { name: string; value: number; onC
                 value={n}
                 checked={value === n}
                 onChange={() => onChange(n)}
-                className="sr-only"
+                className="absolute inset-0 m-0 cursor-pointer appearance-none rounded-full opacity-0"
               />
               {n === 0 ? "None" : n}
             </label>

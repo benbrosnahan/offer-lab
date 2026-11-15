@@ -20,6 +20,7 @@ const STATES = {
     await page.goto(shareLink({ a: A }));
     await page.getByText('Show the math').click();
   },
+  'results with roommates': async page => page.goto(shareLink({ a: { ...A, roommates: 2 } })),
   comparison: async page => page.goto(shareLink({ a: A, b: B })),
 };
 

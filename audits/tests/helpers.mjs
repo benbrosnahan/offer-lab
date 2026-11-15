@@ -43,6 +43,7 @@ export async function readFigures(page) {
   return {
     takeHome: grab(/Take-home pay\s*\$([\d,]+)/),
     rent: (await field('#rent-a')) ?? grab(/Rent \(1-bedroom[^)]*\)\s*\$([\d,]+)/),
+    electricity: await field('#electricity-a'),
     essentials: (await field('#essentials-a')) ?? grab(/Essentials[^\n]*\n?\s*\$([\d,]+)/),
     left: grab(/(?:Left|Short) each month\s*([+-]?[−-]?\$[\d,]+)/) ?? grab(/Left over each month\s*([+-]?[−-]?\$[\d,]+)/),
   };

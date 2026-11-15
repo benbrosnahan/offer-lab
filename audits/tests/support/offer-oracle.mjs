@@ -95,6 +95,40 @@ export const MIT = {
 };
 export const essentials = city => Math.round(MIT[city].reduce((a, b) => a + b, 0) / 12);
 
+// Electricity: EIA, Electric Sales, Revenue, and Average Price, Table 5A, 2024 (latest annual year; released
+// 2025-10-07), "Average Monthly Bill" for residential customers, by state.
+// https://www.eia.gov/electricity/sales_revenue_price/xls/table_5A.xlsx
+export const EIA_BILL = { MA: 167.19976, NY: 139.53219, TX: 163.72258, CA: 160.85994, OH: 135.16102, WA: 113.68201, MI: 119.30835 };
+export const STATE_OF = { 'boston-ma': 'MA', 'new-york-ny': 'NY', 'austin-tx': 'TX', 'san-francisco-ca': 'CA', 'columbus-oh': 'OH', 'seattle-wa': 'WA', 'ann-arbor-mi': 'MI' };
+
+// Shared rent. Zumper October 2026 report, median 2-bedroom (same table as RENT above).
+export const RENT_2BR = { 'boston-ma': 3500, 'new-york-ny': 5470, 'austin-tx': 1970, 'san-francisco-ca': 6320, 'columbus-oh': 1360, 'seattle-wa': 2700 };
+// Ann Arbor is not in that report: Zumper city page, 1-bedroom, 30 days to 2026-11-15.
+RENT['ann-arbor-mi'] = 1550;
+// HUD FY2026 Fair Market Rents (FY26_FMRs_revised.xlsx), 1 to 4 bedrooms, for the row holding the city: Boston
+// city town row (Boston-Cambridge-Quincy HUD Metro FMR Area), New York County, Travis County, Washtenaw County.
+// https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26_FMRs_revised.xlsx
+export const HUD_FMR = {
+  'boston-ma': [2476, 2941, 3526, 3894],
+  'new-york-ny': [2655, 2910, 3644, 3959],
+  'austin-tx': [1562, 1852, 2347, 2760],
+  'ann-arbor-mi': [1387, 1656, 1986, 2193],
+};
+
+/**
+ * The method the app states: one bedroom per person, split evenly. 1 person: Zumper 1BR. 2 people: Zumper 2BR.
+ * Otherwise the largest Zumper median the city has, scaled by HUD's ratio between the two sizes.
+ */
+export function rentShare(cityId, roommates) {
+  const n = roommates + 1;
+  if (n === 1) return RENT[cityId];
+  const z2 = RENT_2BR[cityId];
+  const f = HUD_FMR[cityId];
+  const whole = n === 2 && z2 ? z2 : z2 ? (z2 * f[n - 1]) / f[1] : (RENT[cityId] * f[n - 1]) / f[0];
+  return Math.round(whole / n);
+}
+export const electricity = (cityId, roommates = 0) => Math.round(EIA_BILL[STATE_OF[cityId]] / (roommates + 1));
+
 const STATE = {
   'boston-ma': w => ({ state: maTax(w), local: 0, payroll: 0.0046 * Math.min(w, 184500) }), // MA PFML 0.46% (mass.gov)
   'new-york-ny': w => ({ state: nyTax(w), local: nycTax(w), payroll: nyPayroll(w) }),
@@ -105,17 +139,18 @@ const STATE = {
 };
 
 /** Monthly figures the app should show for an offer. */
-export function expected({ salary, cityId, loanPayment = 0, otherFixed = 0 }) {
+export function expected({ salary, cityId, loanPayment = 0, otherFixed = 0, roommates = 0 }) {
   const s = STATE[cityId](salary);
   const fed = federalTax(salary);
   const f = fica(salary);
   const takeHome = (salary - fed - f - s.state - s.local - s.payroll) / 12;
-  const rent = RENT[cityId];
+  const rent = rentShare(cityId, roommates);
+  const elec = electricity(cityId, roommates);
   const ess = essentials(cityId);
   return {
     federal: fed, fica: f, state: s.state, local: s.local, payroll: s.payroll,
-    takeHomeMonthly: takeHome, rent, essentials: ess,
-    leftOver: takeHome - rent - ess - loanPayment - otherFixed,
+    takeHomeMonthly: takeHome, rent, electricity: elec, essentials: ess,
+    leftOver: takeHome - rent - elec - ess - loanPayment - otherFixed,
   };
 }
 
