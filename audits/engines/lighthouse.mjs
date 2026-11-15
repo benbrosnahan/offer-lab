@@ -496,8 +496,13 @@ export async function offerLabJourney({ page, navigate, timespan, snapshot, sett
   await snapshot('Results');
 
   await timespan('Override the rent', async () => {
-    const opened = await clickButton(page, /^Edit (rent|value)|^\$[\d,]+$/i);
-    if (!opened) warn('Override the rent: no editable rent figure');
+    // The redesign shows rent as a field (#rent-a); the original showed a button with the figure.
+    const field = await page.$('#rent-a');
+    if (field) {
+      await field.click({ clickCount: 3 });
+    } else if (!(await clickButton(page, /^Edit (rent|value)|^\$[\d,]+$/i))) {
+      warn('Override the rent: no editable rent figure');
+    }
     await sleep(300);
     await page.keyboard.type('1800', { delay: 60 });
     await page.keyboard.press('Enter');

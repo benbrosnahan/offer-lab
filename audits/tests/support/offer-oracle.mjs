@@ -128,3 +128,34 @@ export const PROFILES = [
   { name: 'Columbus with city tax', salary: 60000, cityId: 'columbus-oh', loanPayment: 250, otherFixed: 100 },
   { name: 'Seattle, payroll premiums', salary: 80000, cityId: 'seattle-wa', loanPayment: 0, otherFixed: 0 },
 ];
+
+// ---- Edge cases for the P2 fixes, still written from the sources, not the app ----
+
+const brackets = (t, b) => {
+  let tax = 0, lo = 0;
+  for (const [hi, r] of b) { if (t > lo) tax += (Math.min(t, hi) - lo) * r; lo = hi; }
+  return tax;
+};
+
+// Minnesota 2026 (revenue.state.mn.us 2026 amounts; Minn. Stat. 290.0123 subd. 5): standard deduction $15,300,
+// reduced by 3% of AGI between $244,400 and $337,800 plus 10% above $337,800, at most 80%.
+export function mnTax(w) {
+  const reduction = 0.03 * Math.max(0, Math.min(w, 337800) - 244400) + 0.1 * Math.max(0, w - 337800);
+  const ded = 15300 - Math.min(reduction, 0.8 * 15300);
+  return brackets(Math.max(0, w - ded), [[33310, 0.0535], [109430, 0.068], [203150, 0.0785], [Infinity, 0.0985]]);
+}
+
+// NYC above $500,000 of income: no school tax credits (IT-201-I line 69a; IT-2105-I 2026).
+export const nycTaxNoCredits = w => brackets(nyTaxable(w), [[12000, 0.03078], [25000, 0.03762], [50000, 0.03819], [Infinity, 0.03876]]);
+
+// Colorado 2026: 4.40% of federal taxable income; at AGI of $300,000 or more only $1,000 of the standard deduction
+// is kept (HB25-1274).
+export const coTax = w => 0.044 * (w >= 300000 ? w - 1000 : Math.max(0, w - 16100));
+
+// California 2026, all brackets, plus the 1% Behavioral Health Services Tax over $1,000,000 of taxable income; the
+// $158 exemption credit is gone this far above the phase-out.
+export function caTaxHigh(w) {
+  const t = Math.max(0, w - 5900);
+  return brackets(t, [[11456, 0.01], [27157, 0.02], [42861, 0.04], [59498, 0.06], [75197, 0.08], [384109, 0.093],
+    [460927, 0.103], [768213, 0.113], [Infinity, 0.123]]) + 0.01 * Math.max(0, t - 1000000);
+}

@@ -96,12 +96,19 @@ async function journey(url, rate, n, run) {
       await page.keyboard.press('Enter');
     });
     await step(page, cdp, steps, 'submit', () => clickText(page, SUBMIT_TEXTS));
+    await centre(page, '#rent-a');
     await step(page, cdp, steps, 'editRent', async () => {
-      const handle = await page.evaluateHandle(() => [...document.querySelectorAll('button')]
-        .find(b => /^Edit rent|^\$[\d,]+$/i.test((b.innerText || '').trim()) && b.offsetParent) || null);
-      const el = handle.asElement();
-      if (!el) throw new Error('no editable rent figure');
-      await el.click();
+      // The redesign shows rent as a field (#rent-a); the original showed a button with the figure.
+      const field = await page.$('#rent-a');
+      if (field) {
+        await field.click({ clickCount: 3 });
+      } else {
+        const handle = await page.evaluateHandle(() => [...document.querySelectorAll('button')]
+          .find(b => /^Edit rent|^\$[\d,]+$/i.test((b.innerText || '').trim()) && b.offsetParent) || null);
+        const el = handle.asElement();
+        if (!el) throw new Error('no editable rent figure');
+        await el.click();
+      }
       await page.keyboard.type('1800', { delay: 120 });
       await page.keyboard.press('Enter');
     });
